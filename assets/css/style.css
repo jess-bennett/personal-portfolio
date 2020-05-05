@@ -1,1 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700|Quicksand:100,200,300,400,500,600,700');
+
+ header {
+    margin: 15px;
+    height: 100vh;
+}
+
+/* ---------------------------------------------Header */
+
+nav {
+    margin: 15px;
+    height: 10vh;
+}
+
+#circle-cover-bg {
+    display: block;
+    background: url("../images/cartwheel-sq.jpg") no-repeat center center;
+    background-size: 110%;
+    width: 60%;
+    height: 0;
+    padding-bottom: 60%;
+    border: solid 2px red;
+    border-radius: 50%;
+}
+
+#menu-md {
+  font-size: 100%;
+  list-style-type: none;
+  letter-spacing: 4px;
+  text-align: right;
+}
+
+#menu-md li { 
+  display: inline;
+  margin-right: 30px;
+}
+
+#menu-md a {
+    text-decoration: none;
+}
+
+#menu-sm {
+  font-size: 200%;
+  text-align: right;
+}
+
+#home {
+    height: 90vh;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1,header h2 {
+    text-align: center;
+}
+
+.scroll-hint {
+    font-size: 200%;
+    text-align: center;
+}
