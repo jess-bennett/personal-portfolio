@@ -11,46 +11,78 @@
     <title>Jessica Bennett | Full Stack Software Developer</title>
 </head>
 <body>
-    <header>
-        <nav class="fixed-top">
-            <div class="row">
-                <div class="col col-md-2">
-                    <a href="index.html" id="circle-cover-bg"></a>
+     <section id="home-color">
+        <header>
+            <nav class="fixed-top">
+                <div class="row">
+                    <div class="col col-md-2">
+                        <a href="index.html" id="circle-cover-bg"></a>
+                    </div>
+                    <div class="col col-md-4">
+                    
+                    </div>
+                    <div class="col col-md-6">
+                        <i id="menu-sm" class="fas fa-bars d-block d-sm-none" data-toggle="modal" data-target="#menu-modal"></i>
+                        <ul id="menu-md" class="d-none d-md-block">
+                            <li>
+                                <a class="active" href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about-section">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col col-md-4">
-                
-                </div>
-                <div class="col col-md-6">
-                    <i id="menu-sm" class="fas fa-bars d-block d-sm-none"></i>
-                    <ul id="menu-md" class="d-none d-md-block">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
+            </nav>
+            <div id="home-text">
+                <div>
+                    <h1>Jessica Bennett</h1><br>
+                    <h2>Full Stack Software Developer</h2>
                 </div>
             </div>
-        </nav>
-        <div id="home">
-            <div>
-                <h1>Jessica Bennett</h1><br>
-                <h2>Full Stack Software Developer</h2>
+            <div class="scroll-hint">
+                <a href="#about-section"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </header>
+    </section>
+    <section id="about-color">
+        <div id="about-section">
+            <div id="about-text">
+                <!-- <h2>About</h2> -->
+                <ul>
+                    
+                    <svg id="line-a" class="icon  icon--plus" viewbox="0 0 4 0.3">
+                        <path d="M2 0 V2 0.3" />
+                    </svg>
+                    <li><i id="icon-a" class="fas fa-university"></i></li>
+                    <svg id="line-b" class="icon  icon--plus" viewbox="0 0 4 0.3">
+                        <path d="M2 0 V2 0.3" />
+                    </svg>
+                    <li><i id="icon-b" class="fas fa-chalkboard-teacher"></i></li>
+                    <svg id="line-c" class="icon  icon--plus" viewbox="0 0 4 0.3">
+                        <path d="M2 0 V2 0.3" />
+                    </svg>
+                    <li><i id="icon-c" class="fas fa-graduation-cap"></i></li>
+                    <svg id="line-d" class="icon  icon--plus" viewbox="0 0 4 0.3">
+                        <path d="M2 0 V2 0.3" />
+                    </svg>
+                    <li><i id="icon-d" class="fas fa-chart-area"></i></li>
+                    <svg id="line-e" class="icon  icon--plus" viewbox="0 0 4 0.3">
+                        <path d="M2 0 V2 0.3" />
+                    </svg>
+                    <li><i id="icon-e" class="fas fa-laptop-code"></i></li>
+                </ul>
+            </div>
+            <div class="scroll-hint">
+                <a href="#portfolio-section"><i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
-        <div class="scroll-hint">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </header>
-    <section>
-        About
     </section>
     <section>
         Portfolio
@@ -61,5 +93,39 @@
     <footer>
         Contact info etc
     </footer>
+
+	<div class="modal" tabindex="-1" role="dialog" id="menu-modal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-top">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	                <span aria-hidden="true">&times;</span>
+	                </button>
+				</div>
+				<div class="modal-body">
+					<ul>
+                        <li>
+                            <a class="active" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-section">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Download CV</a>
+                        </li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

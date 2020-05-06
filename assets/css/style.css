@@ -1,26 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700|Quicksand:100,200,300,400,500,600,700');
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700|Quicksand:100,200,300,400,500,600,700");
 
- header {
-    margin: 15px;
-    height: 100vh;
+/* ---------------------------------------------Colours */
+
+#home-color {
+  background-color: #9CBCCF;
+  background-image: linear-gradient(#789fbd 0%, #9cbccf 50%, #e7e0da 100%);
 }
+
+#about-color {
+  background-color: #E7E0DA;
+}
+
 
 /* ---------------------------------------------Header */
 
+header {
+  margin: 0 15px 0px;
+  height: 100vh;
+}
+
 nav {
-    margin: 15px;
-    height: 10vh;
+  margin: 15px;
+  height: 10vh;
 }
 
 #circle-cover-bg {
-    display: block;
-    background: url("../images/cartwheel-sq.jpg") no-repeat center center;
-    background-size: 110%;
-    width: 60%;
-    height: 0;
-    padding-bottom: 60%;
-    border: solid 2px red;
-    border-radius: 50%;
+  display: block;
+  background: url("../images/cartwheel-sq.jpg") no-repeat center center;
+  background-size: 110%;
+  width: 60%;
+  height: 0;
+  padding-bottom: 60%;
+  border: solid 2px #383a3a;
+  border-radius: 50%;
 }
 
 #menu-md {
@@ -30,33 +42,215 @@ nav {
   text-align: right;
 }
 
-#menu-md li { 
+#menu-md li {
   display: inline;
   margin-right: 30px;
 }
 
 #menu-md a {
-    text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  color: #383A3A;  
+  text-decoration: none;
+}
+
+#menu-md a:hover {
+    border-bottom: 1px solid #383A3A;
+}
+
+.active {
+    border-bottom: 1px solid;
+    border-color: inherit;
 }
 
 #menu-sm {
+    color: #383A3A;
   font-size: 200%;
   text-align: right;
 }
 
-#home {
-    height: 90vh;
-    padding-top: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.modal-top button {
+    color: #FCFBFB;
+    font-size: 250%;
+    margin-right: 5px;
 }
 
-header h1,header h2 {
-    text-align: center;
+.modal-content {
+    height: 90vh;
+    background-color: rgba(113, 116, 117, 0.8);
+}
+
+.modal-content ul {
+    line-height: 3;
+    font-size: 150%;
+    list-style-type: none;
+    letter-spacing: 4px;
+}
+
+.modal-content a {
+  font-family: "Quicksand", sans-serif;
+  color:#FCFBFB;  
+  text-decoration: none;
+}
+
+#home-text {
+  height: 90vh;
+  padding-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1,
+header h2 {
+  font-family: "Raleway", sans-serif;
+  color: #383a3a;
+  text-align: center;
 }
 
 .scroll-hint {
-    font-size: 200%;
+  text-align: center;
+}
+
+.scroll-hint a {
+  color: #434546;
+  font-size: 200%;
+  text-decoration: none;
+}
+
+/* ---------------------------------------------About */
+
+#about-section {
+  margin: 0 15px 0px;
+  height: 100vh;
+}
+
+#about-text {
+  height: 90vh;
+  padding-top: 15vh;
+}
+
+#about-text h2 {
     text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: #434546;
+}
+
+#about-text ul {
+    padding: 0;
+}
+
+#about-text li {
+    font-size: 280%;
+    text-align: center;
+    list-style: none;
+    color: #434546;
+    text-shadow: 2px 2px#B8B9BA;
+}
+
+/* ---------------------------------------------About animation */
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon--plus > path {
+    fill: #717475;
+    stroke: #717475;
+    stroke-width: 0.05;
+    stroke-linejoin: round;
+    
+}
+
+#line-a {
+    stroke-dasharray: 1px; 
+      stroke-dashoffset: 1px;
+    animation: move 2s linear;
+      animation-fill-mode: forwards;
+}
+
+#line-b {
+    stroke-dasharray: 1px; 
+      stroke-dashoffset: 1px;
+    animation: move 2s linear;
+    animation-delay: 1s;
+      animation-fill-mode: forwards;
+}
+
+#line-c {
+    stroke-dasharray: 1px; 
+      stroke-dashoffset: 1px;
+    animation: move 2s linear;
+    animation-delay: 2s;
+      animation-fill-mode: forwards;
+}
+
+#line-d {
+    stroke-dasharray: 1px; 
+      stroke-dashoffset: 1px;
+    animation: move 2s linear;
+    animation-delay: 3s;
+      animation-fill-mode: forwards;
+}
+
+#line-e {
+    stroke-dasharray: 1px; 
+      stroke-dashoffset: 1px;
+    animation: move 2s linear;
+    animation-delay: 4s;
+      animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#icon-a {
+animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+#icon-b {
+    animation-delay: 1s;
+animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+#icon-c {
+    animation-delay: 2s;
+animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+#icon-d {
+    animation-delay: 3s;
+animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+#icon-e {
+    animation-delay: 4s;
+animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
