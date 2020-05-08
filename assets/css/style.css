@@ -101,55 +101,85 @@ header h2 {
 }
 
 .section-title {
-    height: 15vh;
-    display: flex;
-  align-items: center;
+  height: 15vh;
+  display: flex;
+  align-items: flex-end;
   justify-content: center;
 }
 
 .section-title h2 {
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    color: #434546;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: #434546;
+  
 }
 
-#about-text {
+.about-text {
   height: 75vh;
   padding-top: 0;
 }
 
 /* ---------------------------------------------About animation */
 
-.svg-sm > line {
+.svg-about > line {
     stroke: #434546; 
     stroke-width: 2;
+    stroke-dasharray: 6%;
+    stroke-dashoffset: 6%;
+    animation: move 1s linear;
+    animation-fill-mode: forwards;
 }
 
-.svg-sm > circle {
+line.vertical  {
+    stroke: red;
+    stroke-dasharray: 19%;
+    stroke-dashoffset: 19%;
+}
+
+.svg-about > circle {
     stroke: #434546; 
     stroke-width: 2;
-    fill: #434546;
+    fill: none;
+    stroke-dasharray: 51%;
+    stroke-dashoffset: 51%;
+    animation: move 1s linear;
+    animation-fill-mode: forwards;
 }
 
-#line-e {
-    stroke-dasharray: 1px; 
-      stroke-dashoffset: 1px;
-    animation: move 2s linear;
+ #line-a-sm, #circle-a-sm {
+    animation-delay: 0s;
+}
+
+#line-b-sm, #circle-b-sm {
+    animation-delay: 1s;
+}
+
+#line-c-sm, #circle-c-sm {
+    animation-delay: 2s;
+}
+
+#line-d-sm, #circle-d-sm {
+    animation-delay: 3s;
+}
+
+#line-e-sm, #circle-e-sm {
     animation-delay: 4s;
-      animation-fill-mode: forwards;
+}
+
+#line-f-sm {
+    animation-delay: 5s;
 }
 
 @keyframes move {
+    80% {
+        fill: #E7E0DA; 
+    }
+    
     100% {
         stroke-dashoffset: 0;
+        fill: #434546;
     }
-}
-
-#icon-a {
-animation: 1s fadeIn;
-  animation-fill-mode: forwards;
-  
-  visibility: hidden;
 }
 
 /* ---------------------------------------------Modals */
@@ -184,3 +214,30 @@ animation: 1s fadeIn;
     border: solid 2px #E7E0DA;
     border-radius: 50%;
 }
+
+.modal-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title h3, .modal-title h4 {
+    text-align: right;
+    color: #FCFBFB;
+    font-family: "Raleway", sans-serif;
+}
+
+.about-list h5 {
+    font-family: "Raleway", sans-serif;
+    color: #FCFBFB;
+}
+
+
+.about-list ul {
+    font-size: 100%;
+    list-style-type: circle;
+    letter-spacing: 1px;
+    color: #FCFBFB;
+    font-family: "Quicksand", sans-serif;
+}
+

@@ -53,31 +53,75 @@
     </section>
     <section id="about-color">
         <div id="about-section">
-            <div id="about-text">
-                <!-- <h2>About</h2> -->
-                <ul>
-                    
-                    <svg id="line-a" class="icon  icon--plus" viewbox="0 0 4 0.3">
-                        <path d="M2 0 V2 0.3" />
+            <!---------------------------------- Mobile animation --> 
+            <div class="d-block d-sm-none">
+                <div class="section-title">
+                    <h2>About</h2>
+                </div>
+                <div class="about-text">
+                    <svg width="100%" height="100%" class="svg-about">
+                        <line id="line-a-sm" x1="50%" y1="0%" x2="50%" y2="5%"/>
+                        <circle id="circle-a-sm" cx="50%" cy="12%" r="8%"/>
+                        <text x="50%" y="12%" text-anchor="middle" fill="#E7E0DA" font-size="40px" font-family="FontAwesome" dy=".3em" 
+                        data-toggle="modal" data-target="#undergrad-modal">&#xf19c;</text>
+                        <line id="line-b-sm" x1="50%" y1="19%" x2="50%" y2="24%"/>
+                        <circle id="circle-b-sm" cx="50%" cy="31%" r="8%"/>
+                        <text x="50%" y="31%" text-anchor="middle" fill="#E7E0DA" font-size="40px" font-family="FontAwesome" dy=".3em" 
+                        data-toggle="modal" data-target="#teacher-modal">&#xf51c;</text>
+                        <line id="line-c-sm" x1="50%" y1="38%" x2="50%" y2="43%"/>
+                        <circle id="circle-c-sm" cx="50%" cy="50%" r="8%"/>
+                        <text x="50%" y="50%" text-anchor="middle" fill="#E7E0DA" font-size="40px" font-family="FontAwesome" dy=".3em" 
+                        data-toggle="modal" data-target="#masters-modal">&#xf19d;</text>
+                        <line id="line-d-sm" x1="50%" y1="57%" x2="50%" y2="62%"/>
+                        <circle id="circle-d-sm" cx="50%" cy="69%" r="8%"/>
+                        <text x="50%" y="69%" text-anchor="middle" fill="#E7E0DA" font-size="40px" font-family="FontAwesome" dy=".3em" 
+                        data-toggle="modal" data-target="#researcher-modal">&#xf1fe;</text>
+                        <line id="line-e-sm" x1="50%" y1="76%" x2="50%" y2="81%"/>
+                        <circle id="circle-e-sm" cx="50%" cy="88%" r="8%"/>
+                        <text x="50%" y="88%" text-anchor="middle" fill="#E7E0DA" font-size="40px" font-family="FontAwesome" dy=".3em" 
+                        data-toggle="modal" data-target="#">&#xf5fc;</text>
+                        <line id="line-f-sm" x1="50%" y1="95%" x2="50%" y2="100%"/>
                     </svg>
-                    <li><i id="icon-a" class="fas fa-university"></i></li>
-                    <svg id="line-b" class="icon  icon--plus" viewbox="0 0 4 0.3">
-                        <path d="M2 0 V2 0.3" />
+                </div>
+            </div>
+            <!---------------------------------- Desktop animation -->
+            <div class="d-none d-md-block">
+                <div class="section-title">
+                    <h2>About</h2>
+                </div>
+                <div class="about-text">
+                    <svg width="100%" height="100%" class="svg-about">
+                        <line id="line-a-md" x1="0%" y1="14%" x2="5%" y2="14%"/>
+                        <circle id="circle-a-md" cx="10%" cy="14%" r="6%"/>
+                        <text x="10%" y="14%" text-anchor="middle" fill="#E7E0DA" font-size="40px" font-family="FontAwesome" dy=".3em" 
+                        data-toggle="modal" data-target="#undergrad-modal">&#xf19c;</text>
+                        <line id="line-b-md" x1="15%" y1="14%" x2="20%" y2="14%"/>
+                        <line class="vertical" id="line-c-md" x1="20%" y1="14%" x2="20%" y2="32%"/>
+                        <line id="line-d-md" x1="20%" y1="32%" x2="25%" y2="32%"/>
+                        <circle id="circle-b-md" cx="30%" cy="32%" r="6%"/>
+                        <text x="30%" y="32%" text-anchor="middle" fill="#E7E0DA" font-size="40px" font-family="FontAwesome" dy=".3em" 
+                        data-toggle="modal" data-target="#teacher-modal">&#xf51c;</text>
+                        <line id="line-e-md" x1="35%" y1="32%" x2="40%" y2="32%"/>
+                        <line id="line-f-md" x1="40%" y1="32%" x2="40%" y2="50%"/>
+                        <line id="line-g-md" x1="40%" y1="50%" x2="45%" y2="50%"/>
+                        <circle id="circle-c-md" cx="50%" cy="50%" r="6%"/>
+                        <text x="50%" y="50%" text-anchor="middle" fill="#E7E0DA" font-size="40px" font-family="FontAwesome" dy=".3em" 
+                        data-toggle="modal" data-target="#masters-modal">&#xf19d;</text>
+                        <line id="line-h-md" x1="55%" y1="50%" x2="60%" y2="50%"/>
+                        <line id="line-i-md" x1="60%" y1="50%" x2="60%" y2="68%"/>
+                        <line id="line-j-md" x1="60%" y1="68%" x2="65%" y2="68%"/>
+                        <circle id="circle-d-md" cx="70%" cy="68%" r="6%"/>
+                        <text x="70%" y="68%" text-anchor="middle" fill="#E7E0DA" font-size="40px" font-family="FontAwesome" dy=".3em" 
+                        data-toggle="modal" data-target="#researcher-modal">&#xf1fe;</text>
+                        <line id="line-k-md" x1="75%" y1="68%" x2="80%" y2="68%"/>
+                        <line id="line-l-md" x1="80%" y1="68%" x2="80%" y2="86%"/>
+                        <line id="line-m-md" x1="80%" y1="86%" x2="85%" y2="86%"/>
+                        <circle id="circle-e-md" cx="90%" cy="86%" r="6%"/>
+                        <text x="90%" y="86%" text-anchor="middle" fill="#E7E0DA" font-size="40px" font-family="FontAwesome" dy=".3em" 
+                        data-toggle="modal" data-target="#">&#xf5fc;</text>
+                        <line id="line-n-md" x1="95%" y1="86%" x2="100%" y2="86%"/>
                     </svg>
-                    <li><i id="icon-b" class="fas fa-chalkboard-teacher"></i></li>
-                    <svg id="line-c" class="icon  icon--plus" viewbox="0 0 4 0.3">
-                        <path d="M2 0 V2 0.3" />
-                    </svg>
-                    <li><i id="icon-c" class="fas fa-graduation-cap"></i></li>
-                    <svg id="line-d" class="icon  icon--plus" viewbox="0 0 4 0.3">
-                        <path d="M2 0 V2 0.3" />
-                    </svg>
-                    <li><i id="icon-d" class="fas fa-chart-area"></i></li>
-                    <svg id="line-e" class="icon  icon--plus" viewbox="0 0 4 0.3">
-                        <path d="M2 0 V2 0.3" />
-                    </svg>
-                    <li><i id="icon-e" class="fas fa-laptop-code"></i></li>
-                </ul>
+                </div>
             </div>
             <div class="scroll-hint">
                 <a href="#portfolio-section"><i class="fas fa-chevron-down"></i></a>
@@ -93,7 +137,7 @@
     <footer>
         Contact info etc
     </footer>
-
+    <!---------------------------------- Menu modal -->
 	<div class="modal" tabindex="-1" role="dialog" id="menu-modal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -124,6 +168,123 @@
 			</div>
 		</div>
 	</div>
+    <!---------------------------------- Undergrad modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="undergrad-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-top">
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row">
+                <img src="assets/images/uni-sq.jpg" alt="jessica bennett as an undergraduate">
+                <div class="modal-title">
+                    <div>
+                    <h3>Undergrad</h3> <br>
+                    <h4>2005 - 2009</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body about-list">
+            <h5>Skills aquired:</h5>
+            <ul>
+                <li>Ability to organise</li>
+                <li>Forward planning</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!---------------------------------- Teacher modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="teacher-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-top">
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row">
+                <img src="assets/images/teacher-sq.jpg" alt="jessica bennett as a teacher">
+                <div class="modal-title">
+                    <div>
+                    <h3>Teacher</h3> <br>
+                    <h4>2010 - 2012</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body about-list">
+            <h5>Skills aquired:</h5>
+            <ul>
+                <li>Ability to organise</li>
+                <li>Forward planning</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!---------------------------------- Masters modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="masters-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-top">
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row">
+                <img src="assets/images/master-sq.jpg" alt="jessica bennett with dissertation for masters degree">
+                <div class="modal-title">
+                    <div>
+                    <h3>Master's Degree</h3> <br>
+                    <h4>2012 - 2013</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body about-list">
+            <h5>Skills aquired:</h5>
+            <ul>
+                <li>Ability to organise</li>
+                <li>Forward planning</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!---------------------------------- Researcher modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="researcher-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-top">
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row">
+                <img src="assets/images/researcher-sq.jpg" alt="jessica bennett as a data analyst and researcher">
+                <div class="modal-title">
+                    <div>
+                    <h3>Researcher/Data Analyst</h3> <br>
+                    <h4>2013 - Present</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body about-list">
+            <h5>Skills aquired:</h5>
+            <ul>
+                <li>Ability to organise</li>
+                <li>Forward planning</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
