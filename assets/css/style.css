@@ -5,19 +5,15 @@
 #home-color {
   background-color: #9CBCCF;
   background-image: linear-gradient(#789fbd 0%, #9cbccf 50%, #e7e0da 100%);
+  height: 100vh;
 }
 
-#about-color {
+.main-color {
   background-color: #E7E0DA;
 }
 
 
 /* ---------------------------------------------Header */
-
-header {
-  margin: 0 15px 0px;
-  height: 100vh;
-}
 
 nav {
   margin: 15px;
@@ -26,11 +22,12 @@ nav {
 
 #circle-cover-bg {
   display: block;
+  /* float: left; */
   background: url("../images/cartwheel-sq.jpg") no-repeat center center;
   background-size: 110%;
-  width: 60%;
+  width: 50%;
   height: 0;
-  padding-bottom: 60%;
+  padding-bottom: 50%;
   border: solid 2px #383a3a;
   border-radius: 50%;
 }
@@ -62,7 +59,7 @@ nav {
     border-color: inherit;
 }
 
-#menu-sm {
+#menu-xs {
     color: #383A3A;
   font-size: 200%;
   text-align: right;
@@ -102,6 +99,7 @@ header h2 {
 
 .section-title {
   height: 15vh;
+  margin-bottom: 20px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -115,7 +113,7 @@ header h2 {
   
 }
 
-.about-text {
+.section-text {
   height: 75vh;
   padding-top: 0;
 }
@@ -125,16 +123,19 @@ header h2 {
 .svg-about > line {
     stroke: #434546; 
     stroke-width: 2;
-    stroke-dasharray: 6%;
-    stroke-dashoffset: 6%;
-    animation: move 1s linear;
+    stroke-dasharray: 8%;
+    stroke-dashoffset: 8%;
+    animation: move 0.5s linear;
     animation-fill-mode: forwards;
 }
 
 line.vertical  {
-    stroke: red;
+    stroke: #434546; 
+    stroke-width: 2;
     stroke-dasharray: 19%;
     stroke-dashoffset: 19%;
+    animation: move 0.75s linear;
+    animation-fill-mode: forwards;
 }
 
 .svg-about > circle {
@@ -143,32 +144,92 @@ line.vertical  {
     fill: none;
     stroke-dasharray: 51%;
     stroke-dashoffset: 51%;
-    animation: move 1s linear;
+    animation: move 0.5s linear;
     animation-fill-mode: forwards;
 }
 
- #line-a-sm, #circle-a-sm {
+#line-a-xs, #line-a-md {
     animation-delay: 0s;
 }
 
-#line-b-sm, #circle-b-sm {
+#circle-a-md {
+    animation-delay: 0.25s;
+}
+
+#circle-a-xs, #line-b-md {
+    animation-delay: 0.5s;
+}
+
+#line-c-md {
+    animation-delay: 0.75s;
+}
+
+#line-b-xs {
     animation-delay: 1s;
 }
 
-#line-c-sm, #circle-c-sm {
+#line-d-md {
+    animation-delay: 1.25s;
+}
+
+#circle-b-xs, #circle-b-md {
+    animation-delay: 1.5s;
+}
+
+#line-e-md {
+    animation-delay: 1.75s;
+}
+
+#line-c-xs, #line-f-md {
     animation-delay: 2s;
 }
 
-#line-d-sm, #circle-d-sm {
+#circle-c-xs, #line-g-md {
+    animation-delay: 2.5s;
+}
+
+#circle-c-md {
+    animation-delay: 2.75s;
+}
+
+#line-d-xs, #line-h-md {
     animation-delay: 3s;
 }
 
-#line-e-sm, #circle-e-sm {
+#line-i-md {
+    animation-delay: 3.25s;
+}
+
+#circle-d-xs {
+    animation-delay: 3.5s;
+}
+
+#line-j-md {
+    animation-delay: 3.75s;
+}
+
+#line-e-xs, #circle-d-md {
     animation-delay: 4s;
 }
 
-#line-f-sm {
+#line-k-md {
+    animation-delay: 4.25s;
+}
+
+#circle-e-xs, #line-l-md {
+    animation-delay: 4.5s;
+}
+
+#line-f-xs, #line-m-md {
     animation-delay: 5s;
+}
+
+#circle-e-md {
+    animation-delay: 5.25s;
+}
+
+#line-n-md {
+    animation-delay: 5.5s;
 }
 
 @keyframes move {
@@ -180,6 +241,27 @@ line.vertical  {
         stroke-dashoffset: 0;
         fill: #434546;
     }
+}
+
+/* ---------------------------------------------Portfolio */
+
+#portfolio-section {
+  margin: 0 15px 0px;
+  height: 100vh;
+}
+
+.photos > .row {
+    height: 35vh;
+}
+
+.photos > .row > div {
+    text-align: center;
+}
+
+.photos img {
+    width: 50%;
+    border: 2px solid #434546;
+    border-radius: 50%;
 }
 
 /* ---------------------------------------------Modals */
