@@ -10,8 +10,18 @@
 
 .main-color {
   background-color: #E7E0DA;
+  border: none;
 }
 
+.contact-color {
+    background-color: #767D5A;
+    background-image: linear-gradient(#E7E0DA 0%, #767D5A 50%, #45473B 95%);
+}
+
+.footer-color {
+    background-color: #45473B;
+    color: #E7E0DA;
+}
 
 /* ---------------------------------------------Header */
 
@@ -127,10 +137,10 @@ header h2 {
 
 /* ---------------------------------------------About Full Page */
 
-.section-text img {
+.section-text > img {
     display: block;
     margin: 0 auto;
-    height: 25vh;
+    height: 20vh;
     border: solid 2px #434546;
     border-radius: 50%;
 }
@@ -152,8 +162,8 @@ blockquote, p {
 
 .progress {
     position: relative;
-    height: 25px;
-    margin-bottom: 4px;
+    height: 30px;
+    margin-bottom: 5%;
 }
 
 .progress-type {
@@ -164,36 +174,57 @@ blockquote, p {
     padding: 3px 30px 2px 10px;
 }
 
-.progress-type.color-a {
+.color-a .progress-type {
     color:  #E7E0DA;
 }
 
-.progress-bar.color-a {
+.color-a .progress-bar {
     background-color: #434546;
 }
 
-.progress-type.color-b {
+.color-b .progress-type {
     color:  #434546;
 }
 
-.progress-bar.color-b {
+.color-b .progress-bar {
     border: 2px solid  #434546;
+    background-color:  #E7E0DA;
+}
+
+.color-c .progress-type {
+    color:  #434546;
 }
 
 /* ---------------------------------------------About animation */
 
+.svg-about text {
+    cursor: pointer;
+}
+
+.svg-about text:hover {
+    fill:#717475;
+}
+
+.svg-about a {
+    text-decoration: none;
+}
+
 .svg-about > line {
     stroke: #434546; 
     stroke-width: 2;
+    /* stroke-dasharray: 8%;
+    stroke-dashoffset: 8%;
+    animation: move 0.5s linear;
+    animation-fill-mode: forwards; */
+}
+.line.is-visible  {
     stroke-dasharray: 8%;
     stroke-dashoffset: 8%;
     animation: move 0.5s linear;
     animation-fill-mode: forwards;
 }
 
-line.vertical  {
-    stroke: #434546; 
-    stroke-width: 2;
+.vertical.is-visible  {
     stroke-dasharray: 19%;
     stroke-dashoffset: 19%;
     animation: move 0.75s linear;
@@ -204,6 +235,9 @@ line.vertical  {
     stroke: #434546; 
     stroke-width: 2;
     fill: none;
+}
+
+.circle.is-visible {
     stroke-dasharray: 51%;
     stroke-dashoffset: 51%;
     animation: move 0.5s linear;
@@ -326,6 +360,13 @@ line.vertical  {
     border-radius: 50%;
 }
 
+/* ---------------------------------------------Contact */
+
+#contact-section {
+  margin: 0 15px 0px;
+  height: 100vh;
+}
+
 /* ---------------------------------------------Modals */
 
 .modal-top button {
@@ -335,7 +376,7 @@ line.vertical  {
 }
 
 .modal-content {
-    height: 90vh;
+    min-height: 95vh;
     background-color: #717475;
 }
 
@@ -385,3 +426,8 @@ line.vertical  {
     font-family: "Quicksand", sans-serif;
 }
 
+.about-list blockquote, .about-list p {
+    font-size: 100%;
+    color: #FCFBFB;
+    font-family: "Quicksand", sans-serif;
+}
