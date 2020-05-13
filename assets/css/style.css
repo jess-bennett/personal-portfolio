@@ -15,7 +15,7 @@
 
 .contact-color {
     background-color: #767D5A;
-    background-image: linear-gradient(#E7E0DA 0%, #767D5A 50%, #45473B 95%);
+    background-image: linear-gradient(#E7E0DA 0%, #767D5A 40%, #45473B 95%);
 }
 
 .footer-color {
@@ -355,16 +355,63 @@ blockquote, p {
 }
 
 .photos img {
-    width: 50%;
+    width: 100%;
     border: 2px solid #434546;
     border-radius: 50%;
 }
+
+.portfolio-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio-popup {
+    text-align: center;
+    color: #FCFBFB;
+    font-family: "Quicksand", sans-serif;
+    border: 2px solid #717475;
+    background-color: #717475;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hover:hover > .portfolio-popup {
+    display: block;
+}
+
+.hover:hover > .portfolio-image {
+    display: none;
+}
+
+
 
 /* ---------------------------------------------Contact */
 
 #contact-section {
   margin: 0 15px 0px;
   height: 100vh;
+}
+
+#contact-section img {
+    height: 30vh;
+}
+
+.center-content {
+    text-align: center;
+}
+
+form {
+    font-family: "Quicksand", sans-serif;
+    color: #FCFBFB;
+}
+
+form * {
+    width: 50%;
 }
 
 /* ---------------------------------------------Modals */

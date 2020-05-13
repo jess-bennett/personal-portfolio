@@ -250,22 +250,27 @@
 			</div>
 			<div class="section-text photos">
 				<div class="row justify-content-center">
-					<div class="col-6 col-md-4 my-auto">
-						<img src="assets/images/first-website.JPG" alt="jessica bennetts first website"/>
+					<div class="col-6 col-md-4 my-auto hover">
+						<div class="portfolio-image"><img src="assets/images/first-website.JPG" alt="jessica bennetts first website"/></div>
+                        <div class="portfolio-popup">First website. <br>Created for entry assessment for Code Institute. <br> <a>Visit</a></div>
                     </div>
-                    <div class="col-6 col-md-4 my-auto">
-                        <img src="assets/images/developer-website.JPG" alt="full stack software developer website"/>
+                    <div class="col-6 col-md-4 my-auto hover">
+                        <div class="portfolio-image"><img src="assets/images/developer-website.JPG" alt="full stack software developer website"/></div>
+                        <div class="portfolio-popup"> INFO BOX</div>
                     </div>
-                    <div class="col-6 col-md-4 my-auto">
-                        <img src="assets/images/interactive-frontend.JPG" alt="Interactive Frontend Development Milestone Project"/>
+                    <div class="col-6 col-md-4 my-auto hover">
+                        <div class="portfolio-image"><img src="assets/images/interactive-frontend.png" alt="Interactive Frontend Development Milestone Project"/></div>
+                        <div class="portfolio-popup"> INFO BOX</div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-					<div class="col-6 col-md-4 my-auto">
-						<img src="assets/images/data-centric.JPG" alt="Data Centric Development Milestone Project"/>
+					<div class="col-6 col-md-4 my-auto hover">
+						<div class="portfolio-image"><img src="assets/images/data-centric.png" alt="Data Centric Development Milestone Project"/></div>
+                        <div class="portfolio-popup"> INFO BOX</div>
                     </div>
-                    <div class="col-6 col-md-4 my-auto">
-                        <img src="assets/images/full-stack.JPG" alt="Full Stack Frameworks with Django Milestone Project"/>
+                    <div class="col-6 col-md-4 my-auto hover">
+                        <div class="portfolio-image"><img src="assets/images/full-stack.png" alt="Full Stack Frameworks with Django Milestone Project"/></div>
+                        <div class="portfolio-popup"> INFO BOX</div>
                     </div>
                 </div>
             </div>
@@ -279,7 +284,18 @@
 			<div class="section-title">
 				<h2>Contact</h2>
 			</div>
-		    <div class="section-text">
+		    <div class="section-text row">
+                <div class="col-12  my-auto center-content">
+                    <img src="assets/images/cartwheel-sq.jpg" alt=""/>
+                </div>
+                <div class="col-12  my-auto center-content">
+                    <form action="#" method="post" enctype="text/plain">
+                        <input type="text" id="name" name="name" placeholder="Name" required><br>
+                        <input id="email" type="email" name="email_address" placeholder="Email address" required/><br>
+                        <textarea name="message" rows="5" cols="30" placeholder="What would you like to say?" required></textarea><br>
+                        <input type="submit" value="Send!">
+                    </form>
+                </div>
 		    </div>
 		</div>
 	</section>        
@@ -336,10 +352,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
 					<div class="row">
-						<img
-                src="assets/images/uni-sq.jpg"
-                alt="jessica bennett as an undergraduate"
-              />
+						<img src="assets/images/uni-sq.jpg" alt="jessica bennett as an undergraduate"/>
 						<div class="modal-title">
 							<div>
 								<h3>Undergrad</h3>
@@ -373,10 +386,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
 					<div class="row">
-						<img
-                src="assets/images/teacher-sq.jpg"
-                alt="jessica bennett as a teacher"
-              />
+						<img src="assets/images/teacher-sq.jpg" alt="jessica bennett as a teacher"/>
 						<div class="modal-title">
 							<div>
 								<h3>Teacher</h3>
@@ -410,10 +420,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
 					<div class="row">
-						<img
-                src="assets/images/master-sq.jpg"
-                alt="jessica bennett with dissertation for masters degree"
-              />
+						<img src="assets/images/master-sq.jpg" alt="jessica bennett with dissertation for masters degree"/>
 						<div class="modal-title">
 							<div>
 								<h3>Master's Degree</h3>
@@ -447,10 +454,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
 					<div class="row">
-						<img
-                src="assets/images/researcher-sq.jpg"
-                alt="jessica bennett as a data analyst and researcher"
-              />
+						<img src="assets/images/researcher-sq.jpg" alt="jessica bennett as a data analyst and researcher"/>
 						<div class="modal-title">
 							<div>
 								<h3>Researcher/Data Analyst</h3>
@@ -484,10 +488,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
 					<div class="row">
-						<img
-                src="assets/images/current-sq.jpg"
-                alt="jessica bennett currently"
-              />
+						<img src="assets/images/current-sq.jpg" alt="jessica bennett currently"/>
 						<div class="modal-title">
 							<div>
 								<h3>Full Stack Software Development Student</h3>
@@ -531,6 +532,7 @@
 		</div>
 	</div>
     <!---------------------------------- My JavaScript -->
+    <!---------------------------------- Animation JavaScript -->
     <script>
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
