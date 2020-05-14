@@ -4,23 +4,23 @@
 
 #home-color {
   background-color: #9CBCCF;
-  background-image: linear-gradient(#789fbd 0%, #9cbccf 50%, #e7e0da 100%);
+  background-image: linear-gradient(#789fbd 0%, #9cbccf 50%, #FAF8F7 100%);
   height: 100vh;
 }
 
 .main-color {
-  background-color: #E7E0DA;
+  background-color: #FAF8F7;
   border: none;
 }
 
 .contact-color {
     background-color: #767D5A;
-    background-image: linear-gradient(#E7E0DA 0%, #767D5A 40%, #45473B 95%);
+    background-image: linear-gradient(#FAF8F7 0%, #767D5A 40%, #45473B 95%);
 }
 
 .footer-color {
     background-color: #45473B;
-    color: #E7E0DA;
+    color: #FAF8F7;
 }
 
 /* ---------------------------------------------Header */
@@ -77,6 +77,23 @@ nav {
   text-align: right;
 }
 
+header h1,
+header h2 {
+  font-family: "Raleway", sans-serif;
+  color: #383a3a;
+  text-align: center;
+  animation: disappear 10s infinite;
+}
+
+header blockquote {
+  font-family: "Raleway", sans-serif;
+  color: #383a3a;
+  text-align: center;
+  font-size: 1.5rem;
+  animation: appear 10s infinite;
+  opacity: 0;
+}
+
 #home-text {
   height: 90vh;
   padding-top: 10vh;
@@ -85,11 +102,31 @@ nav {
   justify-content: center;
 }
 
-header h1,
-header h2 {
-  font-family: "Raleway", sans-serif;
-  color: #383a3a;
-  text-align: center;
+@keyframes disappear {
+    0% {
+        opacity: 1; 
+    }
+    
+    50% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0; 
+    }
+    
+    50% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0;
+    }
 }
 
 .scroll-hint {
@@ -175,7 +212,7 @@ blockquote, p {
 }
 
 .color-a .progress-type {
-    color:  #E7E0DA;
+    color:  #FAF8F7;
 }
 
 .color-a .progress-bar {
@@ -188,7 +225,7 @@ blockquote, p {
 
 .color-b .progress-bar {
     border: 2px solid  #434546;
-    background-color:  #E7E0DA;
+    background-color:  #FAF8F7;
 }
 
 .color-c .progress-type {
@@ -212,10 +249,6 @@ blockquote, p {
 .svg-about > line {
     stroke: #434546; 
     stroke-width: 2;
-    /* stroke-dasharray: 8%;
-    stroke-dashoffset: 8%;
-    animation: move 0.5s linear;
-    animation-fill-mode: forwards; */
 }
 .line.is-visible  {
     stroke-dasharray: 8%;
@@ -330,7 +363,7 @@ blockquote, p {
 
 @keyframes move {
     80% {
-        fill: #E7E0DA; 
+        fill: #FAF8F7; 
     }
     
     100% {
@@ -347,7 +380,7 @@ blockquote, p {
 }
 
 .photos > .row {
-    height: 35vh;
+    height: 15vh;
 }
 
 .photos > .row > div {
@@ -355,12 +388,19 @@ blockquote, p {
 }
 
 .photos img {
-    width: 100%;
+    width: 14vh;
+    height: 14vh;
+    object-fit: cover;
     border: 2px solid #434546;
-    border-radius: 50%;
 }
 
-.portfolio-image {
+.portfolio-info {
+    width: 100%;
+    height: 14vh;
+    border: 2px solid #434546;
+}
+
+/* .portfolio-image {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -386,7 +426,7 @@ blockquote, p {
 
 .hover:hover > .portfolio-image {
     display: none;
-}
+} */
 
 
 
@@ -443,7 +483,7 @@ form * {
 .modal-top img {
     margin: 15px;
     height: 20vh;
-    border: solid 2px #E7E0DA;
+    border: solid 2px #FAF8F7;
     border-radius: 50%;
 }
 
