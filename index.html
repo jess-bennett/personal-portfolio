@@ -1,39 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-		type="text/css" />
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<script src="https://kit.fontawesome.com/372df47477.js" crossorigin="anonymous"></script>
-	<title>Jessica Bennett | Full Stack Software Developer</title>
+    <title>Jessica Bennett | Full Stack Software Developer</title>
 </head>
-
 <body>
-	<header id="home-color">
-		<nav class="fixed-top">
+    <header id="home">
+        <nav class="container-fluid fixed-top">
 			<div class="row">
 				<div class="col col-md-2">
 					<a href="index.html" id="circle-cover-bg"></a>
 				</div>
 				<div class="col col-md-10">
-					<i
-              id="menu-xs"
-              class="fas fa-bars d-block d-md-none"
-              data-toggle="modal"
-              data-target="#menu-modal"
-            ></i>
+					<i id="menu-xs" class="fas fa-bars d-block d-md-none" data-toggle="modal" data-target="#menu-modal" ></i>
 					<ul id="menu-md" class="d-none d-md-block">
 						<li>
-							<a class="active" href="index.html">Home</a>
+							<a href="#home">Home</a>
 						</li>
 						<li>
-							<a href="#about-section">About</a>
+							<a href="#about">About</a>
 						</li>
 						<li>
 							<a href="#portfolio-section">Portfolio</a>
@@ -44,8 +34,8 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
-		<div id="home-text">
+        </nav>
+        <div id="home-text">
 			<div>
 				<h1>Jessica Bennett</h1>
                 <blockquote 
@@ -57,133 +47,140 @@
 				<h2>Full Stack Software Developer</h2>
 			</div>
 		</div>
-		<div class="scroll-hint">
-			<a href="#about-section"><i class="fas fa-chevron-down"></i></a>
-		</div>
-	</header>
-	<section class="main-color">
-		<div id="about-section">
-			<div class="section-title">
-				<h2>About</h2>
-			</div>
-			<!---------------------------------- Mobile animation -->
-			<div class="d-block d-md-none">
-				<div class="section-text">
-					<svg width="100%" height="100%" class="svg-about">
-						<line class="show-on-scroll line" id="line-a-xs" x1="50%" y1="0%" x2="50%" y2="5%" />
-                        <text x="25%" y="12%" text-anchor="start"> TEST </text>
-						<circle class="show-on-scroll circle" id="circle-a-xs" cx="50%" cy="12%" r="8%" />
-						<text x="50%" y="12%" text-anchor="middle" fill="#FAF8F7" font-size="40px"
-							font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
-							&#xf19c;
-						</text>
-						<line class="show-on-scroll line" id="line-b-xs" x1="50%" y1="19%" x2="50%" y2="24%" />
-						<circle class="show-on-scroll circle" id="circle-b-xs" cx="50%" cy="31%" r="8%" />
-                        <text x="75%" y="31%" text-anchor="end"> TEST </text>
-						<text x="50%" y="31%" text-anchor="middle" fill="#FAF8F7" font-size="40px"
-							font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
-							&#xf51c;
-						</text>
-						<line class="show-on-scroll line" id="line-c-xs" x1="50%" y1="38%" x2="50%" y2="43%" />
-						<circle class="show-on-scroll circle" id="circle-c-xs" cx="50%" cy="50%" r="8%" />
-						<text x="50%" y="50%" text-anchor="middle" fill="#FAF8F7" font-size="40px"
-							font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#masters-modal">
-							&#xf19d;
-						</text>
-						<line class="show-on-scroll line" id="line-d-xs" x1="50%" y1="57%" x2="50%" y2="62%" />
-						<circle class="show-on-scroll circle" id="circle-d-xs" cx="50%" cy="69%" r="8%" />
-						<text x="50%" y="69%" text-anchor="middle" fill="#FAF8F7" font-size="40px"
-							font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
-							&#xf1fe;
-						</text>
-						<line class="show-on-scroll line" id="line-e-xs" x1="50%" y1="76%" x2="50%" y2="81%" />
-						<circle class="show-on-scroll circle" id="circle-e-xs" cx="50%" cy="88%" r="8%" />
-						<text x="50%" y="88%" text-anchor="middle" fill="#FAF8F7" font-size="40px"
-							font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#developer-modal">
-							&#xf5fc;
-						</text>
-						<line class="show-on-scroll line" id="line-f-xs" x1="50%" y1="95%" x2="50%" y2="100%" />
-					</svg>
-				</div>
-			</div>
-			<!---------------------------------- Desktop animation -->
-			<div class="d-none d-md-block">
-				<!-- <div class="section-title">
-                    <h2>About</h2>
-                </div> -->
-				<div class="section-text">
-					<svg width="100%" height="100%" class="svg-about">
-						<line class="show-on-scroll line" id="line-a-md" x1="0%" y1="14%" x2="6%" y2="14%" />
-						<circle class="show-on-scroll circle" id="circle-a-md" cx="10%" cy="14%" r="5%" />
-						<text x="10%" y="14%" text-anchor="middle" fill="#FAF8F7" font-size="50px"
-							font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
-							&#xf19c;
-						</text>
-						<line class="show-on-scroll line" id="line-b-md" x1="14%" y1="14%" x2="20%" y2="14%" />
-						<line class="show-on-scroll vertical" id="line-c-md" x1="20%" y1="14%" x2="20%" y2="32%" />
-						<line class="show-on-scroll line" id="line-d-md" x1="20%" y1="32%" x2="26%" y2="32%" />
-						<circle class="show-on-scroll circle" id="circle-b-md" cx="30%" cy="32%" r="5%" />
-						<text x="30%" y="32%" text-anchor="middle" fill="#FAF8F7" font-size="50px"
-							font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
-							&#xf51c;
-						</text>
-						<line class="show-on-scroll line" id="line-e-md" x1="34%" y1="32%" x2="40%" y2="32%" />
-						<line class="show-on-scroll vertical" id="line-f-md" x1="40%" y1="32%" x2="40%" y2="50%" />
-						<line class="show-on-scroll line" id="line-g-md" x1="40%" y1="50%" x2="46%" y2="50%" />
-						<circle class="show-on-scroll circle" id="circle-c-md" cx="50%" cy="50%" r="5%" />
-						<text x="50%" y="50%" text-anchor="middle" fill="#FAF8F7" font-size="50px"
-							font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#masters-modal">
-							&#xf19d;
-						</text>
-						<line class="show-on-scroll line" id="line-h-md" x1="54%" y1="50%" x2="60%" y2="50%" />
-						<line class="show-on-scroll vertical" id="line-i-md" x1="60%" y1="50%" x2="60%" y2="68%" />
-						<line class="show-on-scroll line" id="line-j-md" x1="60%" y1="68%" x2="66%" y2="68%" />
-						<circle class="show-on-scroll circle" id="circle-d-md" cx="70%" cy="68%" r="5%" />
-						<text x="70%" y="68%" text-anchor="middle" fill="#FAF8F7" font-size="50px"
-							font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
-							&#xf1fe;
-						</text>
-						<line class="show-on-scroll line" id="line-k-md" x1="74%" y1="68%" x2="80%" y2="68%" />
-						<line class="show-on-scroll vertical" id="line-l-md" x1="80%" y1="68%" x2="80%" y2="86%" />
-						<line class="show-on-scroll line" id="line-m-md" x1="80%" y1="86%" x2="86%" y2="86%" />
-						<circle class="show-on-scroll circle" id="circle-e-md" cx="90%" cy="86%" r="5%" />
-						<a href="#about2-section">
-							<text x="90%" y="86%" text-anchor="middle" fill="#FAF8F7" font-size="50px"
-								font-family="FontAwesome" dy=".3em">
-								&#xf5fc;
-							</text>
-						</a>
-						<line class="show-on-scroll line" id="line-n-md" x1="94%" y1="86%" x2="100%" y2="86%" />
-					</svg>
-				</div>
-			</div>
-        <div class="scroll-hint">
-			<a href="#about2-section"><i class="fas fa-chevron-down"></i></a>
-		</div>
-		</div>
-	</section>
-	<section class="main-color">
-		<div id="about2-section">
-			<div class="section-title">
-				<div>
-					<h3>Full Stack Software Development Student</h3>
-					<h4>Present - 2021</h4>
-				</div>
-			</div>
-			<div class="section-text">
-				<img
-            src="assets/images/current-sq.jpg"
-            alt="jessica bennett currently"
-          />
-				<div class="row">
-					<div class="col-12 col-md-6">
-						<blockquote class="d-none d-md-block"
+    </header>
+    <section id="about">
+        <div class="section-title">
+            <h2>About</h2>
+        </div>
+        <!---------------------------------- Mobile animation -->
+        <div class="d-block d-md-none">
+            <div class="section-svg">
+                <svg width="100%" height="100%" class="svg-about">
+                    <line class="show-on-scroll line" x1="50%" y1="0%" x2="50%" y2="5%" />
+                    <circle class="show-on-scroll delay-0-5 circle" cx="50%" cy="12%" r="8%" />
+                    <text class="show-on-scroll delay-1 text" x="35%" y="12%" text-anchor="end" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> Undergraduate </text>
+                    <text class="show-on-scroll delay-1 text" x="50%" y="12%" text-anchor="middle" fill="#f1f3f5" font-size="40px"
+                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
+                        &#xf19c;
+                    </text>
+                    <line class="show-on-scroll delay-1 line" x1="50%" y1="19%" x2="50%" y2="24%" />
+                    <circle class="show-on-scroll delay-1-5 circle" cx="50%" cy="31%" r="8%" />
+                    <text class="show-on-scroll delay-2 text" x="65%" y="31%" text-anchor="start" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> Teacher </text>
+                    <text class="show-on-scroll delay-2 text" x="50%" y="31%" text-anchor="middle" fill="#f1f3f5" font-size="40px"
+                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
+                        &#xf51c;
+                    </text>
+                    <line class="show-on-scroll delay-2 line" x1="50%" y1="38%" x2="50%" y2="43%" />
+                    <circle class="show-on-scroll delay-2-5 circle" cx="50%" cy="50%" r="8%" />
+                    <text class="show-on-scroll delay-3 text" x="35%" y="50%" text-anchor="end" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> Master's degree </text>
+                    <text class="show-on-scroll delay-3 text" x="50%" y="50%" text-anchor="middle" fill="#f1f3f5" font-size="40px"
+                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#masters-modal">
+                        &#xf19d;
+                    </text>
+                    <line class="show-on-scroll delay-3 line" x1="50%" y1="57%" x2="50%" y2="62%" />
+                    <circle class="show-on-scroll delay-3-5 circle" cx="50%" cy="69%" r="8%" />
+                    <text class="show-on-scroll delay-4 text" x="65%" y="68%" text-anchor="start" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> Researcher/ </text>
+                    <text class="show-on-scroll delay-4 text" x="65%" y="71%" text-anchor="start" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> Data Analyst </text>    
+                    <text class="show-on-scroll delay-4 text" x="50%" y="69%" text-anchor="middle" fill="#f1f3f5" font-size="40px"
+                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
+                        &#xf1fe;
+                    </text>
+                    <line class="show-on-scroll delay-4 line" x1="50%" y1="76%" x2="50%" y2="81%" />
+                    <circle class="show-on-scroll delay-4-5 circle" cx="50%" cy="88%" r="8%" />
+                    <text class="show-on-scroll delay-5 text" x="35%" y="87%" text-anchor="end" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> SFTDEV </text>
+                    <text class="show-on-scroll delay-5 text" x="35%" y="90%" text-anchor="end" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> Student </text>    
+                    <text class="show-on-scroll delay-5 text" x="50%" y="88%" text-anchor="middle" fill="#f1f3f5" font-size="40px"
+                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#developer-modal">
+                        &#xf5fc;
+                    </text>
+                    <line class="show-on-scroll delay-5 line" x1="50%" y1="95%" x2="50%" y2="100%" />
+                </svg>
+            </div>
+        </div>
+        <!---------------------------------- Desktop animation -->
+        <div class="d-none d-md-block">
+            <div class="section-svg">
+                <svg width="100%" height="100%" class="svg-about">
+                    <line class="show-on-scroll line" x1="0%" y1="14%" x2="6%" y2="14%" />
+                    <circle class="show-on-scroll delay-0-25 circle" cx="10%" cy="14%" r="5%" />
+                    <text class="show-on-scroll delay-0-5 text" x="10%" y="25%" text-anchor="middle" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> Undergraduate </text>
+                    <text class="show-on-scroll delay-0-5 text" x="10%" y="14%" text-anchor="middle" fill="#f1f3f5" font-size="50px"
+                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
+                        &#xf19c;
+                    </text>
+                    <line class="show-on-scroll delay-0-5 line" x1="14%" y1="14%" x2="20%" y2="14%" />
+                    <line class="show-on-scroll delay-0-75 vertical" x1="20%" y1="14%" x2="20%" y2="32%" />
+                    <line class="show-on-scroll delay-1-25 line" x1="20%" y1="32%" x2="26%" y2="32%" />
+                    <circle class="show-on-scroll delay-1-5 circle" cx="30%" cy="32%" r="5%" />
+                    <text class="show-on-scroll delay-1-75 text" x="30%" y="43%" text-anchor="middle" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> Teacher </text>
+                    <text class="show-on-scroll delay-1-75 text" x="30%" y="32%" text-anchor="middle" fill="#f1f3f5" font-size="50px"
+                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
+                        &#xf51c;
+                    </text>
+                    <line class="show-on-scroll delay-1-75 line" x1="34%" y1="32%" x2="40%" y2="32%" />
+                    <line class="show-on-scroll delay-2 vertical" x1="40%" y1="32%" x2="40%" y2="50%" />
+                    <line class="show-on-scroll delay-2-5 line" x1="40%" y1="50%" x2="46%" y2="50%" />
+                    <circle class="show-on-scroll delay-2-75 circle" cx="50%" cy="50%" r="5%" />
+                    <text class="show-on-scroll delay-3 text" x="50%" y="61%" text-anchor="middle" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> Master's degree </text>
+                    <text class="show-on-scroll delay-3 text" x="50%" y="50%" text-anchor="middle" fill="#f1f3f5" font-size="50px"
+                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#masters-modal">
+                        &#xf19d;
+                    </text>
+                    <line class="show-on-scroll delay-3 line" x1="54%" y1="50%" x2="60%" y2="50%" />
+                    <line class="show-on-scroll delay-3-25 vertical" x1="60%" y1="50%" x2="60%" y2="68%" />
+                    <line class="show-on-scroll delay-3-75 line" x1="60%" y1="68%" x2="66%" y2="68%" />
+                    <circle class="show-on-scroll delay-4 circle" cx="70%" cy="68%" r="5%" />
+                    <text class="show-on-scroll delay-4-25 text" x="70%" y="79%" text-anchor="middle" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> Researcher/Data analyst </text>
+                    <text class="show-on-scroll delay-4-25 text" x="70%" y="68%" text-anchor="middle" fill="#f1f3f5" font-size="50px"
+                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
+                        &#xf1fe;
+                    </text>
+                    <line class="show-on-scroll delay-4-25 line" x1="74%" y1="68%" x2="80%" y2="68%" />
+                    <line class="show-on-scroll delay-4-5 vertical" x1="80%" y1="68%" x2="80%" y2="86%" />
+                    <line class="show-on-scroll delay-5 line" x1="80%" y1="86%" x2="86%" y2="86%" />
+                    <circle class="show-on-scroll delay-5-25 circle" cx="90%" cy="86%" r="5%" />
+                    <text class="show-on-scroll delay-5-5 text" x="90%" y="97%" text-anchor="middle" fill="#36454f" font-size="15px" font-weight="500"
+                        font-family="Raleway"> SFTDEV Student </text>
+                    <a href="#skills">
+                        <text class="show-on-scroll delay-5-5 text" x="90%" y="86%" text-anchor="middle" fill="#f1f3f5" font-size="50px"
+                            font-family="FontAwesome" dy=".3em">
+                            &#xf5fc;
+                        </text>
+                    </a>
+                    <line class="show-on-scroll delay-5-5 line" id="line-n-md" x1="94%" y1="86%" x2="100%" y2="86%" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="section-title">
+            <div>
+                <h4>Full Stack Software Development Student</h4>
+                <h5>Present - 2021</h5>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <img src="assets/images/current-sq.jpg" alt="jessica bennett currently"/>
+            <div class="row">
+                <div class="col-md-6 d-none d-md-block">
+						<blockquote 
 							cite="https://www.forbes.com/2006/12/10/john-romero-games-tech_cx_de_games06_1212romero.html#57277066866e"><em>
 							You might not think that programmers are artists, but
 							programming is an extremely creative profession. It's
 							logic-based creativity.</em> <br><strong>~ John Romero</strong>
 						</blockquote>
-						<p class="d-none d-md-block">
+						<p>
 							Having recently found this quote, it's been a relief to learn
 							that perhaps I haven't 'failed' every personality test I've ever
 							taken; where logic and creativity appear to be either/or
@@ -206,101 +203,68 @@
 							is as creative as they are logical. Not one or the other...
 						</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-6 progress-section">
 						<h4>Skills</h4>
-						<div class="progress color-a">
-							<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valumin="0"
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped color-a" role="progressbar" aria-valuenow="90" aria-valuemin="0"
 								aria-valuemax="100" style="width: 90%;">
 								<span class="sr-only">90% complete</span>
 							</div>
 							<span class="progress-type">HTML / HTML5</span>
+                            <div class="progress-bar progress-background" role="progressbar" style="width:10%">
+                            </div>
 						</div>
-						<div class="progress color-b">
-							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valumin="0"
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped color-b" role="progressbar" aria-valuenow="80" aria-valuemin="0"
 								aria-valuemax="100" style="width: 80%;">
 								<span class="sr-only">80% complete</span>
 							</div>
 							<span class="progress-type">CSS / CSS3</span>
+                            <div class="progress-bar progress-background" role="progressbar" style="width:20%">
+                            </div>
 						</div>
-						<div class="progress color-c">
-							<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valumin="0"
+						<div class="progress">
+							<div class="progress-bar color-c" role="progressbar" aria-valuenow="0" aria-valuemin="0"
 								aria-valuemax="100" style="width: 0%;">
 								<span class="sr-only">0% complete</span>
 							</div>
-							<span class="progress-type"
-                  >JavaScript / jQuery - Coming soon...</span>
+							<span class="progress-type">JavaScript / jQuery - Coming soon...</span>
+                            <div class="progress-bar progress-background" role="progressbar" style="width:100%">
+                            </div>
 						</div>
-						<div class="progress color-c">
-							<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valumin="0"
+						<div class="progress">
+							<div class="progress-bar color-c" role="progressbar" aria-valuenow="0" aria-valuemin="0"
 								aria-valuemax="100" style="width: 0%;">
 								<span class="sr-only">0% complete</span>
 							</div>
-							<span class="progress-type"
-                  >Python / Django - Coming soon...</span>
+							<span class="progress-type">Python / Django - Coming soon...</span>
+                            <div class="progress-bar progress-background" role="progressbar" style="width:100%">
+                            </div>
 						</div>
-						<div class="progress color-c">
-							<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valumin="0"
+						<div class="progress">
+							<div class="progress-bar color-c" role="progressbar" aria-valuenow="0" aria-valuemin="0"
 								aria-valuemax="100" style="width: 0%;">
 								<span class="sr-only">0% complete</span>
 							</div>
 							<span class="progress-type">SQL / NoSQL - Coming soon...</span>
+                            <div class="progress-bar progress-background" role="progressbar" style="width:100%">
+                            </div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="scroll-hint">
-				<a href="#portfolio-section"><i class="fas fa-chevron-down"></i></a>
-			</div>
-		</div>
-	</section>
-	<section class="main-color">
-		<div id="portfolio-section">
-			<div class="section-title">
-				<h2>Portfolio</h2>
-			</div>
-			<div class="section-text photos">
-			</div>	
-            <div class="scroll-hint">
-                <a href="#contact-section"><i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
-	</section>
-	<section class="contact-color">
-		<div id="contact-section">
-			<div class="section-title">
-				<h2>Contact</h2>
-			</div>
-		    <div class="section-text row">
-                <!-- <div class="col-12  my-auto center-content">
-                    <img src="assets/images/cartwheel-sq.jpg" alt=""/>
-                </div> -->
-                <div class="col-12  my-auto center-content">
-                    <form action="#" method="post" enctype="text/plain">
-                        <input type="text" id="name" name="name" placeholder="Name" required><br>
-                        <input id="email" type="email" name="email_address" placeholder="Email address" required/><br>
-                        <textarea name="message" rows="5" cols="30" placeholder="What would you like to say?" required></textarea><br>
-                        <input type="submit" value="Send!">
-                    </form>
-                </div>
-		    </div>
-		</div>
-	</section>        
-	<footer class="footer-color">
-        <div class="row">
-            <div class="col my-auto center-content">
-                Jessica Bennett - Full Stack Software Developer
-            </div>
-            <div class="col my-auto center-content">
-                <i class="fas fa-download"></i>
-            </div>
-            <div class="col my-auto center-content">
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github-square"></i>
-            </div>
-        </div>
-	</footer>
-	<!---------------------------------- Menu modal -->
-	<div class="modal" tabindex="-1" role="dialog" id="menu-modal">
+        </section>
+    <section id="portfolio">
+    Portfolio
+    </section>
+    <section id="contact">
+    Contact
+    </section>
+    <footer id="footer">
+    Footer
+    </footer>
+    <!---------------------------------- Menu modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="menu-modal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-top">
@@ -316,19 +280,19 @@
 				<div class="modal-body">
 					<ul>
 						<li>
-							<a class="active" href="index.html">Home</a>
+							<a class="active" href="index.html" onclick="$('#menu-modal').modal('hide')">Home</a>
 						</li>
 						<li>
-							<a href="#about-section">About</a>
+							<a href="#about" onclick="$('#menu-modal').modal('hide')">About</a>
 						</li>
 						<li>
-							<a href="#portfolio-section">Portfolio</a>
+							<a href="#portfolio-section" onclick="$('#menu-modal').modal('hide')">Portfolio</a>
 						</li>
 						<li>
-							<a href="#contact-section">Contact</a>
+							<a href="#contact-section" onclick="$('#menu-modal').modal('hide')">Contact</a>
 						</li>
 						<li>
-							<a href="#">Download CV</a>
+							<a href="#" onclick="$('#menu-modal').modal('hide')">Download CV</a>
 						</li>
 					</ul>
 				</div>
@@ -352,15 +316,15 @@
 						<img src="assets/images/uni-sq.jpg" alt="jessica bennett as an undergraduate"/>
 						<div class="modal-title">
 							<div>
-								<h3>Undergrad</h3>
+								<h4>Undergraduate</h4>
 								<br />
-								<h4>2005 - 2009</h4>
+								<h5>2005 - 2009</h5>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="modal-body about-list">
-					<h5>Skills aquired:</h5>
+					<h6>Skills aquired:</h6>
 					<ul>
 						<li>Ability to organise</li>
 						<li>Forward planning</li>
@@ -386,15 +350,15 @@
 						<img src="assets/images/teacher-sq.jpg" alt="jessica bennett as a teacher"/>
 						<div class="modal-title">
 							<div>
-								<h3>Teacher</h3>
+								<h4>Teacher</h4>
 								<br />
-								<h4>2010 - 2012</h4>
+								<h5>2010 - 2012</h5>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="modal-body about-list">
-					<h5>Skills aquired:</h5>
+					<h6>Skills aquired:</h6>
 					<ul>
 						<li>Ability to organise</li>
 						<li>Forward planning</li>
@@ -420,15 +384,15 @@
 						<img src="assets/images/master-sq.jpg" alt="jessica bennett with dissertation for masters degree"/>
 						<div class="modal-title">
 							<div>
-								<h3>Master's Degree</h3>
+								<h4>Master's Degree</h4>
 								<br />
-								<h4>2012 - 2013</h4>
+								<h5>2012 - 2013</h5>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="modal-body about-list">
-					<h5>Skills aquired:</h5>
+					<h6>Skills aquired:</h6>
 					<ul>
 						<li>Ability to organise</li>
 						<li>Forward planning</li>
@@ -454,15 +418,15 @@
 						<img src="assets/images/researcher-sq.jpg" alt="jessica bennett as a data analyst and researcher"/>
 						<div class="modal-title">
 							<div>
-								<h3>Researcher/Data Analyst</h3>
+								<h4>Researcher/Data Analyst</h4>
 								<br />
-								<h4>2013 - Present</h4>
+								<h5>2013 - Present</h5>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="modal-body about-list">
-					<h5>Skills aquired:</h5>
+					<h6>Skills aquired:</h6>
 					<ul>
 						<li>Ability to organise</li>
 						<li>Forward planning</li>
@@ -488,9 +452,9 @@
 						<img src="assets/images/current-sq.jpg" alt="jessica bennett currently"/>
 						<div class="modal-title">
 							<div>
-								<h3>Full Stack Software Development Student</h3>
+								<h4>Full Stack Software Development Student</h4>
 								<br />
-								<h4>Present - 2021</h4>
+								<h5>Present - 2021</h5>
 							</div>
 						</div>
 					</div>
@@ -531,47 +495,51 @@
     <!---------------------------------- My JavaScript -->
     <!---------------------------------- Animation JavaScript -->
     <script>
-// Detect request animation frame
-var scroll = window.requestAnimationFrame ||
-             // IE Fallback
-             function(callback){ window.setTimeout(callback, 1000/60)};
-var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+        // Detect request animation frame
+        var scroll = window.requestAnimationFrame ||
+                    // IE Fallback
+                    function(callback){ window.setTimeout(callback, 1000/60)};
+        var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
 
-function loop() {
+        function loop() {
 
-    Array.prototype.forEach.call(elementsToShow, function(element){
-      if (isElementInViewport(element)) {
-        element.classList.add('is-visible');
-      } /* else {
-        element.classList.remove('is-visible');
-      } */
-    });
+            Array.prototype.forEach.call(elementsToShow, function(element){
+            if (isElementInViewport(element)) {
+                element.classList.add('is-visible');
+            } /* else {
+                element.classList.remove('is-visible');
+            } */
+            });
 
-    scroll(loop);
-}
+            scroll(loop);
+        }
 
-// Call the loop for the first time
-loop();
+        // Call the loop for the first time
+        loop();
 
-// Helper function from: http://stackoverflow.com/a/7557433/274826
-function isElementInViewport(el) {
-  // special bonus for those using jQuery
-  if (typeof jQuery === "function" && el instanceof jQuery) {
-    el = el[0];
-  }
-  var rect = el.getBoundingClientRect();
-  return (
-    (rect.top <= 0
-      && rect.bottom >= 0)
-    ||
-    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-    ||
-    (rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-  );
-}
+        // Helper function from: http://stackoverflow.com/a/7557433/274826
+        function isElementInViewport(el) {
+        // special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
+        }
+        var rect = el.getBoundingClientRect();
+        return (
+            (rect.top <= 0
+            && rect.bottom >= 0)
+            ||
+            (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+            ||
+            (rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+        );
+        }
 
+    </script>
+    <!---------------------------------- Active menu JavaScript -->
+    <script>
+        
     </script>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -584,5 +552,4 @@ function isElementInViewport(el) {
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 </body>
-
 </html>

@@ -1,46 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700|Quicksand:100,200,300,400,500,600,700");
 
-/* ---------------------------------------------Colours */
+/* ---------------------------------------------Background Colours */
 
-#home-color {
-  background-color: #9CBCCF;
-  background-image: linear-gradient(#789fbd 0%, #9cbccf 50%, #FAF8F7 100%);
-  height: 100vh;
+#home {
+    background-color: #0892d0;
 }
 
-.main-color {
-  background-color: #FAF8F7;
-  border: none;
+#about {
+    background-color: #f1f3f5;
 }
 
-.contact-color {
-    background-color: #767D5A;
-    background-image: linear-gradient(#FAF8F7 0%, #767D5A 40%, #45473B 95%);
+#skills {
+    background-color: #e5eaed;
 }
 
-.footer-color {
-    background-color: #45473B;
-    color: #FAF8F7;
+#portfolio {
+    background-color: #f1f3f5;
+}
+
+#contact {
+    background-color: #d1ca1d;
+}
+
+#footer {
+    background-color: #d1ca1d;
 }
 
 /* ---------------------------------------------Header */
-
+/* ---------------------------------------------Nav */
 nav {
-  margin: 15px;
-  height: 10vh;
+  height: 50px;
+  background-color: #36454f;
+  border: none;
 }
-
-
 
 #circle-cover-bg {
   display: block;
-  /* float: left; */
   background: url("../images/cartwheel-sq.jpg") no-repeat center center;
   background-size: 110%;
-  width: 50%;
+  width: 10vh;
   height: 0;
-  padding-bottom: 50%;
-  border: solid 2px #383a3a;
+  padding-bottom: 10vh;
+  border: 4px solid#36454f;
   border-radius: 50%;
 }
 
@@ -49,6 +50,7 @@ nav {
   list-style-type: none;
   letter-spacing: 4px;
   text-align: right;
+  margin-top: 5px;
 }
 
 #menu-md li {
@@ -58,12 +60,12 @@ nav {
 
 #menu-md a {
   font-family: "Quicksand", sans-serif;
-  color: #383A3A;  
+  color: #f1f3f5;  
   text-decoration: none;
 }
 
 #menu-md a:hover {
-    border-bottom: 1px solid #383A3A;
+    border-bottom: 1px solid #f1f3f5;
 }
 
 .active {
@@ -72,84 +74,109 @@ nav {
 }
 
 #menu-xs {
-    color: #383A3A;
+  color: #f1f3f5;
   font-size: 200%;
   text-align: right;
+  margin: 5px;
 }
+
+/* ---------------------------------------------Content */
 
 header h1,
 header h2 {
   font-family: "Raleway", sans-serif;
-  color: #383a3a;
+  color: #f1f3f5;
   text-align: center;
-  animation: disappear 10s infinite;
+  animation: appear 8s infinite;
+  animation-delay: 4s;
+  opacity: 0;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 1;
+    }
+    1% {
+        opacity: 0;
+    }
+    3% {
+        opacity: 1;
+    }
+    4% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    7% {
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+    }
+    11% {
+        opacity: 0;
+    }
+    12% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
 }
 
 header blockquote {
   font-family: "Raleway", sans-serif;
-  color: #383a3a;
+  color: #36454f;
   text-align: center;
   font-size: 1.5rem;
-  animation: appear 10s infinite;
-  opacity: 0;
+  animation: disappear 8s infinite;
+  animation-delay: 4s;
+  
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    7% {
+        opacity: 1;
+    }
+    8% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    11% {
+        opacity: 0;
+    }
+    12% {
+        opacity: 1;
+    }
+    13% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
 }
 
 #home-text {
-  height: 90vh;
+  height: 100vh;
   padding-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@keyframes disappear {
-    0% {
-        opacity: 1; 
-    }
-    
-    50% {
-        opacity: 0;
-    }
-
-    10% {
-        opacity: 1;
-    }
-}
-@keyframes appear {
-    0% {
-        opacity: 0; 
-    }
-    
-    50% {
-        opacity: 1;
-    }
-
-    10% {
-        opacity: 0;
-    }
-}
-
-.scroll-hint {
-  text-align: center;
-}
-
-.scroll-hint a {
-  color: #434546;
-  font-size: 200%;
-  text-decoration: none;
-}
-
 /* ---------------------------------------------About */
-
-#about-section {
-  margin: 0 15px 0px;
-  height: 100vh;
-}
-
-#about2-section {
-  margin: 0 15px 0px;
-  height: 100vh;
-}
 
 .section-title {
   height: 15vh;
@@ -157,89 +184,36 @@ header blockquote {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  border-top: solid 2px #0892d0;
 }
 
-.section-title h2 {
+.section-title h2, h3, h4, h5 {
   margin-bottom: 5px;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  color: #434546;
-  
-}
+  color: #36454f;
 
-.section-text {
-  height: 75vh;
-  padding-top: 0;
-}
-
-/* ---------------------------------------------About Full Page */
-
-.section-text > img {
-    display: block;
-    margin: 0 auto;
-    height: 20vh;
-    border: solid 2px #434546;
-    border-radius: 50%;
-}
-
-h3, h4 {
-    text-align: center;
-    color:  #434546;
-    font-family: "Raleway", sans-serif;
-}
-
-blockquote, p {
-    margin: 15px;
-    font-family: "Quicksand", sans-serif;
-    color:  #434546;
-    text-align: justify;
-}
-
-/* ---------------------------------------------Skills section */
-
-.progress {
-    position: relative;
-    height: 30px;
-    margin-bottom: 5%;
-}
-
-.progress-type {
-    position: absolute;
-    left: 0px;
-    font-weight: 400;
-    font-family: "Raleway", sans-serif;
-    padding: 3px 30px 2px 10px;
-}
-
-.color-a .progress-type {
-    color:  #FAF8F7;
-}
-
-.color-a .progress-bar {
-    background-color: #434546;
-}
-
-.color-b .progress-type {
-    color:  #434546;
-}
-
-.color-b .progress-bar {
-    border: 2px solid  #434546;
-    background-color:  #FAF8F7;
-}
-
-.color-c .progress-type {
-    color:  #434546;
 }
 
 /* ---------------------------------------------About animation */
 
+.section-svg {
+  height: 75vh;
+  padding-top: 0;
+}
+
 .svg-about text {
     cursor: pointer;
+    visibility: hidden;
 }
 
 .svg-about text:hover {
-    fill:#717475;
+    fill: #0892d0;
+}
+
+.text.is-visible {
+    animation: visible 0.5s linear;
+    animation-fill-mode: forwards;
 }
 
 .svg-about a {
@@ -247,8 +221,8 @@ blockquote, p {
 }
 
 .svg-about > line {
-    stroke: #434546; 
-    stroke-width: 2;
+    stroke: #0892d0; 
+    stroke-width: 4;
 }
 .line.is-visible  {
     stroke-dasharray: 8%;
@@ -265,8 +239,8 @@ blockquote, p {
 }
 
 .svg-about > circle {
-    stroke: #434546; 
-    stroke-width: 2;
+    stroke: #0892d0; 
+    stroke-width: 3;
     fill: none;
 }
 
@@ -277,213 +251,200 @@ blockquote, p {
     animation-fill-mode: forwards;
 }
 
-#line-a-xs, #line-a-md {
-    animation-delay: 0s;
-}
-
-#circle-a-md {
+.delay-0-25.is-visible {
     animation-delay: 0.25s;
 }
 
-#circle-a-xs, #line-b-md {
+.delay-0-5.is-visible {
     animation-delay: 0.5s;
 }
 
-#line-c-md {
+.delay-0-75.is-visible {
     animation-delay: 0.75s;
 }
 
-#line-b-xs {
+.delay-1.is-visible {
     animation-delay: 1s;
 }
 
-#line-d-md {
+.delay-1-25.is-visible {
     animation-delay: 1.25s;
 }
 
-#circle-b-xs, #circle-b-md {
+.delay-1-5.is-visible {
     animation-delay: 1.5s;
 }
 
-#line-e-md {
+.delay-1-75.is-visible {
     animation-delay: 1.75s;
 }
 
-#line-c-xs, #line-f-md {
+.delay-2.is-visible {
     animation-delay: 2s;
 }
 
-#circle-c-xs, #line-g-md {
+.delay-2-5.is-visible {
     animation-delay: 2.5s;
 }
 
-#circle-c-md {
+.delay-2-75.is-visible {
     animation-delay: 2.75s;
 }
 
-#line-d-xs, #line-h-md {
+.delay-3.is-visible {
     animation-delay: 3s;
 }
 
-#line-i-md {
+.delay-3-25.is-visible {
     animation-delay: 3.25s;
 }
 
-#circle-d-xs {
+.delay-3-5.is-visible {
     animation-delay: 3.5s;
 }
 
-#line-j-md {
+.delay-3-75.is-visible {
     animation-delay: 3.75s;
 }
 
-#line-e-xs, #circle-d-md {
+.delay-4.is-visible {
     animation-delay: 4s;
 }
 
-#line-k-md {
+.delay-4-25.is-visible {
     animation-delay: 4.25s;
 }
 
-#circle-e-xs, #line-l-md {
+.delay-4-5.is-visible {
     animation-delay: 4.5s;
 }
 
-#line-f-xs, #line-m-md {
+.delay-5.is-visible {
     animation-delay: 5s;
 }
 
-#circle-e-md {
+.delay-5-25.is-visible {
     animation-delay: 5.25s;
 }
 
-#line-n-md {
+.delay-5-5.is-visible {
     animation-delay: 5.5s;
 }
 
 @keyframes move {
-    80% {
-        fill: #FAF8F7; 
-    }
-    
+        
     100% {
         stroke-dashoffset: 0;
         fill: #434546;
     }
 }
 
-/* ---------------------------------------------Portfolio */
-
-#portfolio-section {
-  margin: 0 15px 0px;
-  height: 100vh;
+@keyframes visible {
+    100% {
+        visibility: visible;
+    }
 }
 
-.photos > .row {
-    height: 15vh;
-}
+/* ---------------------------------------------Skills section */
 
-.photos > .row > div {
-    text-align: center;
-}
-
-.photos img {
-    width: 14vh;
-    height: 14vh;
-    object-fit: cover;
-    border: 2px solid #434546;
-}
-
-.portfolio-info {
-    width: 100%;
-    height: 14vh;
-    border: 2px solid #434546;
-}
-
-/* .portfolio-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.portfolio-popup {
-    text-align: center;
-    color: #FCFBFB;
-    font-family: "Quicksand", sans-serif;
-    border: 2px solid #717475;
-    background-color: #717475;
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hover:hover > .portfolio-popup {
+#skills img {
     display: block;
+    margin: 0 auto;
+    height: 20vh;
+    border: solid 2px #36454f;
+    border-radius: 50%;
 }
 
-.hover:hover > .portfolio-image {
-    display: none;
-} */
 
-
-
-/* ---------------------------------------------Contact */
-
-#contact-section {
-  margin: 0 15px 0px;
-  height: 100vh;
-}
-
-#contact-section img {
-    height: 30vh;
-}
-
-.center-content {
-    text-align: center;
-}
-
-form {
+blockquote, p {
+    margin: 15px;
     font-family: "Quicksand", sans-serif;
-    color: #FCFBFB;
+    color:  #36454f;
+    text-align: justify;
 }
 
-form * {
-    width: 50%;
+.progress-section {
+    padding-top: 15px;
 }
+
+.progress {
+    position: relative;
+    height: 30px;
+    margin-bottom: 5%;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    padding: 3px 30px 2px 10px;
+}
+
+.progress-bar.progress-background {
+    background-color: #f1f3f5;
+}
+
+.color-a + .progress-type {
+    color:  #f1f3f5;
+}
+
+.progress-bar.color-a {
+    background-color: #0892d0;
+}
+
+.color-b, .color-c + .progress-type {
+    color:  #36454f;
+}
+
+.progress-bar.color-b {
+    border: 2px solid  #0892d0;
+    background-color:  #f1f3f5;
+}
+
 
 /* ---------------------------------------------Modals */
 
+#menu-modal .modal-dialog {
+    position: relative;
+    left: 20%;
+    width: 80%;
+    margin: 0;
+    pointer-events: none;
+}
+
+
+
 .modal-top button {
-    color: #FCFBFB;
+    color: #f1f3f5;
     font-size: 250%;
     margin-right: 5px;
 }
 
 .modal-content {
-    min-height: 95vh;
-    background-color: #717475;
+    min-height: 100vh;
+    background-color: #36454f;
 }
+
 
 .modal-content ul {
     line-height: 3;
     font-size: 150%;
     list-style-type: none;
     letter-spacing: 4px;
+    text-align: right;
 }
 
 .modal-content a {
   font-family: "Quicksand", sans-serif;
-  color:#FCFBFB;  
+  color: #f1f3f5;  
   text-decoration: none;
 }
 
 .modal-top img {
     margin: 15px;
     height: 20vh;
-    border: solid 2px #FAF8F7;
+    border: solid 2px #f1f3f5;
     border-radius: 50%;
 }
 
@@ -493,15 +454,15 @@ form * {
   justify-content: center;
 }
 
-.modal-title h3, .modal-title h4 {
+.modal-title h4, .modal-title h5 {
     text-align: right;
-    color:  #FCFBFB;
+    color:  #f1f3f5;
     font-family: "Raleway", sans-serif;
 }
 
-.about-list h5 {
+.about-list h6 {
     font-family: "Raleway", sans-serif;
-    color: #FCFBFB;
+    color: #f1f3f5;
 }
 
 
@@ -509,12 +470,13 @@ form * {
     font-size: 100%;
     list-style-type: circle;
     letter-spacing: 1px;
-    color: #FCFBFB;
+    color: #f1f3f5;
     font-family: "Quicksand", sans-serif;
+    text-align: left;
 }
 
 .about-list blockquote, .about-list p {
     font-size: 100%;
-    color: #FCFBFB;
+    color: #f1f3f5;
     font-family: "Quicksand", sans-serif;
 }
