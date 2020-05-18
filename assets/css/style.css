@@ -80,7 +80,7 @@ nav {
   margin: 5px;
 }
 
-/* ---------------------------------------------Content */
+/* ---------------------------------------------Header Content */
 
 header h1,
 header h2 {
@@ -404,22 +404,93 @@ blockquote, p {
 
 /* ---------------------------------------------Portfolio */
 
-.card {
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 80%;
+  height: auto;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 100%;
+  padding: 2%;
+  background-color: #f1f3f5;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card img {
+.flip-card-front img {
     width: 100%;
+    height: auto;
 }
 
-.caption {
-  padding: 2px 16px;
+/* Style the back side */
+.flip-card-back {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  padding: 2%;
+  background-color: #f1f3f5;
+  transform: rotateY(180deg);
+}
+
+.flip-card p {
+  font-family: "Quicksand", sans-serif;
+  color: #36454f; 
+}
+
+.flip-card button {
+  background-color: #0892d0;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  bottom: 15px;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100px;
+}
+
+.flip-card button:disabled {
+    font-family: "Quicksand", sans-serif;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+
+.flip-card a {
+  font-family: "Quicksand", sans-serif;
+  color: #f1f3f5; 
+  font-weight: 800;   
 }
 
 /* ---------------------------------------------Modals */
