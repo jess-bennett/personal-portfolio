@@ -493,6 +493,77 @@ blockquote, p {
   font-weight: 800;   
 }
 
+/* ---------------------------------------------Contact */
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-form {
+    display: inline-block;
+    width: 70%;
+    border: 2px solid #36454f;
+}
+
+.contact-form > div {
+    margin: 5px;
+}
+
+form h4 {
+    text-align: left;
+}
+
+textarea {
+    width: 100%;
+    height: 20vh;
+    resize: none;
+}
+
+.contact-details {
+    text-align: right;
+}
+
+input {
+    text-align: right;
+    width: 100%;
+}
+
+label {
+    font-weight: 500;
+}
+
+textarea, label, input {
+    display: block;
+    background-color: #d1ca1d;
+    font-size: 1.3rem;
+    font-family: "Quicksand", sans-serif;
+    color: #36454f;
+    border: none;
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Quicksand", sans-serif;
+  font-style: italic;
+  color: #36454f;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: "Quicksand", sans-serif;
+  font-style: italic;
+  color: #36454f;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: "Quicksand", sans-serif;
+  font-style: italic;
+  color: #36454f;
+}
+
+
+
+
 /* ---------------------------------------------Modals */
 
 #menu-modal .modal-dialog {

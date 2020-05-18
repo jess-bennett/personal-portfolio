@@ -317,7 +317,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-6 col-md-4 p-2 d-flex justify-content-center">
+                <div class="col-6 col-md-4 p-2 pb-4 d-flex justify-content-center">
 					<div class="flip-card">
 						<div class="flip-card-inner">
 							<div class="flip-card-front">
@@ -333,7 +333,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 p-2 d-flex justify-content-center">
+                <div class="col-6 col-md-4 p-2 pb-4 d-flex justify-content-center">
                     <div class="flip-card">
 						<div class="flip-card-inner">
 							<div class="flip-card-front">
@@ -353,10 +353,36 @@
         </div>
     </section>
     <section id="contact">
-    Contact
+        <div class="section-title">
+            <h2>Contact</h2>
+        </div>
+        <div class="contact-card">
+            <form class="contact-form" method="post" action="#">
+                <div>
+                    <h4>Dear Jess,</h4>
+                    <textarea name="contact-message" placeholder="What would you like to say?" required></textarea>
+                    <div class="contact-details">
+                        <label for="name">from</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
-    <footer id="footer">
-    Footer
+    <footer id="footer" class="container-fluid">
+        <p>Don't fancy sending a message right now?</p>
+        <div class="row">
+            <div class="col">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </footer>
     <!---------------------------------- Menu modal -->
 	<div class="modal fade" tabindex="-1" role="dialog" id="menu-modal">
