@@ -356,7 +356,7 @@ header blockquote {
 }
 
 
-blockquote, p {
+#skills blockquote, #skills p {
     margin: 15px;
     font-family: "Quicksand", sans-serif;
     color:  #36454f;
@@ -407,11 +407,7 @@ blockquote, p {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-<<<<<<< HEAD
   width: 80%;
-=======
-  width: 100%;
->>>>>>> ec9f60bb80837a05330727773a86601aa4ba339e
   height: auto;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -444,7 +440,6 @@ blockquote, p {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-<<<<<<< HEAD
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 100%;
@@ -459,14 +454,11 @@ blockquote, p {
 
 /* Style the back side */
 .flip-card-back {
-=======
->>>>>>> ec9f60bb80837a05330727773a86601aa4ba339e
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 100%;
   padding: 2%;
   background-color: #f1f3f5;
-<<<<<<< HEAD
   transform: rotateY(180deg);
 }
 
@@ -517,8 +509,34 @@ blockquote, p {
     margin: 5px;
 }
 
+.contact-heading {
+    display: flex;
+    position: relative;
+    height: 5vh;
+}
+
 form h4 {
     text-align: left;
+}
+
+.contact-button {
+    width: 8.5vh;
+    height: 3.5vh;
+    background-color: #f1f3f5;
+    padding: 1px;
+    position: absolute;
+    top: 0.5vh;
+    right: 0.5vh;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.button-border {
+    border: 2px dotted #f1f3f5;
+    width: 10vh;
+    height: 5vh;
+    position: absolute;
+    right: 0;
 }
 
 textarea {
@@ -555,54 +573,6 @@ textarea, label, input {
   font-style: italic;
   color: #36454f;
   opacity: 1; /* Firefox */
-=======
-}
-
-.flip-card-front img {
-    width: 100%;
-    height: auto;
-}
-
-/* Style the back side */
-.flip-card-back {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 100%;
-  padding: 2%;
-  background-color: #f1f3f5;
-  transform: rotateY(180deg);
-}
-
-.flip-card p {
-  font-family: "Quicksand", sans-serif;
-  color: #36454f; 
-}
-
-.flip-card button {
-  background-color: #0892d0;
-  border: none;
-  border-radius: 5px;
-  position: absolute;
-  left: 0; 
-  right: 0; 
-  bottom: 15px;
-  margin-left: auto; 
-  margin-right: auto; 
-  width: 100px;
-}
-
-.flip-card button:disabled {
-    font-family: "Quicksand", sans-serif;
-    background-color: #cccccc;
-    color: #666666;
-}
-
-
-.flip-card a {
-  font-family: "Quicksand", sans-serif;
-  color: #f1f3f5; 
-  font-weight: 800;   
->>>>>>> ec9f60bb80837a05330727773a86601aa4ba339e
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -617,10 +587,34 @@ textarea, label, input {
   color: #36454f;
 }
 
+/* ---------------------------------------------Footer */
 
+#footer p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
 
+#footer p:first-of-type {
+    padding-top: 20px;
+}
 
-/* ---------------------------------------------Modals */
+#footer .row {
+    padding-bottom: 15px;
+}
+
+#footer .col {
+    text-align: center;
+}
+
+#footer a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+    color: #36454f;
+}
+
+/* ---------------------------------------------Menu Modal */
 
 #menu-modal .modal-dialog {
     position: relative;
@@ -630,19 +624,41 @@ textarea, label, input {
     pointer-events: none;
 }
 
-
-
 .modal-top button {
     color: #f1f3f5;
     font-size: 250%;
     margin-right: 5px;
 }
 
-.modal-content {
-    min-height: 100vh;
+#menu-modal .modal-content {
     background-color: #36454f;
+    min-height: 100vh;
 }
 
+.modal-content a {
+  font-family: "Quicksand", sans-serif;
+  color: #f1f3f5;  
+  text-decoration: none;
+}
+
+/* ---------------------------------------------About Modal */
+
+@media (min-width: 576px) { 
+    .modal-dialog {
+    max-width: 600px;
+    margin: 1.75rem auto;
+    }
+}
+
+.modal-top {
+    position: relative;
+    min-height: 18vh;
+}
+
+.modal-content {
+    min-height: fit-content;
+    background-color: #d1ca1d;
+}
 
 .modal-content ul {
     line-height: 3;
@@ -652,48 +668,55 @@ textarea, label, input {
     text-align: right;
 }
 
-.modal-content a {
-  font-family: "Quicksand", sans-serif;
-  color: #f1f3f5;  
-  text-decoration: none;
-}
-
 .modal-top img {
-    margin: 15px;
-    height: 20vh;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    height: 15vh;
     border: solid 2px #f1f3f5;
     border-radius: 50%;
 }
 
 .modal-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    top: 15px;
+    left: 15vh;
+    right: 40px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
 
 .modal-title h4, .modal-title h5 {
     text-align: right;
-    color:  #f1f3f5;
+    color:  #36454f;
     font-family: "Raleway", sans-serif;
+}
+
+.about-list {
+    color: #36454f;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
 }
 
 .about-list h6 {
     font-family: "Raleway", sans-serif;
-    color: #f1f3f5;
+    font-weight: 700;
 }
-
 
 .about-list ul {
-    font-size: 100%;
     list-style-type: circle;
     letter-spacing: 1px;
-    color: #f1f3f5;
-    font-family: "Quicksand", sans-serif;
     text-align: left;
+    font-size: 1rem;
 }
 
-.about-list blockquote, .about-list p {
-    font-size: 100%;
-    color: #f1f3f5;
-    font-family: "Quicksand", sans-serif;
+.about-list dt {
+    font-weight: 500;
+}
+
+.about-list dd {
+    margin-bottom: .5rem;
+    margin-inline-start: 40px;
 }
