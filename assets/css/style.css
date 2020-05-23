@@ -529,6 +529,15 @@ form h4 {
     right: 0.5vh;
     text-align: center;
     font-size: 1rem;
+    font-weight: bold;
+    color: #36454f;
+    border: none;
+    font-family: "Quicksand", sans-serif;
+}
+
+.contact-button:hover {
+    background-color: #36454f;
+    color: #f1f3f5;
 }
 
 .button-border {
@@ -537,6 +546,10 @@ form h4 {
     height: 5vh;
     position: absolute;
     right: 0;
+}
+
+.contact-button:focus {
+    outline: none;
 }
 
 textarea {
@@ -568,6 +581,11 @@ textarea, label, input {
     outline: none;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 100px #d1ca1d inset;
+    -webkit-text-fill-color: #36454f;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-family: "Quicksand", sans-serif;
   font-style: italic;
@@ -589,17 +607,20 @@ textarea, label, input {
 
 /* ---------------------------------------------Footer */
 
-#footer p {
+.footer-text {
+    padding-top: 20px;
     font-weight: bold;
     font-size: 1.1rem;
     text-align: center;
 }
 
-#footer p:first-of-type {
-    padding-top: 20px;
+#footer em {
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
 }
 
-#footer .row {
+#footer .row:nth-of-type(2) {
     padding-bottom: 15px;
 }
 
@@ -609,9 +630,15 @@ textarea, label, input {
 
 #footer a {
     text-decoration: none;
-    font-size: 1.6rem;
-    padding-bottom: 5px;
+    font-size: 2rem;
     color: #36454f;
+}
+
+.text-overlay {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #36454f;
+    margin-top: -1.8rem;
 }
 
 /* ---------------------------------------------Menu Modal */
@@ -628,6 +655,10 @@ textarea, label, input {
     color: #f1f3f5;
     font-size: 250%;
     margin-right: 5px;
+}
+
+.modal-top button:hover {
+    color: #36454f;
 }
 
 #menu-modal .modal-content {
@@ -648,6 +679,10 @@ textarea, label, input {
     max-width: 600px;
     margin: 1.75rem auto;
     }
+}
+
+#submit-modal .modal-top {
+    min-height: 8vh;
 }
 
 .modal-top {
@@ -673,7 +708,7 @@ textarea, label, input {
     left: 15px;
     top: 15px;
     height: 15vh;
-    border: solid 2px #f1f3f5;
+    border: solid 2px #36454f;
     border-radius: 50%;
 }
 
