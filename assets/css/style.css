@@ -445,6 +445,8 @@ header blockquote {
   width: 100%;
   padding: 2%;
   background-color: #f1f3f5;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 .flip-card-front img {
