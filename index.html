@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<script src="https://kit.fontawesome.com/372df47477.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -56,114 +56,81 @@
         <div class="section-title">
             <h2>About</h2>
         </div>
-        <!---------------------------------- Mobile animation -->
+        <!--=============================================== Mobile animation -->
         <div class="d-block d-md-none">
             <div class="section-svg">
                 <svg width="100%" height="100%" class="svg-about">
                     <line class="show-on-scroll line" x1="50%" y1="0%" x2="50%" y2="5%" />
                     <line class="show-on-scroll delay-1 line" x1="50%" y1="19%" x2="50%" y2="24%" />
                     <circle class="show-on-scroll delay-0-5 circle" cx="50%" cy="12%" r="8%" />
-                    <text class="show-on-scroll delay-1 text" x="35%" y="12%" text-anchor="end" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Undergraduate </text>
-                    <text class="show-on-scroll delay-1 text" x="50%" y="12%" text-anchor="middle" fill="#f1f3f5" font-size="40px"
-                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
-                        &#xf19c;
-                    </text>
+                    <text class="descriptor end show-on-scroll delay-1 text" x="35%" y="12%"> Undergraduate </text>
+                    <text class="icon show-on-scroll delay-1 text" x="50%" y="12%" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
+                        &#xf19c;</text>
                     <line class="show-on-scroll delay-2 line" x1="50%" y1="38%" x2="50%" y2="43%" />
                     <circle class="show-on-scroll delay-1-5 circle" cx="50%" cy="31%" r="8%" />
-                    <text class="show-on-scroll delay-2 text" x="65%" y="31%" text-anchor="start" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Teacher </text>
-                    <text class="show-on-scroll delay-2 text" x="50%" y="31%" text-anchor="middle" fill="#f1f3f5" font-size="40px"
-                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
-                        &#xf51c;
-                    </text>
+                    <text class="descriptor start show-on-scroll delay-2 text" x="65%" y="31%"> Teacher </text>
+                    <text class="icon show-on-scroll delay-2 text" x="50%" y="31%" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
+                        &#xf51c;</text>
                     <line class="show-on-scroll delay-3 line" x1="50%" y1="57%" x2="50%" y2="62%" />
                     <circle class="show-on-scroll delay-2-5 circle" cx="50%" cy="50%" r="8%" />
-                    <text class="show-on-scroll delay-3 text" x="35%" y="50%" text-anchor="end" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Master's degree </text>
-                    <text class="show-on-scroll delay-3 text" x="50%" y="50%" text-anchor="middle" fill="#f1f3f5" font-size="40px"
-                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#masters-modal">
-                        &#xf19d;
-                    </text>
+                    <text class="descriptor end show-on-scroll delay-3 text" x="35%" y="50%"> Master's degree </text>
+                    <text class="icon show-on-scroll delay-3 text" x="50%" y="50%" dy=".3em" data-toggle="modal" data-target="#masters-modal">
+                        &#xf19d;</text>
                     <line class="show-on-scroll delay-4 line" x1="50%" y1="76%" x2="50%" y2="81%" />
                     <circle class="show-on-scroll delay-3-5 circle" cx="50%" cy="69%" r="8%" />
-                    <text class="show-on-scroll delay-4 text" x="65%" y="68%" text-anchor="start" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Researcher/ </text>
-                    <text class="show-on-scroll delay-4 text" x="65%" y="71%" text-anchor="start" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Data Analyst </text>    
-                    <text class="show-on-scroll delay-4 text" x="50%" y="69%" text-anchor="middle" fill="#f1f3f5" font-size="40px"
-                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
-                        &#xf1fe;
-                    </text>
+                    <text class="descriptor start show-on-scroll delay-4 text" x="65%" y="68%"> Researcher/ </text>
+                    <text class="descriptor start show-on-scroll delay-4 text" x="65%" y="71%"> Data Analyst </text>    
+                    <text class="icon show-on-scroll delay-4 text" x="50%" y="69%" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
+                        &#xf1fe;</text>
                     <line class="show-on-scroll delay-5 line" x1="50%" y1="95%" x2="50%" y2="100%" />
                     <circle class="show-on-scroll delay-4-5 circle" cx="50%" cy="88%" r="8%" />
-                    <text class="show-on-scroll delay-5 text" x="35%" y="87%" text-anchor="end" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Software </text>
-                    <text class="show-on-scroll delay-5 text" x="35%" y="90%" text-anchor="end" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> developer </text>    
-                    <text class="show-on-scroll delay-5 text" x="50%" y="88%" text-anchor="middle" fill="#f1f3f5" font-size="40px"
-                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#developer-modal">
-                        &#xf5fc;
-                    </text>
+                    <text class="descriptor end show-on-scroll delay-5 text" x="35%" y="87%"> Software </text>
+                    <text class="descriptor end show-on-scroll delay-5 text" x="35%" y="90%"> developer </text>    
+                    <text class="icon show-on-scroll delay-5 text" x="50%" y="88%" dy=".3em" data-toggle="modal" data-target="#developer-modal">
+                        &#xf5fc;</text>
                 </svg>
             </div>
         </div>
-        <!---------------------------------- Desktop animation -->
+        <!--=============================================== Desktop animation -->
         <div class="d-none d-md-block">
             <div class="section-svg">
                 <svg width="100%" height="100%" class="svg-about">
                     <line class="show-on-scroll line" x1="0%" y1="14%" x2="6%" y2="14%" />
                     <line class="show-on-scroll delay-0-5 line" x1="14%" y1="14%" x2="20%" y2="14%" />
                     <circle class="show-on-scroll delay-0-25 circle" cx="10%" cy="14%" r="5%" />
-                    <text class="show-on-scroll delay-0-5 text" x="10%" y="26%" text-anchor="middle" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Undergraduate </text>
-                    <text class="show-on-scroll delay-0-5 text" x="10%" y="14%" text-anchor="middle" fill="#f1f3f5" font-size="45px"
-                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
-                        &#xf19c;
-                    </text>
+                    <text class="descriptor middle show-on-scroll delay-0-5 text" x="10%" y="26%"> Undergraduate </text>
+                    <text class="icon show-on-scroll delay-0-5 text" x="10%" y="14%" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
+                        &#xf19c;</text>
                     <line class="show-on-scroll delay-0-75 vertical" x1="20%" y1="14%" x2="20%" y2="32%" />
                     <line class="show-on-scroll delay-1-25 line" x1="20%" y1="32%" x2="26%" y2="32%" />
                     <line class="show-on-scroll delay-1-75 line" x1="34%" y1="32%" x2="40%" y2="32%" />
                     <circle class="show-on-scroll delay-1-5 circle" cx="30%" cy="32%" r="5%" />
-                    <text class="show-on-scroll delay-1-75 text" x="30%" y="44%" text-anchor="middle" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Teacher </text>
-                    <text class="show-on-scroll delay-1-75 text" x="30%" y="32%" text-anchor="middle" fill="#f1f3f5" font-size="45px"
-                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
-                        &#xf51c;
-                    </text>
+                    <text class="descriptor middle show-on-scroll delay-1-75 text" x="30%" y="44%"> Teacher </text>
+                    <text class="icon show-on-scroll delay-1-75 text" x="30%" y="32%" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
+                        &#xf51c;</text>
                     <line class="show-on-scroll delay-2 vertical" x1="40%" y1="32%" x2="40%" y2="50%" />
                     <line class="show-on-scroll delay-2-5 line" x1="40%" y1="50%" x2="46%" y2="50%" />
                     <line class="show-on-scroll delay-3 line" x1="54%" y1="50%" x2="60%" y2="50%" />
                     <circle class="show-on-scroll delay-2-75 circle" cx="50%" cy="50%" r="5%" />
-                    <text class="show-on-scroll delay-3 text" x="50%" y="62%" text-anchor="middle" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Master's degree </text>
-                    <text class="show-on-scroll delay-3 text" x="50%" y="50%" text-anchor="middle" fill="#f1f3f5" font-size="45px"
-                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#masters-modal">
-                        &#xf19d;
-                    </text>
+                    <text class="descriptor middle show-on-scroll delay-3 text" x="50%" y="62%"> Master's degree </text>
+                    <text class="icon show-on-scroll delay-3 text" x="50%" y="50%" dy=".3em" data-toggle="modal" data-target="#masters-modal">
+                        &#xf19d;</text>
                     <line class="show-on-scroll delay-3-25 vertical" x1="60%" y1="50%" x2="60%" y2="68%" />
                     <line class="show-on-scroll delay-3-75 line" x1="60%" y1="68%" x2="66%" y2="68%" />
                     <line class="show-on-scroll delay-4-25 line" x1="74%" y1="68%" x2="80%" y2="68%" />
                     <circle class="show-on-scroll delay-4 circle" cx="70%" cy="68%" r="5%" />
-                    <text class="show-on-scroll delay-4-25 text" x="70%" y="80%" text-anchor="middle" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Researcher/</text>
-                        <text class="show-on-scroll delay-4-25 text" x="70%" y="82%" text-anchor="middle" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Data analyst </text>
-                    <text class="show-on-scroll delay-4-25 text" x="70%" y="68%" text-anchor="middle" fill="#f1f3f5" font-size="45px"
-                        font-family="FontAwesome" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
-                        &#xf1fe;
-                    </text>
+                    <text class="descriptor middle show-on-scroll delay-4-25 text" x="70%" y="80%"> Researcher/</text>
+                    <text class="descriptor middle show-on-scroll delay-4-25 text" x="70%" y="82%"> Data analyst </text>
+                    <text class="icon show-on-scroll delay-4-25 text" x="70%" y="68%" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
+                        &#xf1fe;</text>
                     <line class="show-on-scroll delay-4-5 vertical" x1="80%" y1="68%" x2="80%" y2="86%" />
                     <line class="show-on-scroll delay-5 line" x1="80%" y1="86%" x2="86%" y2="86%" />
                     <line class="show-on-scroll delay-5-5 line" id="line-n-md" x1="94%" y1="86%" x2="100%" y2="86%" />
                     <circle class="show-on-scroll delay-5-25 circle" cx="90%" cy="86%" r="5%" />
-                    <text class="show-on-scroll delay-5-5 text" x="90%" y="98%" text-anchor="middle" fill="#36454f" font-size="15px" font-weight="500"
-                        font-family="Raleway"> Software developer </text>
+                    <text class="descriptor middle show-on-scroll delay-5-5 text" x="90%" y="98%"> Software developer </text>
                     <a href="#skills">
-                        <text class="show-on-scroll delay-5-5 text" x="90%" y="86%" text-anchor="middle" fill="#f1f3f5" font-size="45px"
-                            font-family="FontAwesome" dy=".3em">
-                            &#xf5fc;
-                        </text>
+                        <text class="icon show-on-scroll delay-5-5 text" x="90%" y="86%" dy=".3em">
+                            &#xf5fc;</text>
                     </a>
                 </svg>
             </div>
@@ -279,7 +246,7 @@
                                 <p class="d-none d-md-block">I built this site as part of my entry assessment for Code Institute's software development course.
                                 Is it beautiful and well-made? Absolutely not! But it was created with a huge amount of enthusiasm and dedication
                                 (and zero coding knowledge!). So I'm proud to display it, regardless of its many, many faults.</p>
-                                <button><a href="https://llanelli-to-dursley--j355.repl.co/" target="_blank">Visit site</a></button>
+                                <a href="https://llanelli-to-dursley--j355.repl.co/" target="_blank">Visit site</a>
                             </div>
                         </div>
                     </div>
@@ -296,7 +263,7 @@
                             <div class="flip-card-back">
                                 <p class="d-none d-md-block">You might recognise this site... Here it is - my first 'proper' website, built with the 
                                 knowledge and skills that I'm currently gaining. Feel free to click to 'visit site', but you might find yourself in an inception-like loop!</p>
-                                <button><a href="#portfolio" target="_blank">Visit site</a></button>
+                                <a href="#portfolio" target="_blank">Visit site</a>
                             </div>
                         </div>
                     </div>
@@ -394,7 +361,7 @@
             </div>
         </div>
     </footer>
-    <!---------------------------------- Menu modal -->
+    <!--=============================================== Menu modal -->
 	<div class="modal fade" tabindex="-1" role="dialog" id="menu-modal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -425,7 +392,7 @@
 			</div>
 		</div>
 	</div>
-	<!---------------------------------- Undergrad modal -->
+	<!--=============================================== Undergrad modal -->
 	<div class="modal" tabindex="-1" role="dialog" id="undergrad-modal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -458,7 +425,7 @@
 			</div>
 		</div>
 	</div>
-	<!---------------------------------- Teacher modal -->
+	<!--=============================================== Teacher modal -->
 	<div class="modal" tabindex="-1" role="dialog" id="teacher-modal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -486,7 +453,7 @@
 			</div>
 		</div>
 	</div>
-	<!---------------------------------- Masters modal -->
+	<!--=============================================== Masters modal -->
 	<div class="modal" tabindex="-1" role="dialog" id="masters-modal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -519,7 +486,7 @@
 			</div>
 		</div>
 	</div>
-	<!---------------------------------- Researcher modal -->
+	<!--=============================================== Researcher modal -->
 	<div class="modal" tabindex="-1" role="dialog" id="researcher-modal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -547,7 +514,7 @@
 			</div>
 		</div>
 	</div>
-	<!---------------------------------- Developer modal -->
+	<!--=============================================== Developer modal -->
 	<div class="modal" tabindex="-1" role="dialog" id="developer-modal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -597,7 +564,7 @@
 			</div>
 		</div>
 	</div>
-    <!---------------------------------- Submit modal -->
+    <!--=============================================== Submit modal -->
 	<div class="modal" tabindex="-1" role="dialog" id="submit-modal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -614,8 +581,8 @@
 			</div>
 		</div>
 	</div>
-    <!---------------------------------- My JavaScript -->
-    <!---------------------------------- Animation JavaScript -->
+    <!--=============================================== My JavaScript -->
+    <!--=============================================== Animation JavaScript -->
     <script>
         // Detect request animation frame
         var scroll = window.requestAnimationFrame ||
@@ -659,7 +626,7 @@
         }
 
     </script>
-    <!---------------------------------- Active menu JavaScript -->
+    <!--=============================================== Active menu JavaScript -->
 	<script>
 		$(document).ready(function() { // Tells the function to wait to preform until everything on the page has loaded.
 		$(window).scroll(function() { // Says this function is preformed continuisly while scrolling.

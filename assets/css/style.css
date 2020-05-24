@@ -88,7 +88,7 @@ header h2 {
   color: #f1f3f5;
   text-align: center;
   animation: appear 8s infinite;
-  animation-delay: 4s;
+  animation-delay: 5s;
   opacity: 0;
 }
 
@@ -120,8 +120,32 @@ header h2 {
     12% {
         opacity: 1;
     }
-    99% {
+    50% {
         opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+    53% {
+        opacity: 1;
+    }
+    54% {
+        opacity: 0;
+    }
+    56% {
+        opacity: 1;
+    }
+    57% {
+        opacity: 0;
+    }
+    58% {
+        opacity: 1;
+    }
+    61% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
     }
 }
 
@@ -131,7 +155,7 @@ header blockquote {
   text-align: center;
   font-size: 1.5rem;
   animation: disappear 8s infinite;
-  animation-delay: 4s;
+  animation-delay: 5s;
   
 }
 
@@ -151,20 +175,44 @@ header blockquote {
     8% {
         opacity: 0;
     }
-    10% {
+    9% {
         opacity: 1;
+    }
+    10% {
+        opacity: 0;
     }
     11% {
-        opacity: 0;
-    }
-    12% {
         opacity: 1;
     }
-    13% {
+    12% {
         opacity: 0;
     }
-    99% {
+    50% {
         opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    57% {
+        opacity: 1;
+    }
+    58% {
+        opacity: 0;
+    }
+    59% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    61% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
     }
 }
 
@@ -203,11 +251,37 @@ header blockquote {
 }
 
 .svg-about text {
-    cursor: pointer;
     visibility: hidden;
 }
 
-.svg-about text:hover {
+.descriptor {
+    fill: #36454f; 
+    font-size: 14px; 
+    font-weight: 500;
+    font-family: "Raleway";
+}
+
+.descriptor.start {
+    text-anchor: start; 
+}
+
+.descriptor.middle {
+    text-anchor: middle; 
+}
+
+.descriptor.end {
+    text-anchor: end; 
+}
+
+.icon {
+    cursor: pointer;
+    text-anchor: middle; 
+    fill: #f1f3f5; 
+    font-size: 40px;
+    font-family: "FontAwesome";
+}
+
+.icon:hover {
     fill: #0892d0;
 }
 
@@ -469,7 +543,10 @@ header blockquote {
   color: #36454f; 
 }
 
-.flip-card button {
+.flip-card a, .flip-card button {
+  font-family: "Quicksand", sans-serif;
+  color: #f1f3f5; 
+  font-weight: 800;    
   background-color: #0892d0;
   border: none;
   border-radius: 5px;
@@ -489,11 +566,11 @@ header blockquote {
 }
 
 
-.flip-card a {
+/* .flip-card a {
   font-family: "Quicksand", sans-serif;
   color: #f1f3f5; 
   font-weight: 800;   
-}
+} */
 
 /* ---------------------------------------------Contact */
 
@@ -514,7 +591,7 @@ header blockquote {
 .contact-heading {
     display: flex;
     position: relative;
-    height: 5vh;
+    height: 8vh;
 }
 
 form h4 {
@@ -523,7 +600,7 @@ form h4 {
 
 .contact-button {
     width: 8.5vh;
-    height: 3.5vh;
+    height: 5.5vh;
     background-color: #f1f3f5;
     padding: 1px;
     position: absolute;
@@ -545,7 +622,7 @@ form h4 {
 .button-border {
     border: 2px dotted #f1f3f5;
     width: 10vh;
-    height: 5vh;
+    height: 7vh;
     position: absolute;
     right: 0;
 }
@@ -755,5 +832,5 @@ input:-webkit-autofill {
 
 .about-list dd {
     margin-bottom: .5rem;
-    margin-inline-start: 40px;
+    margin-left: 20px;
 }
