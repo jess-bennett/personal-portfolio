@@ -46,7 +46,7 @@ nav {
 }
 
 #menu-md {
-  font-size: 120%;
+  font-size: 130%;
   list-style-type: none;
   letter-spacing: 4px;
   text-align: right;
@@ -62,6 +62,10 @@ nav {
   font-family: "Quicksand", sans-serif;
   color: #f1f3f5;  
   text-decoration: none;
+}
+
+.cv {
+    font-size: 80%;
 }
 
 #menu-md a:hover {
