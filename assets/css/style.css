@@ -627,6 +627,19 @@ form h4 {
     right: 0;
 }
 
+@media only screen and (max-width: 991px) {
+  .button-border {
+    width: 60px;
+    height: 42px;
+    }   
+    .contact-button {
+    width: 52px;
+    height: 34px;
+    top: 2px;
+    right: 2px;
+    }
+}
+
 .contact-button:focus {
     outline: none;
 }
