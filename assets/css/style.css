@@ -45,7 +45,7 @@ nav {
   border-radius: 50%;
 }
 
-#menu-md {
+#menu-lg {
   font-size: 130%;
   list-style-type: none;
   letter-spacing: 4px;
@@ -53,12 +53,12 @@ nav {
   margin-top: 5px;
 }
 
-#menu-md li {
+#menu-lg li {
   display: inline;
   margin-right: 30px;
 }
 
-#menu-md a {
+#menu-lg a {
   font-family: "Quicksand", sans-serif;
   color: #f1f3f5;  
   text-decoration: none;
@@ -68,7 +68,7 @@ nav {
     font-size: 80%;
 }
 
-#menu-md a:hover {
+#menu-lg a:hover {
     border-bottom: 1px solid #f1f3f5;
 }
 
@@ -707,10 +707,16 @@ input:-webkit-autofill {
 /* ---------------------------------------------Footer */
 
 .footer-text {
+    font-family: "Quicksand", sans-serif;
+    color: #36454f;
     padding-top: 20px;
     font-weight: bold;
     font-size: 1.1rem;
     text-align: center;
+}
+
+.footer-text.small {
+    font-size: 0.9rem;
 }
 
 #footer em {
@@ -719,7 +725,7 @@ input:-webkit-autofill {
     text-align: center;
 }
 
-#footer .row:nth-of-type(2) {
+#footer .row:first-of-type {
     padding-bottom: 15px;
 }
 
