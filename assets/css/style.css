@@ -91,9 +91,182 @@ header h2 {
   font-family: "Raleway", sans-serif;
   color: #f1f3f5;
   text-align: center;
-  animation: appear 8s infinite;
-  animation-delay: 5s;
+  -webkit-animation: appear 8s 5s infinite;
+  -moz-animation: appear 8s 5s infinite;
+  -o-animation: appear 8s 5s infinite;
+  animation: appear 8s 5s infinite;
   opacity: 0;
+}
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: 1;
+    }
+    1% {
+        opacity: 0;
+    }
+    3% {
+        opacity: 1;
+    }
+    4% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    7% {
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+    }
+    11% {
+        opacity: 0;
+    }
+    12% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+    53% {
+        opacity: 1;
+    }
+    54% {
+        opacity: 0;
+    }
+    56% {
+        opacity: 1;
+    }
+    57% {
+        opacity: 0;
+    }
+    58% {
+        opacity: 1;
+    }
+    61% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes appear {
+    0% {
+        opacity: 1;
+    }
+    1% {
+        opacity: 0;
+    }
+    3% {
+        opacity: 1;
+    }
+    4% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    7% {
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+    }
+    11% {
+        opacity: 0;
+    }
+    12% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+    53% {
+        opacity: 1;
+    }
+    54% {
+        opacity: 0;
+    }
+    56% {
+        opacity: 1;
+    }
+    57% {
+        opacity: 0;
+    }
+    58% {
+        opacity: 1;
+    }
+    61% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes appear {
+    0% {
+        opacity: 1;
+    }
+    1% {
+        opacity: 0;
+    }
+    3% {
+        opacity: 1;
+    }
+    4% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    7% {
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+    }
+    11% {
+        opacity: 0;
+    }
+    12% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+    53% {
+        opacity: 1;
+    }
+    54% {
+        opacity: 0;
+    }
+    56% {
+        opacity: 1;
+    }
+    57% {
+        opacity: 0;
+    }
+    58% {
+        opacity: 1;
+    }
+    61% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
 }
 
 @keyframes appear {
@@ -158,9 +331,181 @@ header blockquote {
   color: #36454f;
   text-align: center;
   font-size: 1.5rem;
-  animation: disappear 8s infinite;
-  animation-delay: 5s;
-  
+  -webkit-animation: disappear 8s 5s infinite;  
+  -moz-animation: disappear 8s 5s infinite; 
+  -o-animation: disappear 8s 5s infinite; 
+  animation: disappear 8s 5s infinite; 
+}
+
+@-webkit-keyframes disappear {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    7% {
+        opacity: 1;
+    }
+    8% {
+        opacity: 0;
+    }
+    9% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    11% {
+        opacity: 1;
+    }
+    12% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    57% {
+        opacity: 1;
+    }
+    58% {
+        opacity: 0;
+    }
+    59% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    61% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes disappear {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    7% {
+        opacity: 1;
+    }
+    8% {
+        opacity: 0;
+    }
+    9% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    11% {
+        opacity: 1;
+    }
+    12% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    57% {
+        opacity: 1;
+    }
+    58% {
+        opacity: 0;
+    }
+    59% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    61% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes disappear {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    7% {
+        opacity: 1;
+    }
+    8% {
+        opacity: 0;
+    }
+    9% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    11% {
+        opacity: 1;
+    }
+    12% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    57% {
+        opacity: 1;
+    }
+    58% {
+        opacity: 0;
+    }
+    59% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    61% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
 }
 
 @keyframes disappear {
@@ -290,8 +635,10 @@ header blockquote {
 }
 
 .text.is-visible {
-    animation: visible 0.5s linear;
-    animation-fill-mode: forwards;
+    -webkit-animation: visible 0.5s linear forwards;
+    -moz-animation: visible 0.5s linear forwards;
+    -o-animation: visible 0.5s linear forwards;
+    animation: visible 0.5s linear forwards;
 }
 
 .svg-about a {
@@ -305,15 +652,19 @@ header blockquote {
 .line.is-visible  {
     stroke-dasharray: 8%;
     stroke-dashoffset: 8%;
-    animation: move 0.5s linear;
-    animation-fill-mode: forwards;
+    -webkit-animation: move 0.5s linear forwards;
+    -moz-animation: move 0.5s linear forwards;
+    -o-animation: move 0.5s linear forwards;
+    animation: move 0.5s linear forwards;
 }
 
 .vertical.is-visible  {
     stroke-dasharray: 19%;
     stroke-dashoffset: 19%;
-    animation: move 0.75s linear;
-    animation-fill-mode: forwards;
+    -webkit-animation: move 0.75s linear forwards;
+    -moz-animation: move 0.75s linear forwards;
+    -o-animation: move 0.75s linear forwards;
+    animation: move 0.75s linear forwards;
 }
 
 .svg-about > circle {
@@ -325,8 +676,10 @@ header blockquote {
 .circle.is-visible {
     stroke-dasharray: 51%;
     stroke-dashoffset: 51%;
-    animation: move 0.5s linear;
-    animation-fill-mode: forwards;
+    -webkit-animation: move 0.5s linear forwards;
+    -moz-animation: move 0.5s linear forwards;
+    -o-animation: move 0.5s linear forwards;
+    animation: move 0.5s linear forwards;
 }
 
 .delay-0-25.is-visible {
@@ -409,11 +762,53 @@ header blockquote {
     animation-delay: 5.5s;
 }
 
+@-webkit-keyframes move {
+        
+    100% {
+        stroke-dashoffset: 0;
+        fill: #434546;
+    }
+}
+
+@-moz-keyframes move {
+        
+    100% {
+        stroke-dashoffset: 0;
+        fill: #434546;
+    }
+}
+
+@-o-keyframes move {
+        
+    100% {
+        stroke-dashoffset: 0;
+        fill: #434546;
+    }
+}
+
 @keyframes move {
         
     100% {
         stroke-dashoffset: 0;
         fill: #434546;
+    }
+}
+
+@-webkit-keyframes visible {
+    100% {
+        visibility: visible;
+    }
+}
+
+@-moz-keyframes visible {
+    100% {
+        visibility: visible;
+    }
+}
+
+@-o-keyframes visible {
+    100% {
+        visibility: visible;
     }
 }
 
