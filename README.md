@@ -7,7 +7,7 @@ The quote on the homepage (which also appears in the 'About' section) was someth
 
 Creating this project has been quite a learning curve. Not only with regards to putting into practice what I have learnt so far, but also in terms of understanding my way of working a lot better – and hopefully improving on this in future projects! 
 
-I began building the site with quite a clear idea in my head. As can be seen in my [wireframe document](documentation/user-centric-project-wireframe.pdf), I started out using a picture taken in the village where I grew up as my inspiration for the design (as part of the ‘reflection of my personality’ methodology). I used Adobe CC to create a palette based on this image, and was so pleased with the idea that I ignored the fact that I didn’t really like how the colours actually looked! I had also set upon a single-page site (which has caused me more issues than I first realised) and for some reason (which possibly made sense to me at the time, but doesn’t now!), set each section to be 100vh. 
+I began building the site with quite a clear idea in my head. As can be seen in my [wireframe document](documentation/ucp-wireframe.pdf), I started out using a picture taken in the village where I grew up as my inspiration for the design (as part of the ‘reflection of my personality’ methodology). I used Adobe CC to create a palette based on this image, and was so pleased with the idea that I ignored the fact that I didn’t really like how the colours actually looked! I had also set upon a single-page site (which has caused me more issues than I first realised) and for some reason (which possibly made sense to me at the time, but doesn’t now!), set each section to be 100vh. 
 
 About halfway through the project I realised my mistake on both these counts, and created a new index.html. I copied the code across line by line to make sure that I fully understood each design-decision I was making and at the same time, rectified those two major mistakes. Each section is no longer limited in height, which has helped enormously with the layout. And the colour palette, whilst still based on my original image, is a much more abstract take on the greens and blues of the countryside – and I think, more suited to the purpose of the site.
 
@@ -18,13 +18,13 @@ All these changes have meant that this project took quite a bit longer than I ha
     *  I was slightly too enthusiastic about getting to the 'fun (extra challenging)' parts and in hindsight I should have spent more time ensuring I was satisfied with the underlying format. This would have saved me a great deal of time that was spent going back and changing the colour scheme and layout.
 
 * Pick a CSS naming convention and stick with it
-    * I still have more to learn when it comes to the pros and cons of different naming conventions, although I did do plenty of reading around the subject before beginning the site. I have tried to use a consistent style throughout but I think some of my class names were a bit haphazard to begin with. 
+    * I still have more to learn when it comes to the pros and cons of different naming conventions, although I did do plenty of reading around the subject before beginning the site. I have tried to use a consistent style throughout (mainly based on BEM) but I think some of my class names were a bit haphazard to begin with. 
 
 * Thoroughly document external libraries
     * The JS took some trial and error to get it working, and I ended up with some unused libraries in place. Whilst I did make a note of those that I used in my wireframe document, I neglected to remove all of those that **didn't** work from my code and ended up with two unused libraries (now removed).
 
 * Be wary of duplicating CSS rules
-    * Again, I think this was an overload of enthusiasm that led to some needless repetition of rules. In future, I realise that I need to be more careful of this!
+    * Again, I think this was an overload of enthusiasm that led to some needless repetition of rules. I am hopeful that I have now removed all of the duplications but in future, I realise that I need to be more careful of this!
 
 ## UX
 The website has been built with prospective clients, recruiters, employers and collaborators in mind. Whilst a personal portfolio site is a fairly simple idea, I wanted it to appeal to different people for different reasons. Basically, I want something which is impressive, but more importantly, easy-to-understand for both technical and non-technical mindsets. 
@@ -33,7 +33,7 @@ With this mind, I have tried to ensure that the site is easy to navigate and tha
 
 ### User stories
 * As a prospective client, I want to see an example of the type of website that could be created. I am less interested in the content itself, and more interested in the different features that have been implemented and the overall look of the site.  
-![Design](documentation/design-example.JPG)
+![Design](documentation/design-example.JPG) ![Design](documentation/design2-example.JPG)
 * As a non-technical recruiter/employer, I am interested in the work history of the candidate and the availability of a hard-copy CV.  
 ![CV](documentation/cv-example.JPG)
 * As technical recruiter/employer, I would like to see work history of the candidate and also see a demonstration of their programming ability.  
@@ -41,7 +41,7 @@ With this mind, I have tried to ensure that the site is easy to navigate and tha
 * As a prospective collaborator, I am interested in seeing the candidate’s programming ability and design choices.  
 ![Ability](documentation/ability-example.JPG)
 
-My [wireframe document](documentation/user-centric-project-wireframe.pdf) further demonstrates how I attempted to meet the above requirements – with particular reference to the Strategy plane section.
+My [wireframe document](documentation/ucp-wireframe.pdf) further demonstrates how I attempted to meet the above requirements – with particular reference to the Strategy plane section.
 
 ## Features
 ### Existing Features
@@ -50,7 +50,7 @@ My [wireframe document](documentation/user-centric-project-wireframe.pdf) furthe
 * Homepage – navbar image
     * Keeps to ‘personal’ ethos of the site. Also allows user to quickly return to homepage.
 * Homepage – main
-    * Displays quote that has shaped the project. Demonstrates additional programming ability.
+    * Displays quote that has shaped the project. Animation added to enhance design.
 * About – svg
     * Showcases work history in a visual manner (text provides additional information to the icons)
 * About – modals
@@ -94,13 +94,13 @@ My [wireframe document](documentation/user-centric-project-wireframe.pdf) furthe
 ## Testing
 
 The first stage of testing was conducted by willing family members. This was to check usability - whether navigation was clear and user stories met.
-Feedback regarding usability was good. Some errors were identified (mainly due to the different devices used for testing) and fixed. An overview of these can be found at the end of the [wireframe document](documentation/user-centric-project-wireframe.pdf)
+Feedback regarding usability was good. Some errors were identified (mainly due to the different devices used for testing) and fixed. An overview of these can be found at the end of the [wireframe document](documentation/ucp-wireframe.pdf)
 Code was tested using external sites. Functionality testing was carried out manually. 
 
 ### Code Testing
 
 Testing was conducted via Validator.w3.org and jigsaw.w3.org/css-validator. Some errors were found during initial testing and fixed. Two warnings remain in place (one for html and one for css) however, no action has been taken on these as they do not affect the performance of the site. 
-Full details can be found [here](documentation/user-centric-project-testing.xlsx)
+Full details can be found [here](documentation/ucp-testing-code.pdf)
 
 ### Functionality Testing
 
@@ -108,7 +108,7 @@ Functionality was tested across different device sizes and different browsers.
 
 All test outcomes were good with some exceptions:
 
-* Active scroll JS doesn't work for 'Contact' page as section is not big enough to be recognised
+* Active scroll JS doesn't work for 'Contact' page as section is not big enough to be recognised (I believe this is the cause of the issue)
     * This is not being remedied at this time as it doesn't affect usability and my understanding of JavaScript is not yet sufficient for me to make any further changes to the code! 
 
 * Icon background on 'About' page working on iPad2 but not iPad7
@@ -118,7 +118,7 @@ All test outcomes were good with some exceptions:
 
 * Modal menu close on link click working intermittently
     * A similar issue to the one above, in terms of consistency and my ability to understand it! The modal menu has some JS included, as otherwise, it was necessary to click on the link and then close the modal, which I didn't think was very user-friendly. On some devices this functionality works, on others, it doesn't. 
-    I haven't been able to find any pattern in when/where it does/doesn't work, so unfortunately am having to leave it at this time. 
+    I haven't been able to find any pattern in when/where it does/doesn't work, so unfortunately I am having to leave it at this time. 
 
 * Animation 'show on scroll' effect
     * This was tricky to implement as I have no knowledge of JS. However, I felt it was very important to include as the animations are pointless if they aren't seen (i.e. if they take place while the user is on another section of the site).
@@ -127,15 +127,18 @@ All test outcomes were good with some exceptions:
     So, if a user scrolls part way onto the 'About' page, the animation starts on whichever elements are in view. If the user then scrolls back up the page, before revisiting the 'About' page, any elements that were not previously in view (and therefore activated) now begin their animation, but still with the animation delay. This is not perfect, but again, I don't currently have the JS knowledge needed to get it to the standard I would like.
 
 * Safari testing not carried out
-    * It has not been possible for me to fully test the site on Safari at this time as I do not have a desktop Mac. Therefore, whilst testing from a family member who owns a Mac has been reported to be 'good' in all cases, I don't feel enough confidence in this testing to report it here. 
-    Similarly with the issue betwen the iPad2 and iPad7 mentioned above: the iPad7 issue has been reported to me as I only have the iPad2, so carrying out full tests on the issue has been difficult.
+    * It has not been possible for me to fully test the site on Safari at this time as I do not have a desktop Mac (some testing has been conducted on crossbrowsertesting.com). Therefore, whilst testing from a family member who owns a Mac has been reported to be 'good' in all cases, I don't feel enough confidence in this testing to report it here.
+    Similarly with the issue betwen the iPad2 and iPad7 mentioned above: the iPad7 issue has been reported to me as I only have the iPad2 (which is obsolete so is stuck on an old version of Safari), so carrying out full tests on the issue has been difficult.
 
 * Google dev tools v 'Real life' testing
     * I also found during testing that features would work on Google dev tools, but not on a similar device in 'real life'.
     This resulted in many additional commits where I would implement a change, and then have to push it to the live site in order to check. 
     I was keen to 'clean up' my commit history as I feel it could appear confusing. However, it was suggested to me by tutor support that it would be best to leave it rather than risk any major errors!
 
-The full testing matrix with features tested and devices/browsers tested on, can be found [here](documentation/user-centric-project-testing.xlsx)    
+The full testing matrix with features tested and devices/browsers tested on, can be found here:  
+* [Device size in development](documentation/ucp-testing-device-size-dev.pdf)
+* [Device size in published version](documentation/ucp-testing-device-size-live.pdf)
+* [Browser testing](documentation/ucp-testing-browser-live.pdf)
 
 ## Deployment
 

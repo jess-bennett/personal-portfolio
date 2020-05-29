@@ -73,6 +73,11 @@
      color: #f1f3f5;
      text-align: center;
 }
+ @media only screen and (max-width: 991px) {
+     header h1, header h2 {
+         font-size: x-large;
+    }
+}
  .home__text--background {
      background-color: #f1f3f5;
      padding: 20px;
@@ -143,6 +148,12 @@
      color: #36454f;
      text-align: center;
      font-size: 1.5rem;
+     margin-bottom: 0.5rem;
+}
+ @media only screen and (max-width: 991px) {
+     header blockquote {
+         font-size: medium;
+    }
 }
  #home__text {
      height: 100vh;
@@ -153,8 +164,9 @@
 }
 /* ---------------------------------------------About */
  .section__title {
-     height: 15vh;
+     min-height: 15vh;
      margin-bottom: 20px;
+     padding-top: 15px;
      display: flex;
      align-items: flex-end;
      justify-content: center;
@@ -169,6 +181,7 @@
 /* ---------------------------------------------About animation */
  .section__svg {
      height: 75vh;
+     min-height: 500px;
      padding-top: 0;
 }
  .section__svg text {
