@@ -1,1257 +1,741 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700|Quicksand:100,200,300,400,500,600,700");
-
 /* ---------------------------------------------Background Colours */
-
-#home {
-    background-color: #0892d0;
+ #home {
+     background-color: #0892d0;
 }
-
-#about {
-    background-color: #f1f3f5;
+ #about {
+     background-color: #f1f3f5;
 }
-
-#skills {
-    background-color: #e5eaed;
+ #skills {
+     background-color: #e5eaed;
 }
-
-#portfolio {
-    background-color: #f1f3f5;
+ #portfolio {
+     background-color: #f1f3f5;
 }
-
-#contact {
-    background-color: #d1ca1d;
+ #contact {
+     background-color: #d1ca1d;
 }
-
-#footer {
-    background-color: #d1ca1d;
+ #footer {
+     background-color: #d1ca1d;
 }
-
 /* ---------------------------------------------Header */
 /* ---------------------------------------------Nav */
-nav {
-  height: 50px;
-  background-color: #36454f;
-  border: none;
+ nav {
+     height: 50px;
+     background-color: #36454f;
+     border: none;
 }
-
-#circle-cover-bg {
-  display: block;
-  background: url("../images/cartwheel-sq.jpg") no-repeat center center;
-  background-size: 110%;
-  width: 10vh;
-  height: 0;
-  padding-bottom: 10vh;
-  border: 3px solid#36454f;
-  border-radius: 50%;
+ #nav__img {
+     display: block;
+     background: url("../images/cartwheel-sq.jpg") no-repeat center center;
+     background-size: 110%;
+     width: 10vh;
+     height: 0;
+     padding-bottom: 10vh;
+     border: 3px solid#36454f;
+     border-radius: 50%;
 }
-
-#menu-lg {
-  font-size: 130%;
-  list-style-type: none;
-  letter-spacing: 4px;
-  text-align: right;
-  margin-top: 5px;
+ #menu--lg {
+     font-size: 130%;
+     list-style-type: none;
+     letter-spacing: 4px;
+     text-align: right;
+     margin-top: 5px;
 }
-
-#menu-lg li {
-  display: inline;
-  margin-right: 30px;
+ #menu--lg li {
+     display: inline;
+     margin-right: 30px;
 }
-
-#menu-lg a {
-  font-family: "Quicksand", sans-serif;
-  color: #f1f3f5;  
-  text-decoration: none;
+ #menu--lg a {
+     font-family: "Quicksand", sans-serif;
+     color: #f1f3f5;
+     text-decoration: none;
 }
-
-.cv {
-    font-size: 80%;
+ .menu--reduced {
+     font-size: 80%;
 }
-
-#menu-lg a:hover {
-    border-bottom: 1px solid #f1f3f5;
+ #menu--lg a:hover {
+     border-bottom: 1px solid #f1f3f5;
 }
-
-.active {
-    border-bottom: 1px solid;
-    border-color: inherit;
+ .menu--active {
+     border-bottom: 1px solid;
+     border-color: inherit;
 }
-
-#menu-xs {
-  color: #f1f3f5;
-  font-size: 200%;
-  text-align: right;
-  margin: 5px;
+ #menu--xs {
+     color: #f1f3f5;
+     font-size: 200%;
+     text-align: right;
+     margin: 5px;
 }
-
 /* ---------------------------------------------Header Content */
-
-header h1,
-header h2 {
-  font-family: "Raleway", sans-serif;
-  color: #f1f3f5;
-  text-align: center;
-  -webkit-animation: appear 8s 5s infinite;
-  -moz-animation: appear 8s 5s infinite;
-  -o-animation: appear 8s 5s infinite;
-  animation: appear 8s 5s infinite;
-  opacity: 0;
+ header h1, header h2 {
+     font-family: "Raleway", sans-serif;
+     color: #f1f3f5;
+     text-align: center;
 }
-
-@-webkit-keyframes appear {
-    0% {
-        opacity: 1;
+ .home__text--background {
+     background-color: #f1f3f5;
+     padding: 20px;
+     width: 100vw;
+     -webkit-animation: background--color-change 15s 5s infinite;
+     -moz-animation: background--color-change 15s 5s infinite;
+     -o-animation: background--color-change 15s 5s infinite;
+     animation: background--color-change 15s 5s infinite;
+}
+ @-webkit-keyframes background--color-change {
+     0% {
+         background-color: #f1f3f5;
     }
-    1% {
-        opacity: 0;
+     25% {
+         background-color: #36454f;
     }
-    3% {
-        opacity: 1;
+     50% {
+         background-color: #36454f;
     }
-    4% {
-        opacity: 0;
-    }
-    6% {
-        opacity: 1;
-    }
-    7% {
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-    }
-    11% {
-        opacity: 0;
-    }
-    12% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    51% {
-        opacity: 0;
-    }
-    53% {
-        opacity: 1;
-    }
-    54% {
-        opacity: 0;
-    }
-    56% {
-        opacity: 1;
-    }
-    57% {
-        opacity: 0;
-    }
-    58% {
-        opacity: 1;
-    }
-    61% {
-        opacity: 0;
-    }
-    99% {
-        opacity: 0;
+     75% {
+         background-color: #f1f3f5;
     }
 }
-
-@-moz-keyframes appear {
-    0% {
-        opacity: 1;
+ @-moz-keyframes background--color-change {
+     0% {
+         background-color: #f1f3f5;
     }
-    1% {
-        opacity: 0;
+     25% {
+         background-color: #36454f;
     }
-    3% {
-        opacity: 1;
+     50% {
+         background-color: #36454f;
     }
-    4% {
-        opacity: 0;
-    }
-    6% {
-        opacity: 1;
-    }
-    7% {
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-    }
-    11% {
-        opacity: 0;
-    }
-    12% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    51% {
-        opacity: 0;
-    }
-    53% {
-        opacity: 1;
-    }
-    54% {
-        opacity: 0;
-    }
-    56% {
-        opacity: 1;
-    }
-    57% {
-        opacity: 0;
-    }
-    58% {
-        opacity: 1;
-    }
-    61% {
-        opacity: 0;
-    }
-    99% {
-        opacity: 0;
+     75% {
+         background-color: #f1f3f5;
     }
 }
-
-@-o-keyframes appear {
-    0% {
-        opacity: 1;
+ @-o-keyframes background--color-change {
+     0% {
+         background-color: #f1f3f5;
     }
-    1% {
-        opacity: 0;
+     25% {
+         background-color: #36454f;
     }
-    3% {
-        opacity: 1;
+     50% {
+         background-color: #36454f;
     }
-    4% {
-        opacity: 0;
-    }
-    6% {
-        opacity: 1;
-    }
-    7% {
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-    }
-    11% {
-        opacity: 0;
-    }
-    12% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    51% {
-        opacity: 0;
-    }
-    53% {
-        opacity: 1;
-    }
-    54% {
-        opacity: 0;
-    }
-    56% {
-        opacity: 1;
-    }
-    57% {
-        opacity: 0;
-    }
-    58% {
-        opacity: 1;
-    }
-    61% {
-        opacity: 0;
-    }
-    99% {
-        opacity: 0;
+     75% {
+         background-color: #f1f3f5;
     }
 }
-
-@keyframes appear {
-    0% {
-        opacity: 1;
+ @keyframes background--color-change {
+     0% {
+         background-color: #f1f3f5;
     }
-    1% {
-        opacity: 0;
+     25% {
+         background-color: #36454f;
     }
-    3% {
-        opacity: 1;
+     50% {
+         background-color: #36454f;
     }
-    4% {
-        opacity: 0;
-    }
-    6% {
-        opacity: 1;
-    }
-    7% {
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-    }
-    11% {
-        opacity: 0;
-    }
-    12% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    51% {
-        opacity: 0;
-    }
-    53% {
-        opacity: 1;
-    }
-    54% {
-        opacity: 0;
-    }
-    56% {
-        opacity: 1;
-    }
-    57% {
-        opacity: 0;
-    }
-    58% {
-        opacity: 1;
-    }
-    61% {
-        opacity: 0;
-    }
-    99% {
-        opacity: 0;
+     75% {
+         background-color: #f1f3f5;
     }
 }
-
-header blockquote {
-  font-family: "Raleway", sans-serif;
-  color: #36454f;
-  text-align: center;
-  font-size: 1.5rem;
-  -webkit-animation: disappear 8s 5s infinite;  
-  -moz-animation: disappear 8s 5s infinite; 
-  -o-animation: disappear 8s 5s infinite; 
-  animation: disappear 8s 5s infinite; 
+ header blockquote {
+     font-family: "Raleway", sans-serif;
+     color: #36454f;
+     text-align: center;
+     font-size: 1.5rem;
 }
-
-@-webkit-keyframes disappear {
-    0% {
-        opacity: 0;
-    }
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 0;
-    }
-    7% {
-        opacity: 1;
-    }
-    8% {
-        opacity: 0;
-    }
-    9% {
-        opacity: 1;
-    }
-    10% {
-        opacity: 0;
-    }
-    11% {
-        opacity: 1;
-    }
-    12% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    51% {
-        opacity: 1;
-    }
-    55% {
-        opacity: 0;
-    }
-    57% {
-        opacity: 1;
-    }
-    58% {
-        opacity: 0;
-    }
-    59% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 0;
-    }
-    61% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 1;
-    }
+ #home__text {
+     height: 100vh;
+     padding-top: 10vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
-
-@-moz-keyframes disappear {
-    0% {
-        opacity: 0;
-    }
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 0;
-    }
-    7% {
-        opacity: 1;
-    }
-    8% {
-        opacity: 0;
-    }
-    9% {
-        opacity: 1;
-    }
-    10% {
-        opacity: 0;
-    }
-    11% {
-        opacity: 1;
-    }
-    12% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    51% {
-        opacity: 1;
-    }
-    55% {
-        opacity: 0;
-    }
-    57% {
-        opacity: 1;
-    }
-    58% {
-        opacity: 0;
-    }
-    59% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 0;
-    }
-    61% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes disappear {
-    0% {
-        opacity: 0;
-    }
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 0;
-    }
-    7% {
-        opacity: 1;
-    }
-    8% {
-        opacity: 0;
-    }
-    9% {
-        opacity: 1;
-    }
-    10% {
-        opacity: 0;
-    }
-    11% {
-        opacity: 1;
-    }
-    12% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    51% {
-        opacity: 1;
-    }
-    55% {
-        opacity: 0;
-    }
-    57% {
-        opacity: 1;
-    }
-    58% {
-        opacity: 0;
-    }
-    59% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 0;
-    }
-    61% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 1;
-    }
-}
-
-@keyframes disappear {
-    0% {
-        opacity: 0;
-    }
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 0;
-    }
-    7% {
-        opacity: 1;
-    }
-    8% {
-        opacity: 0;
-    }
-    9% {
-        opacity: 1;
-    }
-    10% {
-        opacity: 0;
-    }
-    11% {
-        opacity: 1;
-    }
-    12% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    51% {
-        opacity: 1;
-    }
-    55% {
-        opacity: 0;
-    }
-    57% {
-        opacity: 1;
-    }
-    58% {
-        opacity: 0;
-    }
-    59% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 0;
-    }
-    61% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 1;
-    }
-}
-
-#home-text {
-  height: 100vh;
-  padding-top: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* ---------------------------------------------About */
-
-.section-title {
-  height: 15vh;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  border-top: solid 3px #0892d0;
+ .section__title {
+     height: 15vh;
+     margin-bottom: 20px;
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+     border-top: solid 3px #0892d0;
 }
-
-.section-title h2, h3, h4, h5 {
-  margin-bottom: 5px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  color: #36454f;
-
+ .section__title h2, h3, h4, h5 {
+     margin-bottom: 5px;
+     text-align: center;
+     font-family: "Raleway", sans-serif;
+     color: #36454f;
 }
-
 /* ---------------------------------------------About animation */
-
-.section-svg {
-  height: 75vh;
-  padding-top: 0;
+ .section__svg {
+     height: 75vh;
+     padding-top: 0;
 }
-
-.svg-about text {
-    visibility: hidden;
+ .section__svg text {
+     visibility: hidden;
 }
-
-.descriptor {
-    fill: #36454f; 
-    font-size: 14px; 
-    font-weight: 500;
-    font-family: "Raleway";
+ .section__svg--text {
+     fill: #36454f;
+     font-size: 14px;
+     font-weight: 500;
+     font-family: "Raleway";
 }
-
-.descriptor.start {
-    text-anchor: start; 
+ .section__svg--text.start {
+     text-anchor: start;
 }
-
-.descriptor.middle {
-    text-anchor: middle; 
+ .section__svg--text.middle {
+     text-anchor: middle;
 }
-
-.descriptor.end {
-    text-anchor: end; 
+ .section__svg--text.end {
+     text-anchor: end;
 }
-
-.icon {
-    cursor: pointer;
-    text-anchor: middle; 
-    fill: #f1f3f5; 
-    font-size: 40px;
-    font-family: "FontAwesome";
+ .section__svg--icon {
+     cursor: pointer;
+     text-anchor: middle;
+     fill: #f1f3f5;
+     font-size: 40px;
+     font-family: "FontAwesome";
 }
-
-.icon:hover {
-    fill: #0892d0;
+ .section__svg--icon:hover {
+     fill: #0892d0;
 }
-
-.text.is-visible {
-    -webkit-animation: visible 0.5s linear forwards;
-    -moz-animation: visible 0.5s linear forwards;
-    -o-animation: visible 0.5s linear forwards;
-    animation: visible 0.5s linear forwards;
+ .text.is-visible {
+     -webkit-animation: visible 0.5s linear forwards;
+     -moz-animation: visible 0.5s linear forwards;
+     -o-animation: visible 0.5s linear forwards;
+     animation: visible 0.5s linear forwards;
 }
-
-.svg-about a {
-    text-decoration: none;
+ .section__svg a {
+     text-decoration: none;
 }
-
-.svg-about > line {
-    stroke: #0892d0; 
-    stroke-width: 4;
+ .section__svg line {
+     stroke: #0892d0;
+     stroke-width: 4;
 }
-.line.is-visible  {
-    stroke-dasharray: 8%;
-    stroke-dashoffset: 8%;
-    -webkit-animation: move 0.5s linear forwards;
-    -moz-animation: move 0.5s linear forwards;
-    -o-animation: move 0.5s linear forwards;
-    animation: move 0.5s linear forwards;
+ .line.is-visible {
+     stroke-dasharray: 8%;
+     stroke-dashoffset: 8%;
+     -webkit-animation: move 0.5s linear forwards;
+     -moz-animation: move 0.5s linear forwards;
+     -o-animation: move 0.5s linear forwards;
+     animation: move 0.5s linear forwards;
 }
-
-.vertical.is-visible  {
-    stroke-dasharray: 19%;
-    stroke-dashoffset: 19%;
-    -webkit-animation: move 0.75s linear forwards;
-    -moz-animation: move 0.75s linear forwards;
-    -o-animation: move 0.75s linear forwards;
-    animation: move 0.75s linear forwards;
+ .vertical.is-visible {
+     stroke-dasharray: 19%;
+     stroke-dashoffset: 19%;
+     -webkit-animation: move 0.75s linear forwards;
+     -moz-animation: move 0.75s linear forwards;
+     -o-animation: move 0.75s linear forwards;
+     animation: move 0.75s linear forwards;
 }
-
-.svg-about > circle {
-    stroke: #0892d0; 
-    stroke-width: 3;
-    fill: none;
+ .section__svg circle {
+     stroke: #0892d0;
+     stroke-width: 3;
+     fill: none;
 }
-
-.circle.is-visible {
-    stroke-dasharray: 51%;
-    stroke-dashoffset: 51%;
-    -webkit-animation: move 0.5s linear forwards;
-    -moz-animation: move 0.5s linear forwards;
-    -o-animation: move 0.5s linear forwards;
-    animation: move 0.5s linear forwards;
+ .circle.is-visible {
+     stroke-dasharray: 51%;
+     stroke-dashoffset: 51%;
+     -webkit-animation: move 0.5s linear forwards;
+     -moz-animation: move 0.5s linear forwards;
+     -o-animation: move 0.5s linear forwards;
+     animation: move 0.5s linear forwards;
 }
-
-.delay-0-25.is-visible {
-    animation-delay: 0.25s;
+ .delay-0-25.is-visible {
+     animation-delay: 0.25s;
 }
-
-.delay-0-5.is-visible {
-    animation-delay: 0.5s;
+ .delay-0-5.is-visible {
+     animation-delay: 0.5s;
 }
-
-.delay-0-75.is-visible {
-    animation-delay: 0.75s;
+ .delay-0-75.is-visible {
+     animation-delay: 0.75s;
 }
-
-.delay-1.is-visible {
-    animation-delay: 1s;
+ .delay-1.is-visible {
+     animation-delay: 1s;
 }
-
-.delay-1-25.is-visible {
-    animation-delay: 1.25s;
+ .delay-1-25.is-visible {
+     animation-delay: 1.25s;
 }
-
-.delay-1-5.is-visible {
-    animation-delay: 1.5s;
+ .delay-1-5.is-visible {
+     animation-delay: 1.5s;
 }
-
-.delay-1-75.is-visible {
-    animation-delay: 1.75s;
+ .delay-1-75.is-visible {
+     animation-delay: 1.75s;
 }
-
-.delay-2.is-visible {
-    animation-delay: 2s;
+ .delay-2.is-visible {
+     animation-delay: 2s;
 }
-
-.delay-2-5.is-visible {
-    animation-delay: 2.5s;
+ .delay-2-5.is-visible {
+     animation-delay: 2.5s;
 }
-
-.delay-2-75.is-visible {
-    animation-delay: 2.75s;
+ .delay-2-75.is-visible {
+     animation-delay: 2.75s;
 }
-
-.delay-3.is-visible {
-    animation-delay: 3s;
+ .delay-3.is-visible {
+     animation-delay: 3s;
 }
-
-.delay-3-25.is-visible {
-    animation-delay: 3.25s;
+ .delay-3-25.is-visible {
+     animation-delay: 3.25s;
 }
-
-.delay-3-5.is-visible {
-    animation-delay: 3.5s;
+ .delay-3-5.is-visible {
+     animation-delay: 3.5s;
 }
-
-.delay-3-75.is-visible {
-    animation-delay: 3.75s;
+ .delay-3-75.is-visible {
+     animation-delay: 3.75s;
 }
-
-.delay-4.is-visible {
-    animation-delay: 4s;
+ .delay-4.is-visible {
+     animation-delay: 4s;
 }
-
-.delay-4-25.is-visible {
-    animation-delay: 4.25s;
+ .delay-4-25.is-visible {
+     animation-delay: 4.25s;
 }
-
-.delay-4-5.is-visible {
-    animation-delay: 4.5s;
+ .delay-4-5.is-visible {
+     animation-delay: 4.5s;
 }
-
-.delay-5.is-visible {
-    animation-delay: 5s;
+ .delay-5.is-visible {
+     animation-delay: 5s;
 }
-
-.delay-5-25.is-visible {
-    animation-delay: 5.25s;
+ .delay-5-25.is-visible {
+     animation-delay: 5.25s;
 }
-
-.delay-5-5.is-visible {
-    animation-delay: 5.5s;
+ .delay-5-5.is-visible {
+     animation-delay: 5.5s;
 }
-
-@-webkit-keyframes move {
-        
-    100% {
-        stroke-dashoffset: 0;
-        fill: #434546;
+ @-webkit-keyframes move {
+     100% {
+         stroke-dashoffset: 0;
+         fill: #434546;
     }
 }
-
-@-moz-keyframes move {
-        
-    100% {
-        stroke-dashoffset: 0;
-        fill: #434546;
+ @-moz-keyframes move {
+     100% {
+         stroke-dashoffset: 0;
+         fill: #434546;
     }
 }
-
-@-o-keyframes move {
-        
-    100% {
-        stroke-dashoffset: 0;
-        fill: #434546;
+ @-o-keyframes move {
+     100% {
+         stroke-dashoffset: 0;
+         fill: #434546;
     }
 }
-
-@keyframes move {
-        
-    100% {
-        stroke-dashoffset: 0;
-        fill: #434546;
+ @keyframes move {
+     100% {
+         stroke-dashoffset: 0;
+         fill: #434546;
     }
 }
-
-@-webkit-keyframes visible {
-    100% {
-        visibility: visible;
+ @-webkit-keyframes visible {
+     100% {
+         visibility: visible;
     }
 }
-
-@-moz-keyframes visible {
-    100% {
-        visibility: visible;
+ @-moz-keyframes visible {
+     100% {
+         visibility: visible;
     }
 }
-
-@-o-keyframes visible {
-    100% {
-        visibility: visible;
+ @-o-keyframes visible {
+     100% {
+         visibility: visible;
     }
 }
-
-@keyframes visible {
-    100% {
-        visibility: visible;
+ @keyframes visible {
+     100% {
+         visibility: visible;
     }
 }
-
 /* ---------------------------------------------Skills section */
-
-#skills img {
-    display: block;
-    margin: 0 auto;
-    height: 20vh;
-    border: solid 2px #36454f;
-    border-radius: 50%;
+ #skills img {
+     display: block;
+     margin: 0 auto;
+     height: 20vh;
+     border: solid 2px #36454f;
+     border-radius: 50%;
 }
-
-
-#skills blockquote, #skills p {
-    margin: 15px;
-    font-family: "Quicksand", sans-serif;
-    color:  #36454f;
-    text-align: justify;
+ #skills blockquote, #skills p {
+     margin: 15px;
+     font-family: "Quicksand", sans-serif;
+     color: #36454f;
+     text-align: justify;
 }
-
-.progress-section {
-    padding-top: 15px;
+ .progress-section {
+     padding-top: 15px;
 }
-
-.progress {
-    position: relative;
-    height: 30px;
-    margin-bottom: 5%;
+ .progress {
+     position: relative;
+     height: 30px;
+     margin-bottom: 5%;
 }
-
-.progress-type {
-    position: absolute;
-    left: 0px;
-    font-weight: 400;
-    font-family: "Raleway", sans-serif;
-    padding: 3px 30px 2px 10px;
+ .progress-type {
+     position: absolute;
+     left: 0px;
+     font-weight: 400;
+     font-family: "Raleway", sans-serif;
+     padding: 3px 30px 2px 10px;
 }
-
-.progress-bar.progress-background {
-    background-color: #f1f3f5;
+ .progress-bar.progress-background {
+     background-color: #f1f3f5;
 }
-
-.color-a + .progress-type {
-    color:  #f1f3f5;
+ .progress--color-a + .progress-type {
+     color: #f1f3f5;
 }
-
-.progress-bar.color-a {
-    background-color: #0892d0;
+ .progress-bar.progress--color-a {
+     background-color: #0892d0;
 }
-
-.color-b, .color-c + .progress-type {
-    color:  #36454f;
+ .progress--color-b, .progress--color-c + .progress-type {
+     color: #36454f;
 }
-
-.progress-bar.color-b {
-    border: 2px solid  #0892d0;
-    background-color:  #f1f3f5;
+ .progress-bar.progress--color-b {
+     border: 2px solid #0892d0;
+     background-color: #f1f3f5;
 }
-
 /* ---------------------------------------------Portfolio */
-
+/* ---------- Flip card instruction taken from: https://www.w3schools.com/howto/howto_css_flip_card.asp */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 80%;
-  height: auto;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+ .flip-card {
+     background-color: transparent;
+     width: 80%;
+     height: auto;
+     perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
 }
-
 /* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+ .flip-card-inner {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.8s;
+     transform-style: preserve-3d;
 }
-
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+ .flip-card:hover .flip-card-inner {
+     transform: rotateY(180deg);
 }
-
 /* Position the front and back side */
-.flip-card-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
+ .flip-card-back {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     -webkit-backface-visibility: hidden;
+    /* Safari */
+     backface-visibility: hidden;
 }
-
 /* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 100%;
-  padding: 2%;
-  background-color: #f1f3f5;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
+ .flip-card-front {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width: 100%;
+     padding: 2%;
+     background-color: #f1f3f5;
+     -webkit-backface-visibility: hidden;
+    /* Safari */
+     backface-visibility: hidden;
 }
-
-.flip-card-front img {
-    width: 100%;
-    height: auto;
+ .flip-card-front img {
+     width: 100%;
+     height: auto;
 }
-
 /* Style the back side */
-.flip-card-back {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 100%;
-  padding: 2%;
-  background-color: #f1f3f5;
-  transform: rotateY(180deg);
+ .flip-card-back {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width: 100%;
+     padding: 2%;
+     background-color: #f1f3f5;
+     transform: rotateY(180deg);
 }
-
-.flip-card p {
-  font-family: "Quicksand", sans-serif;
-  color: #36454f; 
+ .flip-card p {
+     font-family: "Quicksand", sans-serif;
+     color: #36454f;
 }
-
-.flip-card a, .flip-card button {
-  font-family: "Quicksand", sans-serif;
-  color: #f1f3f5; 
-  font-weight: 800;    
-  background-color: #0892d0;
-  border: none;
-  border-radius: 5px;
-  position: absolute;
-  left: 0; 
-  right: 0; 
-  bottom: 15px;
-  margin-left: auto; 
-  margin-right: auto; 
-  width: 100px;
+ .flip-card a, .flip-card button {
+     font-family: "Quicksand", sans-serif;
+     color: #f1f3f5;
+     font-weight: 800;
+     background-color: #0892d0;
+     border: none;
+     border-radius: 5px;
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: 15px;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100px;
 }
-
-.flip-card button:disabled {
-    font-family: "Quicksand", sans-serif;
-    background-color: #cccccc;
-    color: #666666;
+ .flip-card button:disabled {
+     font-family: "Quicksand", sans-serif;
+     background-color: #cccccc;
+     color: #666666;
 }
-
-
-/* .flip-card a {
-  font-family: "Quicksand", sans-serif;
-  color: #f1f3f5; 
-  font-weight: 800;   
-} */
-
 /* ---------------------------------------------Contact */
-
-.contact-card {
-    text-align: center;
+ .contact__card {
+     text-align: center;
 }
-
-.contact-form {
-    display: inline-block;
-    width: 70%;
-    border: 2px solid #36454f;
+ #contact__form {
+     display: inline-block;
+     width: 70%;
+     border: 2px solid #36454f;
 }
-
-.contact-form > div {
-    margin: 5px;
+ #contact__form > div {
+     margin: 5px;
 }
-
-.contact-heading {
-    display: flex;
-    position: relative;
-    height: 8vh;
+ .contact__heading {
+     display: flex;
+     position: relative;
+     height: 8vh;
 }
-
-form h4 {
-    text-align: left;
+ form h4 {
+     text-align: left;
 }
-
-.contact-button {
-    width: 8.5vh;
-    height: 5.5vh;
-    background-color: #f1f3f5;
-    padding: 1px;
-    position: absolute;
-    top: 0.5vh;
-    right: 0.5vh;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #36454f;
-    border: none;
-    font-family: "Quicksand", sans-serif;
+ .contact__button {
+     width: 8.5vh;
+     height: 5.5vh;
+     background-color: #f1f3f5;
+     padding: 1px;
+     position: absolute;
+     top: 0.5vh;
+     right: 0.5vh;
+     text-align: center;
+     font-size: 1rem;
+     font-weight: bold;
+     color: #36454f;
+     border-radius: .25rem;
+     border: 2px solid #f1f3f5;
+     font-family: "Quicksand", sans-serif;
 }
-
-.contact-button:hover {
-    background-color: #36454f;
-    color: #f1f3f5;
+ .contact__button:hover {
+     border-color: #36454f;
 }
-
-.button-border {
-    border: 2px dotted #f1f3f5;
-    width: 10vh;
-    height: 7vh;
-    position: absolute;
-    right: 0;
+ .contact__button--border {
+     border: 2px dotted #f1f3f5;
+     width: 10vh;
+     height: 7vh;
+     position: absolute;
+     right: 0;
 }
-
-@media only screen and (max-width: 991px) {
-  .button-border {
-    width: 60px;
-    height: 42px;
-    }   
-    .contact-button {
-    width: 52px;
-    height: 34px;
-    top: 2px;
-    right: 2px;
+ @media only screen and (max-width: 991px) {
+     .contact__button--border {
+         width: 60px;
+         height: 42px;
     }
-    .contact-heading {
-    height: 48px;
+     .contact__button {
+         width: 52px;
+         height: 34px;
+         top: 2px;
+         right: 2px;
+    }
+     .contact__heading {
+         height: 48px;
+    }
 }
+ .contact__button:focus {
+     outline: none;
 }
-
-.contact-button:focus {
-    outline: none;
+ textarea {
+     width: 100%;
+     height: 20vh;
+     resize: none;
 }
-
-textarea {
-    width: 100%;
-    height: 20vh;
-    resize: none;
+ .contact__details {
+     text-align: right;
 }
-
-.contact-details {
-    text-align: right;
+ input {
+     text-align: right;
+     width: 100%;
 }
-
-input {
-    text-align: right;
-    width: 100%;
+ label {
+     font-weight: 500;
 }
-
-label {
-    font-weight: 500;
+ textarea, label, input {
+     display: block;
+     background-color: #d1ca1d;
+     font-size: 1.3rem;
+     font-family: "Quicksand", sans-serif;
+     color: #36454f;
+     border: none;
+     outline: none;
 }
-
-textarea, label, input {
-    display: block;
-    background-color: #d1ca1d;
-    font-size: 1.3rem;
-    font-family: "Quicksand", sans-serif;
-    color: #36454f;
-    border: none;
-    outline: none;
+/* ----------------------------Autofill instruction taken from: https://webagility.com/posts/the-ultimate-list-of-hacks-for-chromes-forced-yellow-background-on-autocompleted-inputs */
+ input:-webkit-autofill {
+     box-shadow: 0 0 0 100px #d1ca1d inset;
+     -webkit-text-fill-color: #36454f;
 }
-
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 100px #d1ca1d inset;
-    -webkit-text-fill-color: #36454f;
+/* ----------------------------Placeholder instruction taken from: https://www.w3schools.com/howto/howto_css_placeholder.asp */
+ ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+     font-family: "Quicksand", sans-serif;
+     font-style: italic;
+     color: #36454f;
+     opacity: 1;
+    /* Firefox */
 }
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  font-family: "Quicksand", sans-serif;
-  font-style: italic;
-  color: #36454f;
-  opacity: 1; /* Firefox */
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+     font-family: "Quicksand", sans-serif;
+     font-style: italic;
+     color: #36454f;
 }
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  font-family: "Quicksand", sans-serif;
-  font-style: italic;
-  color: #36454f;
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+     font-family: "Quicksand", sans-serif;
+     font-style: italic;
+     color: #36454f;
 }
-
-::-ms-input-placeholder { /* Microsoft Edge */
-  font-family: "Quicksand", sans-serif;
-  font-style: italic;
-  color: #36454f;
-}
-
 /* ---------------------------------------------Footer */
-
-.footer-text {
-    font-family: "Quicksand", sans-serif;
-    color: #36454f;
-    padding-top: 20px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-align: center;
+ .footer__text {
+     font-family: "Quicksand", sans-serif;
+     color: #36454f;
+     padding-top: 20px;
+     font-weight: bold;
+     font-size: 1.1rem;
+     text-align: center;
 }
-
-.footer-text.small {
-    font-size: 0.9rem;
+ .footer__text.small {
+     font-size: 0.9rem;
 }
-
-#footer em {
-    font-weight: normal;
-    font-size: 1rem;
-    text-align: center;
+ #footer em {
+     font-weight: normal;
+     font-size: 1rem;
+     text-align: center;
 }
-
-#footer .row:first-of-type {
-    padding-bottom: 15px;
+ #footer .row:first-of-type {
+     padding-bottom: 15px;
 }
-
-#footer .col {
-    text-align: center;
+ #footer .col {
+     text-align: center;
 }
-
-#footer a {
-    text-decoration: none;
-    font-size: 2rem;
-    color: #36454f;
+ #footer a {
+     text-decoration: none;
+     font-size: 2rem;
+     color: #36454f;
 }
-
-.text-overlay {
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #36454f;
-    margin-top: -1.8rem;
+ .footer__text--overlay {
+     font-size: 0.8rem;
+     font-weight: bold;
+     color: #36454f;
+     margin-top: -1.8rem;
 }
-
 /* ---------------------------------------------Menu Modal */
-
-#menu-modal .modal-dialog {
-    position: relative;
-    left: 20%;
-    width: 80%;
-    margin: 0;
-    pointer-events: none;
+ #menu__modal .modal-dialog {
+     position: relative;
+     left: 20%;
+     width: 80%;
+     margin: 0;
+     pointer-events: none;
 }
-
-.modal-top button {
-    color: #f1f3f5;
-    font-size: 250%;
-    margin-right: 5px;
+ .modal-top button {
+     color: #f1f3f5;
+     font-size: 250%;
+     margin-right: 5px;
 }
-
-.modal-top button:hover {
-    color: #36454f;
+ .modal-top button:hover {
+     color: #36454f;
 }
-
-#menu-modal .modal-content {
-    background-color: #36454f;
-    min-height: 100vh;
+ #menu__modal .modal-content {
+     background-color: #36454f;
+     min-height: 100vh;
 }
-
-.modal-content a {
-  font-family: "Quicksand", sans-serif;
-  color: #f1f3f5;  
-  text-decoration: none;
+ .modal-content a {
+     font-family: "Quicksand", sans-serif;
+     color: #f1f3f5;
+     text-decoration: none;
 }
-
 /* ---------------------------------------------About Modal */
-
-@media (min-width: 576px) { 
-    .modal-dialog {
-    max-width: 600px;
-    margin: 1.75rem auto;
+ @media (min-width: 576px) {
+     .modal-dialog {
+         max-width: 600px;
+         margin: 1.75rem auto;
     }
 }
-
-#submit-modal .modal-top {
-    min-height: 8vh;
+ #submit-modal .modal-top {
+     min-height: 8vh;
 }
-
-.modal-top {
-    position: relative;
-    min-height: 18vh;
+ .modal-top {
+     position: relative;
+     min-height: 18vh;
 }
-
-.modal-content {
-    min-height: fit-content;
-    background-color: #d1ca1d;
+ .modal-content {
+     min-height: fit-content;
+     background-color: #d1ca1d;
 }
-
-.modal-content ul {
-    line-height: 3;
-    font-size: 150%;
-    list-style-type: none;
-    letter-spacing: 4px;
-    text-align: right;
+ .modal-content ul {
+     line-height: 3;
+     font-size: 150%;
+     list-style-type: none;
+     letter-spacing: 4px;
+     text-align: right;
 }
-
-.modal-top img {
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    height: 15vh;
-    border: solid 2px #36454f;
-    border-radius: 50%;
+ .modal-top img {
+     position: absolute;
+     left: 15px;
+     top: 15px;
+     height: 15vh;
+     border: solid 2px #36454f;
+     border-radius: 50%;
 }
-
-.modal-title {
-    position: absolute;
-    top: 15px;
-    left: 15vh;
-    right: 40px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
+ .modal-title {
+     position: absolute;
+     top: 15px;
+     left: 15vh;
+     right: 40px;
+     display: inline-block;
+     align-items: center;
+     justify-content: center;
+     line-height: 1;
 }
-
-.modal-title h4, .modal-title h5 {
-    text-align: right;
-    color:  #36454f;
-    font-family: "Raleway", sans-serif;
+ .modal-title h4, .modal-title h5 {
+     text-align: right;
+     color: #36454f;
+     font-family: "Raleway", sans-serif;
 }
-
-.about-list {
-    color: #36454f;
-    font-family: "Quicksand", sans-serif;
-    font-size: 1rem;
+ .modal__about--list {
+     color: #36454f;
+     font-family: "Quicksand", sans-serif;
+     font-size: 1rem;
 }
-
-.about-list h6 {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
+ .modal__about--list h6 {
+     font-family: "Raleway", sans-serif;
+     font-weight: 700;
 }
-
-.about-list ul {
-    list-style-type: circle;
-    letter-spacing: 1px;
-    text-align: left;
-    font-size: 1rem;
+ .modal__about--list ul {
+     list-style-type: circle;
+     letter-spacing: 1px;
+     text-align: left;
+     font-size: 1rem;
 }
-
-.about-list dt {
-    font-weight: 500;
+ .modal__about--list dt {
+     font-weight: 500;
 }
-
-.about-list dd {
-    margin-bottom: .5rem;
-    margin-left: 20px;
+ .modal__about--list dd {
+     margin-bottom: .5rem;
+     margin-left: 20px;
+}
+/* ---------------------------------------------Submit Modal */
+ .modal-footer {
+     border-top: 2px solid #36454f;
+}
+ .submit__button--light {
+     font-family: "Quicksand", sans-serif;
+     color: #36454f;
+     background-color: #f1f3f5;
+     border: 2px solid #f1f3f5;
+}
+ .submit__button--light:hover {
+     color: #36454f;
+     border-color: #36454f;
+}
+ .submit__button--dark {
+     font-family: "Quicksand", sans-serif;
+     color: #f1f3f5;
+     background-color: #36454f;
+     border: 2px solid #36454f;
+}
+ .submit__button--dark:hover {
+     color: #f1f3f5;
+     border-color: #f1f3f5;
 }

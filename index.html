@@ -15,17 +15,18 @@
     <title>Jess Bennett | Full Stack Software Developer</title>
 </head>
 <body>
+<!--============================================================= Home section -->
     <header id="home">
         <nav class="container-fluid fixed-top">
 			<div class="row">
 				<div class="col col-lg-2">
-					<a href="#home" id="circle-cover-bg"></a>
+					<a href="#home" id="nav__img"></a>
 				</div>
 				<div class="col col-lg-10">
-					<i id="menu-xs" class="fas fa-bars d-block d-lg-none" data-toggle="modal" data-target="#menu-modal"></i>
-					<ul id="menu-lg" class="d-none d-lg-block">
+					<i id="menu--xs" class="fas fa-bars d-block d-lg-none" data-toggle="modal" data-target="#menu__modal"></i>
+					<ul id="menu--lg" class="d-none d-lg-block">
 						<li>
-							<a href="#home" class="menu-item-1 active">Home</a>
+							<a href="#home" class="menu-item-1 menu--active">Home</a>
 						</li>
 						<li>
 							<a href="#about" class="menu-item-2">About</a>
@@ -36,15 +37,15 @@
 						<li>
 							<a href="#contact" class="menu-item-4">Contact</a>
 						</li>
-                        <li class="cv">
+                        <li class="menu--reduced">
 							<a href="assets/cv/cv-jessica-bennett.pdf" target="_blank">Download CV</a>
 						</li>
 					</ul>
 				</div>
 			</div>
         </nav>
-        <div id="home-text">
-			<div>
+        <div id="home__text">
+			<div class="home__text--background">
 				<h1>Jess Bennett</h1>
                 <blockquote 
                     cite="https://www.forbes.com/2006/12/10/john-romero-games-tech_cx_de_games06_1212romero.html#57277066866e"><em>
@@ -56,92 +57,95 @@
 			</div>
 		</div>
     </header>
+<!--============================================================= About section -->    
+    <!--=================== Please see 'README.md' for all SVG acknowledgements -->
     <section id="about">
-        <div class="section-title">
+        <div class="section__title">
             <h2>About</h2>
         </div>
-        <!--=============================================== Mobile animation -->
+        <!--================================================== Mobile animation -->
         <div class="d-block d-md-none">
-            <div class="section-svg">
-                <svg width="100%" height="100%" class="svg-about">
+            <div class="section__svg">
+                <svg width="100%" height="100%">
                     <line class="show-on-scroll line" x1="50%" y1="0%" x2="50%" y2="5%" />
                     <line class="show-on-scroll delay-1 line" x1="50%" y1="19%" x2="50%" y2="24%" />
                     <circle class="show-on-scroll delay-0-5 circle" cx="50%" cy="12%" r="8%" />
-                    <text class="descriptor end show-on-scroll delay-1 text" x="35%" y="12%"> Undergraduate </text>
-                    <text class="icon show-on-scroll delay-1 text" x="50%" y="12%" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
+                    <text class="section__svg--text end show-on-scroll delay-1 text" x="35%" y="12%"> Undergraduate </text>
+                    <text class="section__svg--icon show-on-scroll delay-1 text" x="50%" y="12%" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
                         &#xf19c;</text>
                     <line class="show-on-scroll delay-2 line" x1="50%" y1="38%" x2="50%" y2="43%" />
                     <circle class="show-on-scroll delay-1-5 circle" cx="50%" cy="31%" r="8%" />
-                    <text class="descriptor start show-on-scroll delay-2 text" x="65%" y="31%"> Teacher </text>
-                    <text class="icon show-on-scroll delay-2 text" x="50%" y="31%" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
+                    <text class="section__svg--text start show-on-scroll delay-2 text" x="65%" y="31%"> Teacher </text>
+                    <text class="section__svg--icon show-on-scroll delay-2 text" x="50%" y="31%" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
                         &#xf51c;</text>
                     <line class="show-on-scroll delay-3 line" x1="50%" y1="57%" x2="50%" y2="62%" />
                     <circle class="show-on-scroll delay-2-5 circle" cx="50%" cy="50%" r="8%" />
-                    <text class="descriptor end show-on-scroll delay-3 text" x="35%" y="50%"> Master's degree </text>
-                    <text class="icon show-on-scroll delay-3 text" x="50%" y="50%" dy=".3em" data-toggle="modal" data-target="#masters-modal">
+                    <text class="section__svg--text end show-on-scroll delay-3 text" x="35%" y="50%"> Master's degree </text>
+                    <text class="section__svg--icon show-on-scroll delay-3 text" x="50%" y="50%" dy=".3em" data-toggle="modal" data-target="#masters-modal">
                         &#xf19d;</text>
                     <line class="show-on-scroll delay-4 line" x1="50%" y1="76%" x2="50%" y2="81%" />
                     <circle class="show-on-scroll delay-3-5 circle" cx="50%" cy="69%" r="8%" />
-                    <text class="descriptor start show-on-scroll delay-4 text" x="65%" y="68%"> Researcher/ </text>
-                    <text class="descriptor start show-on-scroll delay-4 text" x="65%" y="71%"> Data Analyst </text>    
-                    <text class="icon show-on-scroll delay-4 text" x="50%" y="69%" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
+                    <text class="section__svg--text start show-on-scroll delay-4 text" x="65%" y="68%"> Researcher/ </text>
+                    <text class="section__svg--text start show-on-scroll delay-4 text" x="65%" y="71%"> Data Analyst </text>    
+                    <text class="section__svg--icon show-on-scroll delay-4 text" x="50%" y="69%" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
                         &#xf1fe;</text>
                     <line class="show-on-scroll delay-5 line" x1="50%" y1="95%" x2="50%" y2="100%" />
                     <circle class="show-on-scroll delay-4-5 circle" cx="50%" cy="88%" r="8%" />
-                    <text class="descriptor end show-on-scroll delay-5 text" x="35%" y="87%"> Software </text>
-                    <text class="descriptor end show-on-scroll delay-5 text" x="35%" y="90%"> developer </text>    
-                    <text class="icon show-on-scroll delay-5 text" x="50%" y="88%" dy=".3em" data-toggle="modal" data-target="#developer-modal">
+                    <text class="section__svg--text end show-on-scroll delay-5 text" x="35%" y="87%"> Software </text>
+                    <text class="section__svg--text end show-on-scroll delay-5 text" x="35%" y="90%"> developer </text>    
+                    <text class="section__svg--icon show-on-scroll delay-5 text" x="50%" y="88%" dy=".3em" data-toggle="modal" data-target="#developer-modal">
                         &#xf5fc;</text>
                 </svg>
             </div>
         </div>
         <!--=============================================== Desktop animation -->
         <div class="d-none d-md-block">
-            <div class="section-svg">
-                <svg width="100%" height="100%" class="svg-about">
+            <div class="section__svg">
+                <svg width="100%" height="100%">
                     <line class="show-on-scroll line" x1="0%" y1="14%" x2="6%" y2="14%" />
                     <line class="show-on-scroll delay-0-5 line" x1="14%" y1="14%" x2="20%" y2="14%" />
                     <circle class="show-on-scroll delay-0-25 circle" cx="10%" cy="14%" r="5%" />
-                    <text class="descriptor middle show-on-scroll delay-0-5 text" x="10%" y="26%"> Undergraduate </text>
-                    <text class="icon show-on-scroll delay-0-5 text" x="10%" y="14%" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
+                    <text class="section__svg--text middle show-on-scroll delay-0-5 text" x="10%" y="26%"> Undergraduate </text>
+                    <text class="section__svg--icon show-on-scroll delay-0-5 text" x="10%" y="14%" dy=".3em" data-toggle="modal" data-target="#undergrad-modal">
                         &#xf19c;</text>
                     <line class="show-on-scroll delay-0-75 vertical" x1="20%" y1="14%" x2="20%" y2="32%" />
                     <line class="show-on-scroll delay-1-25 line" x1="20%" y1="32%" x2="26%" y2="32%" />
                     <line class="show-on-scroll delay-1-75 line" x1="34%" y1="32%" x2="40%" y2="32%" />
                     <circle class="show-on-scroll delay-1-5 circle" cx="30%" cy="32%" r="5%" />
-                    <text class="descriptor middle show-on-scroll delay-1-75 text" x="30%" y="44%"> Teacher </text>
-                    <text class="icon show-on-scroll delay-1-75 text" x="30%" y="32%" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
+                    <text class="section__svg--text middle show-on-scroll delay-1-75 text" x="30%" y="44%"> Teacher </text>
+                    <text class="section__svg--icon show-on-scroll delay-1-75 text" x="30%" y="32%" dy=".3em" data-toggle="modal" data-target="#teacher-modal">
                         &#xf51c;</text>
                     <line class="show-on-scroll delay-2 vertical" x1="40%" y1="32%" x2="40%" y2="50%" />
                     <line class="show-on-scroll delay-2-5 line" x1="40%" y1="50%" x2="46%" y2="50%" />
                     <line class="show-on-scroll delay-3 line" x1="54%" y1="50%" x2="60%" y2="50%" />
                     <circle class="show-on-scroll delay-2-75 circle" cx="50%" cy="50%" r="5%" />
-                    <text class="descriptor middle show-on-scroll delay-3 text" x="50%" y="62%"> Master's degree </text>
-                    <text class="icon show-on-scroll delay-3 text" x="50%" y="50%" dy=".3em" data-toggle="modal" data-target="#masters-modal">
+                    <text class="section__svg--text middle show-on-scroll delay-3 text" x="50%" y="62%"> Master's degree </text>
+                    <text class="section__svg--icon show-on-scroll delay-3 text" x="50%" y="50%" dy=".3em" data-toggle="modal" data-target="#masters-modal">
                         &#xf19d;</text>
                     <line class="show-on-scroll delay-3-25 vertical" x1="60%" y1="50%" x2="60%" y2="68%" />
                     <line class="show-on-scroll delay-3-75 line" x1="60%" y1="68%" x2="66%" y2="68%" />
                     <line class="show-on-scroll delay-4-25 line" x1="74%" y1="68%" x2="80%" y2="68%" />
                     <circle class="show-on-scroll delay-4 circle" cx="70%" cy="68%" r="5%" />
-                    <text class="descriptor middle show-on-scroll delay-4-25 text" x="70%" y="80%"> Researcher/</text>
-                    <text class="descriptor middle show-on-scroll delay-4-25 text" x="70%" y="82%"> Data analyst </text>
-                    <text class="icon show-on-scroll delay-4-25 text" x="70%" y="68%" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
+                    <text class="section__svg--text middle show-on-scroll delay-4-25 text" x="70%" y="80%"> Researcher/</text>
+                    <text class="section__svg--text middle show-on-scroll delay-4-25 text" x="70%" y="82%"> Data analyst </text>
+                    <text class="section__svg--icon show-on-scroll delay-4-25 text" x="70%" y="68%" dy=".3em" data-toggle="modal" data-target="#researcher-modal">
                         &#xf1fe;</text>
                     <line class="show-on-scroll delay-4-5 vertical" x1="80%" y1="68%" x2="80%" y2="86%" />
                     <line class="show-on-scroll delay-5 line" x1="80%" y1="86%" x2="86%" y2="86%" />
                     <line class="show-on-scroll delay-5-5 line" id="line-n-md" x1="94%" y1="86%" x2="100%" y2="86%" />
                     <circle class="show-on-scroll delay-5-25 circle" cx="90%" cy="86%" r="5%" />
-                    <text class="descriptor middle show-on-scroll delay-5-5 text" x="90%" y="98%"> Software developer </text>
+                    <text class="section__svg--text middle show-on-scroll delay-5-5 text" x="90%" y="98%"> Software developer </text>
                     <a href="#skills">
-                        <text class="icon show-on-scroll delay-5-5 text" x="90%" y="86%" dy=".3em">
+                        <text class="section__svg--icon show-on-scroll delay-5-5 text" x="90%" y="86%" dy=".3em">
                             &#xf5fc;</text>
                     </a>
                 </svg>
             </div>
         </div>
     </section>
+<!--============================================================= Skills section -->    
     <section id="skills">
-        <div class="section-title">
+        <div class="section__title">
             <div>
                 <h5>Full Stack Software Development Student</h5>
                 <h5>Present - 2021</h5>
@@ -179,60 +183,61 @@
 							valuable skills from each point of my journey, and someone who
 							is as creative as they are logical. Not one or the other...
 						</p>
-					</div>
-					<div class="col-12 col-md-6 progress-section">
-						<h4>Skills</h4>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped color-a" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width: 90%;">
-								<span class="sr-only">90% complete</span>
-							</div>
-							<span class="progress-type">HTML / HTML5</span>
-                            <div class="progress-bar progress-background" role="progressbar" style="width:10%">
-                            </div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped color-b" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width: 80%;">
-								<span class="sr-only">80% complete</span>
-							</div>
-							<span class="progress-type">CSS / CSS3</span>
-                            <div class="progress-bar progress-background" role="progressbar" style="width:20%">
-                            </div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar color-c" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-								aria-valuemax="100" style="width: 0%;">
-								<span class="sr-only">0% complete</span>
-							</div>
-							<span class="progress-type">JavaScript / jQuery - Coming soon...</span>
-                            <div class="progress-bar progress-background" role="progressbar" style="width:100%">
-                            </div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar color-c" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-								aria-valuemax="100" style="width: 0%;">
-								<span class="sr-only">0% complete</span>
-							</div>
-							<span class="progress-type">Python / Django - Coming soon...</span>
-                            <div class="progress-bar progress-background" role="progressbar" style="width:100%">
-                            </div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar color-c" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-								aria-valuemax="100" style="width: 0%;">
-								<span class="sr-only">0% complete</span>
-							</div>
-							<span class="progress-type">SQL / NoSQL - Coming soon...</span>
-                            <div class="progress-bar progress-background" role="progressbar" style="width:100%">
-                            </div>
-						</div>
-					</div>
+                </div>
+                <div class="col-12 col-md-6 progress-section">
+                    <h4>Skills</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress--color-a" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 90%;">
+                            <span class="sr-only">90% complete</span>
+                        </div>
+                        <span class="progress-type">HTML / HTML5</span>
+                        <div class="progress-bar progress-background" role="progressbar" style="width:10%">
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress--color-b" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 80%;">
+                            <span class="sr-only">80% complete</span>
+                        </div>
+                        <span class="progress-type">CSS / CSS3</span>
+                        <div class="progress-bar progress-background" role="progressbar" style="width:20%">
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress--color-c" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 0%;">
+                            <span class="sr-only">0% complete</span>
+                        </div>
+                        <span class="progress-type">JavaScript / jQuery - Coming soon...</span>
+                        <div class="progress-bar progress-background" role="progressbar" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress--color-c" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 0%;">
+                            <span class="sr-only">0% complete</span>
+                        </div>
+                        <span class="progress-type">Python / Django - Coming soon...</span>
+                        <div class="progress-bar progress-background" role="progressbar" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress--color-c" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 0%;">
+                            <span class="sr-only">0% complete</span>
+                        </div>
+                        <span class="progress-type">SQL / NoSQL - Coming soon...</span>
+                        <div class="progress-bar progress-background" role="progressbar" style="width:100%">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        </section>
+    </section>
+<!--============================================================= Portfolio section -->        
     <section id="portfolio">
-        <div class="section-title">
+        <div class="section__title">
             <h2>Portfolio</h2>
         </div>
         <div class="container-fluid">
@@ -282,7 +287,8 @@
                                 </div>
 					        </div>
                             <div class="flip-card-back">
-                                <p class="d-none d-lg-block">Coming soon...</p>
+                                <p class="d-none d-lg-block">Project purpose: Presentation of interactive data<br>
+                                Expected date of completion: November 2020</p>
                                 <button disabled>Visit site</button>
                             </div>
                         </div>
@@ -300,7 +306,8 @@
                                 </div>
 					        </div>
                             <div class="flip-card-back">
-                                <p class="d-none d-lg-block">Coming soon...</p>
+                                <p class="d-none d-lg-block">Project purpose: A full-stack site that allows users to manage a common dataset about a particular domain.<br>
+                                Expected date of completion: January 2021</p>
                                 <button disabled>Visit site</button>
                             </div>
                         </div>
@@ -316,7 +323,8 @@
                                 </div>
 					        </div>
                             <div class="flip-card-back">
-                                <p class="d-none d-lg-block">Coming soon...</p>
+                                <p class="d-none d-lg-block">Project purpose: A full-stack site based around business logic used to control a centrally-owned dataset.<br>
+                                Expected date of completion: April 2021</p>
                                 <button disabled>Visit site</button>
                             </div>
                         </div>
@@ -325,21 +333,22 @@
             </div>
         </div>
     </section>
+<!--============================================================= Contact section -->    
     <section id="contact">
-        <div class="section-title">
+        <div class="section__title">
             <h2>Contact</h2>
         </div>
-        <div class="contact-card">
-            <form class="contact-form">
+        <div class="contact__card">
+            <form id="contact__form" onsubmit="openModal()">
                 <div>
-                    <div class="contact-heading">
+                    <div class="contact__heading">
                         <h4>Dear Jess,</h4>
-                        <div class="button-border">
-                            <button class="contact-button" data-toggle="modal" data-target="#submit-modal">Send!</button>
+                        <div class="contact__button--border">
+                            <input type="submit" value="Send!" class="contact__button">
                         </div>
                     </div>
-                        <textarea name="contact-message" placeholder="What would you like to say?" required></textarea>
-                        <div class="contact-details">
+                        <textarea name="contact__message" placeholder="What would you like to say?" required></textarea>
+                        <div class="contact__details">
                             <label for="name">from</label>
                             <input type="text" id="name" name="name" placeholder="Your name" required>
                             <input type="email" id="email" name="email" placeholder="Your email address" required>
@@ -348,13 +357,14 @@
             </form>
         </div>
     </section>
+<!--============================================================= Footer -->    
     <footer id="footer">
         <div class="container-fluid">
-            <p class="footer-text">Don't fancy sending a message right now?</p>
+            <p class="footer__text">Don't fancy sending a message right now?</p>
             <div class="row">
                 <div class="col">
                     <a href="assets/cv/cv-jessica-bennett.pdf" target="_blank"><i class="far fa-file"></i></a>
-                    <p class="text-overlay">CV</p>
+                    <p class="footer__text--overlay">CV</p>
                 </div>
                 <div class="col">
                     <a href="https://github.com/jess-bennett/" target="_blank"><i class="fab fa-github"></i></a>
@@ -365,14 +375,14 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="footer-text small"> &copy; | 2020 | Jessica Bennett </p>
+                    <p class="footer__text small"> &copy; | 2020 | Jessica Bennett </p>
                 </div>
             </div>
         </div>
     </footer>
     <!--=============================================== Menu modal -->
     <!--=============================================== JS Credit: https://stackoverflow.com/questions/13319678/can-i-close-the-bootstrap-modal-once-the-link-has-been-clicked -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="menu-modal">
+	<div class="modal fade" tabindex="-1" role="dialog" id="menu__modal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-top">
@@ -383,19 +393,19 @@
 				<div class="modal-body">
 					<ul>
 						<li>
-							<a href="#home" class="menu-item-1 active" onclick="$('#menu-modal').modal('hide')">Home</a>
+							<a href="#home" class="menu-item-1 menu--active" onclick="$('#menu__modal').modal('hide')">Home</a>
 						</li>
 						<li>
-							<a href="#about" class="menu-item-2" onclick="$('#menu-modal').modal('hide')">About</a>
+							<a href="#about" class="menu-item-2" onclick="$('#menu__modal').modal('hide')">About</a>
 						</li>
 						<li>
-							<a href="#portfolio" class="menu-item-3" onclick="$('#menu-modal').modal('hide')">Portfolio</a>
+							<a href="#portfolio" class="menu-item-3" onclick="$('#menu__modal').modal('hide')">Portfolio</a>
 						</li>
 						<li>
-							<a href="#contact" class="menu-item-4" onclick="$('#menu-modal').modal('hide')">Contact</a>
+							<a href="#contact" class="menu-item-4" onclick="$('#menu__modal').modal('hide')">Contact</a>
 						</li>
-						<li class="cv">
-							<a href="assets/cv/cv-jessica-bennett.pdf" target="_blank" onclick="$('#menu-modal').modal('hide')">Download CV</a>
+						<li class="menu--reduced">
+							<a href="assets/cv/cv-jessica-bennett.pdf" target="_blank" onclick="$('#menu__modal').modal('hide')">Download CV</a>
 						</li>
 					</ul>
 				</div>
@@ -419,7 +429,7 @@
                         </div>
                     </div>
                 </div>
-				<div class="modal-body about-list">
+				<div class="modal-body modal__about--list">
 					<h6>Qualification gained:</h6>
 					<dl>
 						<dt>BA(Hons) Primary Education with French with QTS</dt>
@@ -452,7 +462,7 @@
                         </div>
                     </div>
 				</div>
-				<div class="modal-body about-list">
+				<div class="modal-body modal__about--list">
                     <h6>Skills aquired:</h6>
 					<ul>
 						<li>Strong verbal communication</li>
@@ -480,7 +490,7 @@
                         </div>
                     </div>
 				</div>
-				<div class="modal-body about-list">
+				<div class="modal-body modal__about--list">
 					<h6>Qualification gained:</h6>
 					<dl>
 						<dt>MEd Psychology of Education </dt>
@@ -513,7 +523,7 @@
                         </div>
                     </div>
 				</div>
-				<div class="modal-body about-list">
+				<div class="modal-body modal__about--list">
                     <h6>Skills aquired:</h6>
 					<ul>
 						<li>Logical thinking and problem solving</li>
@@ -541,7 +551,7 @@
                         </div>
                     </div>
 				</div>
-				<div class="modal-body about-list">
+				<div class="modal-body modal__about--list">
 					<blockquote
 						cite="https://www.forbes.com/2006/12/10/john-romero-games-tech_cx_de_games06_1212romero.html#57277066866e">
 						<em>You might not think that programmers are artists, but programming
@@ -584,14 +594,54 @@
                     </button>
 				</div>
 				<div class="modal-body">
-                    <h4>Please note the contact form is not currently connected and your message will not be received.</h4>
-                    <br>
-                    <h5>Emails can be sent to jessica_bennett@gmx.com</h5>
+                    <h4>Message ready to send...</h4>
 				</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn submit__button--dark" data-dismiss="modal">Edit message</button>
+                    <button type="button" class="btn submit__button--light" onclick="clearInput()" data-dismiss="modal">Send!</button>
+                </div>
 			</div>
 		</div>
 	</div>
     <!--=============================================== My JavaScript -->
+    <!--=============================================== Active menu JavaScript -->
+    <!--=============================================== Credit: https://www.steckinsights.com/change-active-menu-as-you-scroll-with-jquery/ -->
+	<script>
+		$(document).ready(function() { // Tells the function to wait to preform until everything on the page has loaded.
+		$(window).scroll(function() { // Says this function is preformed continously while scrolling.
+		var Scroll = $(window).scrollTop() + 1, // This variable finds the distance you have scrolled from the top.
+		SectionOneOffset = $('#home').offset().top, // This variable finds the distance between #section-one and the top. Replace #section-one with the ID of your section.
+		SectionTwoOffset = $('#about').offset().top, 
+        SectionThreeOffset = $('#portfolio').offset().top,
+        SectionFourOffset = $('#contact').offset().top;
+        
+
+		if (Scroll >= SectionOneOffset) { // If you have scrolled past section one do this.
+		$(".menu-item-1").addClass("menu--active"); // Adds class of current-menu-item to the menu item with a class of menu-item-1
+		} else { // If you have not scrolled section one do this.
+		$(".menu-item-1").removeClass("menu--active"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
+		}
+		if (Scroll >= SectionTwoOffset) { 
+		$(".menu-item-2").addClass("menu--active"); 
+		$(".menu-item-1").removeClass("menu--active"); 
+		} else { 
+		$(".menu-item-2").removeClass("menu--active"); 
+        }
+        if (Scroll >= SectionThreeOffset) { 
+		$(".menu-item-3").addClass("menu--active"); 
+		$(".menu-item-2").removeClass("menu--active"); 
+		} else { 
+		$(".menu-item-3").removeClass("menu--active"); 
+        }
+        if (Scroll >= SectionFourOffset) { 
+		$(".menu-item-4").addClass("menu--active"); 
+		$(".menu-item-3").removeClass("menu--active"); 
+		} else { 
+		$(".menu-item-4").removeClass("menu--active"); 
+		}
+		});
+		});
+    </script>    
     <!--=============================================== Animation JavaScript -->
     <!--=============================================== Credit: https://cssanimation.rocks/scroll-animations/  -->
     <script>
@@ -606,9 +656,7 @@
             Array.prototype.forEach.call(elementsToShow, function(element){
             if (isElementInViewport(element)) {
                 element.classList.add('is-visible');
-            } /* else {
-                element.classList.remove('is-visible');
-            } */
+            } 
             });
 
             scroll(loop);
@@ -635,47 +683,18 @@
             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
         );
         }
-
     </script>
-    <!--=============================================== Active menu JavaScript -->
-    <!--=============================================== Credit: https://www.steckinsights.com/change-active-menu-as-you-scroll-with-jquery/ -->
+    <!--=============================================== Form submit JavaScript -->
+    <!--=============================================== Credit: https://codepen.io/hanapiers/pen/EXNrGP and https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_form_reset  -->
 	<script>
-		$(document).ready(function() { // Tells the function to wait to preform until everything on the page has loaded.
-		$(window).scroll(function() { // Says this function is preformed continuisly while scrolling.
-		var Scroll = $(window).scrollTop() + 1, // This variable finds the distance you have scrolled from the top.
-		SectionOneOffset = $('#home').offset().top, // This variable finds the distance between #section-one and the top. Replace #section-one with the ID of your section.
-		SectionTwoOffset = $('#about').offset().top, // This variable finds the distance between #section-two and the top.Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
-        SectionThreeOffset = $('#portfolio').offset().top,
-        SectionFourOffset = $('#contact').offset().top;
-        
-
-		if (Scroll >= SectionOneOffset) { // If you have scrolled past section one do this.
-		$(".menu-item-1").addClass("active"); // Adds class of current-menu-item to the menu item with a class of menu-item-1
-		} else { // If you have not scrolled section one do this.
-		$(".menu-item-1").removeClass("active"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
-		}
-		if (Scroll >= SectionTwoOffset) { // If you have scrolled past section two do this.You can duplicate this for as many sections as you want.
-		$(".menu-item-2").addClass("active"); // Adds class of current-menu-item to the menu item with a class of menu-item-2
-		$(".menu-item-1").removeClass("active"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
-		} else { // If you have not scrolled section two do this.
-		$(".menu-item-2").removeClass("active"); // Removes class of current-menu-item to the menu item with a class of menu-item-2
+        $('#contact__form').on('submit', function(e){
+        $('#submit-modal').modal('show');
+        e.preventDefault();
+        });
+        function clearInput() {
+            document.getElementById("contact__form").reset();
         }
-        if (Scroll >= SectionThreeOffset) { // If you have scrolled past section two do this.You can duplicate this for as many sections as you want.
-		$(".menu-item-3").addClass("active"); // Adds class of current-menu-item to the menu item with a class of menu-item-2
-		$(".menu-item-2").removeClass("active"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
-		} else { // If you have not scrolled section two do this.
-		$(".menu-item-3").removeClass("active"); // Removes class of current-menu-item to the menu item with a class of menu-item-2
-        }
-        if (Scroll >= SectionFourOffset) { // If you have scrolled past section two do this.You can duplicate this for as many sections as you want.
-		$(".menu-item-4").addClass("active"); // Adds class of current-menu-item to the menu item with a class of menu-item-2
-		$(".menu-item-3").removeClass("active"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
-		} else { // If you have not scrolled section two do this.
-		$(".menu-item-4").removeClass("active"); // Removes class of current-menu-item to the menu item with a class of menu-item-2
-		}
-		});
-		});
     </script>
-
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>

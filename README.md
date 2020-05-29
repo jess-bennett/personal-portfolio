@@ -7,11 +7,24 @@ The quote on the homepage (which also appears in the 'About' section) was someth
 
 Creating this project has been quite a learning curve. Not only with regards to putting into practice what I have learnt so far, but also in terms of understanding my way of working a lot better – and hopefully improving on this in future projects! 
 
-I began building the site with quite a clear idea in my head. As can be seen in my [wireframe document](project-files/user-centric-project-wireframe.pdf), I started out using a picture taken in the village where I grew up as my inspiration for the design (as part of the ‘reflection of my personality’ methodology). I used Adobe CC to create a palette based on this image, and was so pleased with the idea that I ignored the fact that I didn’t really like how the colours actually looked! I had also set upon a single-page site (which has caused me more issues than I first realised) and for some reason (which possibly made sense to me at the time, but doesn’t now!), set each section to be 100vh. 
+I began building the site with quite a clear idea in my head. As can be seen in my [wireframe document](documentation/user-centric-project-wireframe.pdf), I started out using a picture taken in the village where I grew up as my inspiration for the design (as part of the ‘reflection of my personality’ methodology). I used Adobe CC to create a palette based on this image, and was so pleased with the idea that I ignored the fact that I didn’t really like how the colours actually looked! I had also set upon a single-page site (which has caused me more issues than I first realised) and for some reason (which possibly made sense to me at the time, but doesn’t now!), set each section to be 100vh. 
 
 About halfway through the project I realised my mistake on both these counts, and created a new index.html. I copied the code across line by line to make sure that I fully understood each design-decision I was making and at the same time, rectified those two major mistakes. Each section is no longer limited in height, which has helped enormously with the layout. And the colour palette, whilst still based on my original image, is a much more abstract take on the greens and blues of the countryside – and I think, more suited to the purpose of the site.
 
 All these changes have meant that this project took quite a bit longer than I had anticipated. But for a first project, I have learnt a huge amount, which I hope will help the planning process for my next project.
+
+### Lessons Learnt
+* Start small and build up
+    *  I was slightly too enthusiastic about getting to the 'fun (extra challenging)' parts and in hindsight I should have spent more time ensuring I was satisfied with the underlying format. This would have saved me a great deal of time that was spent going back and changing the colour scheme and layout.
+
+* Pick a CSS naming convention and stick with it
+    * I still have more to learn when it comes to the pros and cons of different naming conventions, although I did do plenty of reading around the subject before beginning the site. I have tried to use a consistent style throughout but I think some of my class names were a bit haphazard to begin with. 
+
+* Thoroughly document external libraries
+    * The JS took some trial and error to get it working, and I ended up with some unused libraries in place. Whilst I did make a note of those that I used in my wireframe document, I neglected to remove all of those that **didn't** work from my code and ended up with two unused libraries (now removed).
+
+* Be wary of duplicating CSS rules
+    * Again, I think this was an overload of enthusiasm that led to some needless repetition of rules. In future, I realise that I need to be more careful of this!
 
 ## UX
 The website has been built with prospective clients, recruiters, employers and collaborators in mind. Whilst a personal portfolio site is a fairly simple idea, I wanted it to appeal to different people for different reasons. Basically, I want something which is impressive, but more importantly, easy-to-understand for both technical and non-technical mindsets. 
@@ -19,15 +32,16 @@ The website has been built with prospective clients, recruiters, employers and c
 With this mind, I have tried to ensure that the site is easy to navigate and that everything works and can be found where expected. But at the same time, many of the simple features include more complex programming to demonstrate what I have learnt so far. Examples of this are the animations used on the homepage and 'About' sections, and the post-card style contact form.
 
 ### User stories
-* As a prospective client, I want to see an example of the type of website that could be created. I am less interested in the content itself, and more interested in the different features that have been implemented and the overall look of the site.
+* As a prospective client, I want to see an example of the type of website that could be created. I am less interested in the content itself, and more interested in the different features that have been implemented and the overall look of the site.  
+![Design](documentation/design-example.JPG)
+* As a non-technical recruiter/employer, I am interested in the work history of the candidate and the availability of a hard-copy CV.  
+![CV](documentation/cv-example.JPG)
+* As technical recruiter/employer, I would like to see work history of the candidate and also see a demonstration of their programming ability.  
+![Work history](documentation/work-history-example.JPG)
+* As a prospective collaborator, I am interested in seeing the candidate’s programming ability and design choices.  
+![Ability](documentation/ability-example.JPG)
 
-* As a non-technical recruiter/employer, I am interested in the work history of the candidate and the availability of a hard-copy CV.
-
-* As technical recruiter/employer, I would like to see work history of the candidate and also see a demonstration of their programming ability.
-
-* As a prospective collaborator, I am interested in seeing the candidate’s programming ability and design choices.
-
-My [wireframe document](project-files/user-centric-project-wireframe.pdf) demonstrates how I attempted to meet the above requirements – with particular reference to the Strategy plane section.
+My [wireframe document](documentation/user-centric-project-wireframe.pdf) further demonstrates how I attempted to meet the above requirements – with particular reference to the Strategy plane section.
 
 ## Features
 ### Existing Features
@@ -44,9 +58,9 @@ My [wireframe document](project-files/user-centric-project-wireframe.pdf) demons
 * About – svg animation
     * Demonstrates additional programming ability. JS added to ensure that user sees animation, rather than it happening ‘invisibly’ whilst they are on another page. 
 * Skills page
-    * On desktop, this page replaces the ‘software developer’ modal to allow for a more detailed overview. On mobile, it is a smaller additional section with just the progress bars. Its purpose is to give a back story to my career path, and is also designed to be updated as I continue to progress as a software developer.
+    * On desktop, this page replaces the ‘software developer’ modal to allow for a more detailed overview. On mobile, it is a smaller additional section with just the progress bars. Its purpose is to give a back story to my career path, and is also designed to be updated as I continue to progress as a software developer. I have purposefully used the 'Coming soon...' text to highlight my current stage of progression.
 * Portfolio page
-    * Showcases work as a software developer. Also designed to be regularly updated.
+    * Showcases work as a software developer. Also designed to be regularly updated, and includes information regarding upcoming projects.
 * Portfolio cards animation
     * Designed to save space on layout, and also to demonstrate additional programming ability. This section has changed quite a lot since its original inception! This is mainly a design choice. The masonry style didn’t work at all with the typically ‘square’ webpages I wanted to display. I have added additional information about the website on the reverse of each card. This is viewable on larger devices, but not on mobile.
 * Contact page
@@ -69,24 +83,24 @@ My [wireframe document](project-files/user-centric-project-wireframe.pdf) demons
 
 ## Technologies used
 * [Bootstrap](https://getbootstrap.com/)
-    * Bootstrap css and JS used for grid layout and modals
+    * Bootstrap CSS and JS used for grid layout and modals
 * [FontAwesome](https://fontawesome.com/)
-    * FA JS used for icons
+    * FA JS used for icons. Initially, the CSS file was used but this didn't work for the SVG icons, so the JS file was used instead.
 * [JQuery](https://developers.google.com/speed/libraries)
-    * Google hosted library used for menu active scroll function and animation on scroll function
+    * Used for menu active scroll function and animation on scroll function
 * [Favicon](https://favicon.io/)
     * Used to create site’s favicon
 
 ## Testing
 
 The first stage of testing was conducted by willing family members. This was to check usability - whether navigation was clear and user stories met.
-Feedback regarding usability was good. Some errors were identified (mainly due to the different devices used for testing) and fixed. An overview of these can be found at the end of the [wireframe document](project-files/user-centric-project-wireframe.pdf)
+Feedback regarding usability was good. Some errors were identified (mainly due to the different devices used for testing) and fixed. An overview of these can be found at the end of the [wireframe document](documentation/user-centric-project-wireframe.pdf)
 Code was tested using external sites. Functionality testing was carried out manually. 
 
 ### Code Testing
 
 Testing was conducted via Validator.w3.org and jigsaw.w3.org/css-validator. Some errors were found during initial testing and fixed. Two warnings remain in place (one for html and one for css) however, no action has been taken on these as they do not affect the performance of the site. 
-Full details can be found [here](project-files/user-centric-project-testing.xlsx)
+Full details can be found [here](documentation/user-centric-project-testing.xlsx)
 
 ### Functionality Testing
 
@@ -121,11 +135,16 @@ All test outcomes were good with some exceptions:
     This resulted in many additional commits where I would implement a change, and then have to push it to the live site in order to check. 
     I was keen to 'clean up' my commit history as I feel it could appear confusing. However, it was suggested to me by tutor support that it would be best to leave it rather than risk any major errors!
 
-The full testing matrix with features tested and devices/browsers tested on, can be found [here](project-files/user-centric-project-testing.xlsx)    
+The full testing matrix with features tested and devices/browsers tested on, can be found [here](documentation/user-centric-project-testing.xlsx)    
 
 ## Deployment
 
-The site was deployed via GitHub Pages. The full website link is: https://jess-bennett.github.io/personal-portfolio/
+The site was deployed via GitHub Pages with the following steps:
+
+1. From the repository, I visited 'settings'
+2. Under 'GitHub pages', I changed the source to 'Master branch'
+
+ The full website link is: https://jess-bennett.github.io/personal-portfolio/
 
 ## Credits
 
@@ -137,24 +156,20 @@ All content and media was created by me.
 
 Other than a word of thanks to my family for their help with testing on different devices, I would like to acknowledge the following sites:
 
-* Making the image square was harder than I expected! 
-    * Solution taken from: https://pagecrafter.com/maintain-aspect-ratio-for-html-element-using-only-css-in-a-responsive-design/ 
-* Aligning homepage text in middle of page also took some work. 
-    * Solution taken from: https://www.jakpsatweb.cz/css/css-vertical-center-solution.html
-* SVG 
-    * Following articles used: https://medium.com/@sterling.meghan/svg-line-animation-for-beginners-51857c88357f and https://css-tricks.com/svg-path-syntax-illustrated-guide/ and https://www.w3schools.com/graphics/svg_line.asp and https://www.w3schools.com/graphics/svg_circle.asp and https://codepen.io/BruceBC/pen/PPPNQV and https://stackoverflow.com/questions/14984007/how-do-i-include-a-font-awesome-icon-in-my-svg
-* Text icons that open modals to show ‘finger pointer’ 
-    * Following article: https://www.tutorialrepublic.com/faq/how-to-change-the-cursor-into-a-hand-pointer-on-hover-using-css.php
-* Show animation on scroll 
-    * Code taken directly from: https://cssanimation.rocks/scroll-animations/ - removed section on ‘remove class’ as don’t want the animation to repeat
-* Close menu modal on anchor click 
-    * https://stackoverflow.com/questions/13319678/can-i-close-the-bootstrap-modal-once-the-link-has-been-clicked
-* Portfolio card 
-    * Code lifted and adapted from: https://www.w3schools.com/howto/howto_css_flip_card.asp
-* Placeholder text colour for contact form
-    * https://www.w3schools.com/howto/howto_css_placeholder.asp
-* Overwriting autofill colour change in contact form 
-    * https://webagility.com/posts/the-ultimate-list-of-hacks-for-chromes-forced-yellow-background-on-autocompleted-inputs
 * Active menu JS 
     * Code taken from: https://www.steckinsights.com/change-active-menu-as-you-scroll-with-jquery/
+* Close menu modal on anchor click 
+    * https://stackoverflow.com/questions/13319678/can-i-close-the-bootstrap-modal-once-the-link-has-been-clicked    
+* Show animation on scroll 
+    * Code taken directly from: https://cssanimation.rocks/scroll-animations/ - removed section on ‘remove class’ as don’t want the animation to repeat    
+* SVG 
+    * Following articles used: https://medium.com/@sterling.meghan/svg-line-animation-for-beginners-51857c88357f and https://css-tricks.com/svg-path-syntax-illustrated-guide/ and https://www.w3schools.com/graphics/svg_line.asp and https://www.w3schools.com/graphics/svg_circle.asp and https://codepen.io/BruceBC/pen/PPPNQV and https://stackoverflow.com/questions/14984007/how-do-i-include-a-font-awesome-icon-in-my-svg
+* Portfolio card 
+    * Code lifted and adapted from: https://www.w3schools.com/howto/howto_css_flip_card.asp
+* Overwriting autofill colour change in contact form 
+    * https://webagility.com/posts/the-ultimate-list-of-hacks-for-chromes-forced-yellow-background-on-autocompleted-inputs
+* Placeholder text colour for contact form
+    * https://www.w3schools.com/howto/howto_css_placeholder.asp
+* Contact form submission button JS
+    * https://codepen.io/hanapiers/pen/EXNrGP and https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_form_reset   
 
